@@ -1,0 +1,91 @@
+* {
+
+	font-size: inherit;
+	line-height: 1em;
+	text-align: inherit;
+	font-style: inherit;
+    --webkit-font-smoothing: inherit;
+    --webkit-text-size-adjust: 100%;
+    outline: 0px solid rgba(255,0,0,03);
+    text-rendering: optimizelegibility;
+}
+
+body {
+	font-family: "Arial Narrow";
+	font-weight: 500px;
+	text-align: center;
+	text-transform: uppercase;
+	min-width: 1008px;
+	margin: 0px 0px;
+}
+
+.scoreboard_wrapper {
+	white-space: nowrap;
+	background-color: #E5E4D6;
+}
+
+.header {
+	white-space: nowrap;
+	font-family: "Kozuka Gothic Pr6N";
+	font-size: 3.6em;
+	font-weight: 100;
+	margin-left: 0;
+	width: 100%;
+	padding: 10px 0px 50px;
+	margin: 0px 15px;
+}
+
+h2 {
+	font-size: 1.68em;
+	font-weight: 600;
+}
+
+
+.division {
+	display: inline-block;
+	width: 31%;
+	margin: 0 auto 4%;
+    max-width: 30em;
+    vertical-align: top;
+    padding: 0 .75%;
+}
+
+
+ .th {
+ 	display: inline-block;
+}
+
+.division .tr {
+    max-width: 350px;
+    min-width: 10em;
+}
+
+.th, .tr {
+	margin-bottom: 1%;
+	white-space: nowrap;
+	max-width: 36em;
+}
+
+.td {
+	background: none repeat scroll 0 0 #000000;
+	box-sizing: border-box;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 2em;
+	overflow: hidden;
+	padding: 0.25em 2% 0.125em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	text-align: center;
+	width: 68%;
+}
+
+.score {
+	margin-left: 1%;
+	width: 12%;
+}
+
+.words + .score {
+	background-color: #98B5CB;
+	color: #000000;
+}

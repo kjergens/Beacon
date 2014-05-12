@@ -1,0 +1,21 @@
+body {
+	margin: 0px;
+	background: #d6d2d2;
+	font-family: sans-serif;
+}
+
+blockquote {
+	border: 1px solid white;
+	width: 500px;
+	margin: 0px 0px 10px 0px;
+	text-align: center;
+}
+
+.header {
+	margin-top: 5px; 
+}
+
+.content{
+	margin: auto;
+	width: 600px;
+}

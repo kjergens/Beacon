@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<Title>Search</Title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+  	<link rel="stylesheet" type="text/css" href="css/search.css"/>
+</head>
+<body>
+
+<!--Page Wrapper0-->
+
+<div class="content">
+  
+<!-- Search box and results -->
+  <span id="result_text"></span>
+
+  <div class="search_container">
+	  <input type="search" id="search_text" placeholder="Search" name="search_text" onkeydown="if (event.keyCode == 13) mySearch();">
+    <span class="magnifying_container">
+      <img src="open-iconic-master/svg/magnifying-glass" alt="" width="16" height="16">
+    </span>
+  </div>
+
+<!-- Main text area -->
+  <div class="text_background">
+    <div class="text">
+	   <p id="txt">Is you is or is you ain't my baby?</p>
+	   <!--<p id="result"></p>-->
+    </div>
+  </div>
+
+<!--Footer-->
+  <div class="footer">
+     <p>Open Iconic www.useiconic.com/open</p>
+  </div>
+
+
+</div>
+
+
+
+<script type="text/javascript">
+function mySearch()
+{
+   var searchStr = document.getElementById("search_text").value;
+
+   if (searchStr.length > 0) {
+  	 var re = new RegExp(searchStr, "gi");
+  	 var targetStr = document.getElementById("txt").innerHTML;
+
+  	 var myArray = targetStr.match(re);
+  	 var resultTxt;
+
+   	 if (myArray == null) { 
+  	    resultTxt = 'no matches';
+  	 }
+  	 else if (myArray.length == 1) {
+  	 	resultTxt = 'one match';
+  	 }
+  	 else {
+  	    resultTxt = myArray.length + ' matches'; 
+  	 }
+
+  	 //document.getElementById("result").innerHTML = searchStr + ": " + resultTxt;
+     document.getElementById("result_text").innerHTML = searchStr + ": " + resultTxt;;
+   }
+   else {
+   	 //document.getElementById("result").innerHTML = "";
+     document.getElementById("result_text").innerHTML = "";
+   }
+
+   document.getElementById("search_text").value = "";
+}
+</script>
+
+</body>
+
+</html>

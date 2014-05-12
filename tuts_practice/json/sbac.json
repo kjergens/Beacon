@@ -1,0 +1,30 @@
+ELA_grade3_claim1 
+{
+	"desc" : "Students can read closely and analytically to comprehend a range of increasingly complex literary and informational texts.",
+	"doks" : [1,2],
+	"targets": [ 
+	 {
+		"targetId" : 1,
+       	"title" : "Key Details",
+       	"desc" : "Given an inference of conclusion, use explicit details and implicit information from the text to support the inference of conclusion provided.",
+       	"stds" : [
+       	{
+       		"stdId": "RL-1",
+            "stdDesc": "Ask and answer questions to demonstrate understanding of a text, referring explicitly to the text as the basis for the answers."
+         	}
+         ]  
+     	},  /* end target 1 */
+     {
+    	"targetId" : 2,
+        "title" : "Central Ideas",
+        "desc" : "Identify central ideas, key events, or the sequence of events presented in a text.",
+        "doks" : [2,3],
+        "stds" : [
+        {
+    		"stdId": "RL-2",
+           	"stdDesc": "Recount stories, including fables, folktales, and myths from diverse cultures; determine the central message, lesson, or moral and explain how it is conveyed through key details in the text"
+           	}
+        ]
+	 	}   /* end target 2 */
+	]
+}

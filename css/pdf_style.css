@@ -1,0 +1,317 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	zvertical-align: baseline;
+}
+
+li {
+	list-style: none outside none;
+	display: inline-block;
+	height: 11px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-family: helvetica;
+	font-weight: normal;
+	vertical-align: baseline;
+	line-height: 1;
+	color: #636363;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	background-color: #636363;
+}
+
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.pdf {
+	width: 760px;
+	height: 1100px;
+	background-color: #ffffff;
+	margin: 10px auto;
+	padding: 50px 40px;
+	z-index: 0;
+}
+
+.back_to_overlay {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+	background-color: #c3c3c3;
+	padding: 6px;
+}
+
+.header_container {
+	width: 700px;
+	margin: 10px auto 70px auto;
+}
+
+.pdf_header_left {
+	float: left;
+}
+
+.pdf_header_right {
+	float: right;
+}
+
+.points_earned {
+	text-align: center;
+}
+
+
+.assessment_name h5, .stu_assessment_name h5  {
+	font-weight: bold;
+}
+
+.assessment_name {
+	color: #636363;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.item_table_container {
+	margin: 20px auto 50px auto;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 600px;
+}
+
+
+.stu_item_table_container {
+	margin: 20px auto;
+	zposition: relative;
+	ztop: 0px;
+	zleft: 0px;
+	width: 350px;
+}
+
+
+.item_type_and_points, thead {
+	margin: 5px 5px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	color: #666666;
+}
+
+.item_table {
+	border: 1px solid #999999;
+}
+
+.item_table td:first-child {
+	width: 40px;
+}
+
+.item_table tr {
+	border-bottom: 1px solid #cccccc;
+	margin: 0px 10px;
+	text-align: right;
+	height: 19px;
+}
+
+.item_table td {
+	padding: 3px 10px;
+	text-align: right;
+	width: 75px;
+	height: 19px;
+}
+
+
+.filler_student {
+	min-width:90px;
+}
+
+.filler_col_1pt {
+	min-width:160px;
+}
+
+.filler_col_3pts {
+	min-width:72px;
+}
+
+.filler_col_4pts {
+	min-width:0px;
+}
+
+.item_no h5 {
+	color: #275F7A;
+}
+
+
+
+.red_bucket h5, .red_bucket h6, .red_bucket h4, .red_bucket h3 {
+	color: #E33E39;
+	font-weight: bold;
+}
+
+
+.yellow_bucket h6 {
+	color: #CDAD00;
+	font-weight: bold;
+}
+
+.green_bucket h6, .green_bucket h5, .green_bucket h4 {
+	color: #6AB046;
+	font-weight: bold;
+}
+
+.blue_bucket h6 {
+	color: #1D7CF2;
+	font-weight: bold;
+}
+
+.not_scored h6 {
+	color: #9c9c9c;
+	font-weight: bold;
+}
+
+.student_icon {
+	display: inline-block;
+	height: 11px;
+	margin: 15px 5px;
+	width: 7px;
+
+}
+
+.toggle p {
+	color:transparent;
+}
+
+.cir
+{
+	width:10px;
+	height:10px;
+	border-radius:5px;
+	background-color:#999999;
+	margin:5px 10px;
+	position: absolute;
+	top: 5px;
+}
+
+.hump
+{
+	width:12px;
+	height:12px;
+	border-radius:6px 6px 0px 0px;
+	background-color:#999999;
+	position: absolute;
+	bottom: 5px;
+}
+
+.stu_icon_gray {
+	width: 15px;
+	position: absolute;
+	left: 20px;
+}
+
+
+.item_type h6 {
+	color: #999999;
+	font-weight: bold;
+
+}
+
+#hexagon_top { 
+	border-bottom: 65px solid #E35152; 
+	border-left: 45px solid transparent; 
+	border-right: 45px solid transparent; 
+	height: 0; 
+	width: 65px;
+	display: block;
+}
+
+#hexagon_bottom { 
+	border-top: 65px solid #E35152; 
+	border-left: 45px solid transparent; 
+	border-right: 45px solid transparent; 
+	height: 0; 
+	width: 65px;
+	display: block;
+}
+
+
+#gr_hexagon_top { 
+	border-bottom: 25px solid #6AB046; 
+	border-left: 15px solid transparent; 
+	border-right: 15px solid transparent; 
+	height: 0; 
+	width: 25px;
+	display: block;
+}
+
+#gr_hexagon_bottom { 
+	border-top: 25px solid #6AB046; 
+	border-left: 15px solid transparent; 
+	border-right: 15px solid transparent; 
+	height: 0; 
+	width: 25px;
+	display: block;
+}
+
+
+.hex_header {
+	color: #333333;
+	ztext-align: center;
+	padding: 30px 6px;
+}
+
+.standard_summary {
+	margin: 50px auto;
+	width: 600px;
+}
+
+.stu_standard_summary {
+	margin: 30px auto;
+	width: 550px;
+}
+
+.hex_description h4, .hex_description h5 {
+	margin: 10px 10px 0px 50px;
+}
+
+.hex_description {
+	margin-left: 100px;
+}

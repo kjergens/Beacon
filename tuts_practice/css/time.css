@@ -1,0 +1,24 @@
+.time_container {
+	margin: 20px auto;
+}
+
+.show_time {
+	background-color: #00688B;
+	border: 0;
+	color: #ffffff;
+	margin: 20px auto;
+	width: 170px;
+}
+
+
+.hide_time {
+	background-color: #636363;
+	border: 0;
+	color: #ffffff;
+	margin: 20px auto;
+	width: 170px;
+}
+
+#txtDateTime {
+	margin: 50px;
+}

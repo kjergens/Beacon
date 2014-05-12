@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/form.css">
+	<title>Form</title>
+</head>
+
+<body>
+<input class="gremlin_button" type="button" id="btnGremlin" value="Unleash the gremlins" onclick="g_u()">
+
+<div class="wrap">
+
+	<div class="formarea">
+		<form action="index.html" method="get">
+			<ul>
+				<li>
+					<label for="firstName">First Name:</label>
+					<input id="firstName" name="firstName">
+				</li>
+
+				<li>
+					<label for="comments">Comment:</label>
+					<textarea id="comments" name="comments"></textarea>
+				</li>
+
+				<li class="checkmark">
+					<input type="checkbox" name="showName" id="showName" value="Yes">
+					<label for="showName">Hide my name with comment.</label>
+				</li>
+
+				<li>
+					<input class="button" type="submit" value="Submit">	
+				</li>
+			</ul>
+		</form>
+	</div>
+</div>
+
+
+<!--https://github.com/marmelab/gremlins.js-->
+
+<script src="js/gremlins.min.js"></script>
+<script>
+function g_u() {
+	gremlins.createHorde().unleash();
+}
+</script>
+
+</body>
+</html>

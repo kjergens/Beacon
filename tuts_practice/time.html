@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/time.css"/>
+</head>
+<body>
+
+<div class="time_container">
+  <center>
+  
+   <input id="btnTime" class="show_time" type="button" onclick="toggleDateTime()" value="Show the time"/>
+   <p id="txtDateTime"></p>
+</center>
+</div>
+
+
+<script>
+
+function toggleDateTime()
+{
+  var btnText, newBtnText, txtDateTime, cName;
+
+  btnText = document.getElementById("btnTime").value;
+
+  if (btnText == "Show the time") {
+      txtDateTime = Date();
+      newBtnText = "Hide the time";
+      cName = "hide_time";
+  } 
+  else {
+      txtDateTime = "";
+      newBtnText = "Show the time";
+      cName = "show_time";
+  }
+ 
+  document.getElementById("txtDateTime").innerHTML = txtDateTime;
+  document.getElementById("btnTime").value = newBtnText;
+  document.getElementById("btnTime").className = cName;
+}
+</script>
+
+</body>
+</html> 

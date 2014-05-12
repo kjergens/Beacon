@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body, p, h1, h2, h3, h4, h5, h6, a {
+  font-family: sans-serif;
+}
+
+button {
+ width: 140px;
+ height: 60px;
+ border-radius: 10px;
+ font-size: 18px;
+ margin: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<button type="button" onclick="makeItRain()">Make it rain</button>
+
+<p id="rain"></p>
+
+</body>
+
+<script>
+
+function makeItRain()
+{
+	var txtRain ="";
+
+	for (i=0; i<=500; i++) {
+		txtRain += "rain ";
+	}
+
+	document.getElementById("rain").innerHTML+=txtRain;
+}
+
+</script>
+
+</html> 
