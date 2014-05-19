@@ -1,0 +1,175 @@
+body {
+	font-size: 15px;
+	color: #333333;
+	background-color: #333333;
+	margin: 0px;
+	padding: 0px;
+}
+
+h3 {
+	font-size: 18px;
+	display: inline;
+}
+
+h1, h2, h3, h4 {
+	font-weight: lighter;
+}
+
+body, h1, h2, h3, h4, p {
+	font-family: sans-serif;
+	display: inline;
+}
+
+hr {
+	margin: 5px 5px 5px 30px;
+	color: #e3e3e3;
+}
+
+.instructions {
+	padding: 10px 0px;
+	margin: 0px;
+}
+
+.page_wrapper {
+	background-color: #ffffff;
+	width: 80%;
+	width: 880px;
+	margin: auto;
+	position: relative;
+	top: 0px;
+	min-height: 700px;
+}
+
+.page_header {
+	padding: 30px 0px 20px 60px;
+	text-align: left;
+	zmargin-left: 42px;
+}
+
+.table {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.htable {
+	display: inline-block;
+	margin-left: -70px;
+	margin-top: 40px;
+}
+
+#r1, #t1, #s1, #d2 {
+	border-top: 1px solid #E2E1DF;
+}
+
+.part {
+	margin-bottom: 15px;
+	margin-left: 30px;
+	margin-top: 15px;
+}
+
+.tr {
+   display: block;
+   height: 120px;
+}
+
+.header{
+	height: 20px;
+	padding: 0px 0px 5px 0px;
+}
+
+
+.td {
+	border: 1px solid #E2E1DF;
+	display: inline;
+	float: left;
+	padding: 30px 20px;
+	width: 90px;
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 50px;
+	margin-left: 30px;
+}
+
+.option_col, .core_task {
+   border-bottom: 1px solid #E2E1DF;
+}
+
+.part_col {
+	border-top: 0px;
+	border-bottom: 0px;
+	border-left: 0px;
+}
+
+.core_task {
+	background-color: #eeeeec;
+	border-left: 1px solid #E2E1DF;
+}
+
+.core_task:hover {
+	background-color: #e3e3e3;
+}	
+
+.option_col:hover {
+	background-color: #CCEDFD;
+}	
+
+.option_col:active, .selected {
+	background-color: #f3e94f;
+	color:#333333;
+}	
+
+
+a {
+    color: #00AAEE;
+    text-decoration: none;
+}
+
+.core_task a {
+	color: #00AAEE;
+}
+
+.topic {
+	padding-bottom: 30px;
+	font-weight: bold;
+}
+
+.s_res .topic, .x_act .topic {
+	padding-bottom: 15px;
+}
+
+.x_res .topic {
+	padding-bottom: 10px;
+}
+
+.x_res {
+	padding: 20px 20px 40px;
+}
+
+.corehead {
+	border: 0px;
+	height: 14px;
+	text-align: left;
+	padding: 0px 50px 0px 230px;
+}
+
+.act_head {
+	border: 0px;
+	height: 14px;
+	text-align: left;
+	width: 300px;
+	padding: 0px;
+}
+
+.selected_core {
+	background-color: #c4a000;
+	color: #333333;
+}
+
+.selected a {
+	color: #333333;
+}
+
+.selected_core a {
+	color: #333333;
+}
