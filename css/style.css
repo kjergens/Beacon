@@ -3,7 +3,7 @@ body {
 	color: #333333;
 }
 
-a {
+aside a {
 	color: #f1f1f1;
 	text-decoration: none;
 }
@@ -23,8 +23,6 @@ aside ul {
 	 margin-left: 0px;
 }
 
-aside {
-}
 
 .primary {
 	background: #e3e3e3;
