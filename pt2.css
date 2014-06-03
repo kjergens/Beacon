@@ -2,6 +2,7 @@ body {
 	font-size: 15px;
 	color: #333333;
 	background-color: #333333;
+	line-height: 22px;
 	margin: 0px;
 	padding: 0px;
 }
@@ -21,41 +22,49 @@ body, h1, h2, h3, h4, p {
 }
 
 hr {
-	margin: 5px 5px 5px 30px;
-	color: #e3e3e3;
+	margin: 5px 5px;
+	color: #cfcfcf;
 }
 
 .instructions {
 	padding: 10px 0px;
 	margin: 0px;
+	width: 65%;
+}
+
+#detailed_instructions {
+	zwidth: 65%;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
 }
 
 .page_wrapper {
 	background-color: #ffffff;
-	width: 80%;
-	width: 880px;
+	width: 780px;
 	margin: auto;
+	padding: 10px 65px;
 	position: relative;
 	top: 0px;
 	min-height: 700px;
 }
 
 .page_header {
-	padding: 30px 0px 20px 60px;
+	padding: 20px 0px 20px 0px;
 	text-align: left;
 	zmargin-left: 42px;
 }
 
 .table {
 	display: inline-block;
-	margin-left: 30px;
+	zmargin-left: 30px;
 }
 
-.htable {
-	display: inline-block;
-	margin-left: -70px;
-	margin-top: 40px;
-}
 
 #r1, #t1, #s1, #d2 {
 	border-top: 1px solid #E2E1DF;
@@ -63,7 +72,7 @@ hr {
 
 .part {
 	margin-bottom: 15px;
-	margin-left: 30px;
+	zmargin-left: 30px;
 	margin-top: 15px;
 }
 
@@ -72,7 +81,7 @@ hr {
    height: 120px;
 }
 
-.header{
+.header {
 	height: 20px;
 	padding: 0px 0px 5px 0px;
 }
@@ -91,19 +100,23 @@ hr {
 	margin-left: 30px;
 }
 
+.core_task {
+	margin-left: 0px;
+}
+
 .option_col, .core_task {
    border-bottom: 1px solid #E2E1DF;
 }
 
-.part_col {
-	border-top: 0px;
-	border-bottom: 0px;
-	border-left: 0px;
-}
 
 .core_task {
 	background-color: #eeeeec;
 	border-left: 1px solid #E2E1DF;
+}
+
+.core_label {
+	padding-bottom: 10px;
+	margin-top: -10px;
 }
 
 .core_task:hover {
@@ -138,7 +151,7 @@ a {
 	padding-bottom: 15px;
 }
 
-.x_res .topic {
+.x_res .topic, .core_task .topic {
 	padding-bottom: 10px;
 }
 

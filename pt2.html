@@ -8,22 +8,27 @@
 <body>
 	<div class="page_wrapper">
 		<div class="page_header">
-			<h2>Plan Your Performance Task</h2>
-		<div class="instructions"><h4>Select from the options below</h4></div>
-		</div>
-		<!--<div class="htable">
-			<div class="tr header">
-				<div class="td corehead"><h3>Core Task</h3></div>
-				<div class="td act_head"><h3>Activies</h3></div>
+			<h1>Build a Performance Task</h1>
+			<div class="instructions"><h4>Select from the options below.</h4>
+				<h4><a href="#" onclick="toggleGuidelines()">Guidelines</a></h4>
+				<ol id="detailed_instructions" class="hide">
+					<li>Choose any of the options below to create your Peformance Task.</li>
+					<li>Each Part is its own assessment. Together these Parts make up a single Performance Task.</li>
+					<li>Each Part automatically comes with a Core Task. All activities in the Part relate to that Core Task.</li>
+					<li>The Parts build upon each other. It is highly recommended that you adminster the Parts and activities in the order presented.</li>
+					<li>It takes a 35-50 minute class period to complete a Core Task and just one activity. For that reason, it is recommended that you choose only one activity per Part. 
+					</li>
+				</ol>
 			</div>
-		</div>-->
+		</div>
+
 		<div class="table">
 			<div class="tr">
 				<hr>
 				<div class="part"><h3>Part 1</h3></div>
 				
-				
 				<div class="td core_task" id="r1" onclick="select_r1()">
+					<div class="core_label"><h4>Core Task</h4></div>
 					<div class="topic">Reading</div>
 					<div class="details" onclick="moredetails()"><a href="#">Details</a></div></div>
 
@@ -45,9 +50,9 @@
 			<div class="tr">
 			<hr>
 				<div class="part"><h3>Part 2</h3></div>
-
 			
 				<div class="td core_task" id="r2" onclick="select_r2()">
+					<div class="core_label"><h4>Core Task</h4></div>
 					<div class="topic">Reading</div>
 					<div class="details" onclick="moredetails()"><a href="#">Details</a></div></div>
 
@@ -77,6 +82,7 @@
 				<div class="part"><h3>Part 3</h3></div>
 				
 				<div class="td core_task" id="r3" onclick="select_r3()">
+					<div class="core_label"><h4>Core Task</h4></div>
 					<div class="topic">Reading</div>
 					<div class="details" onclick="moredetails()"><a href="#">Details</a></div></div>
 
@@ -173,6 +179,18 @@ function select_a3()
 function moredetails()
 {
 	alert("More details");
+}
+
+function toggleGuidelines()
+{
+   var cName = document.getElementById("detailed_instructions").className;
+
+   if (cName == "hide") { 
+   	document.getElementById("detailed_instructions").className = "show";
+   }
+   else {
+   	document.getElementById("detailed_instructions").className = "hide";
+   }
 }
 </script>
 
