@@ -1,164 +1,200 @@
-/*****************
-  =global
-  ****************/
-@viewport
-	{
-		zoom: 1.0;
-		width: extend-to-zoom;
-	}
+/*
+ ****************
+ * =global
+ ****************
+ */
+ @viewport
+ {
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
 
 @-ms-viewport
-	{
-		width: extend-to-zoom;
-		zoom: 1.0;
-	}
+{
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
 
 :target 
-  {
-   	background-color: gray;
-   	color: white;
-   	padding: 10px;
-  }
-
-body 
-	{
-		font-family: sans-serif;
-		color: #333333;
-	}
-
-.wrap 
-	{
-	}
-
-.footer, .title, nav>ul>li
-	{
-   	text-transform: lowercase;
-  }
-
-nav>ul>li>a, .footer>a 
-  {
-   	color: #a1a1a1;
-  }
-
-a 
-	{
-   	text-decoration: none;
-  }
-
-a:active 
-	{
-   	color: #333333;
-  }
-
-
+{
+  background-color: gray;
+  color: white;
+  padding: 10px;
+}
 
 /*
- ******************
-  =header
- ******************
-*/
+ ****************
+ * =typography
+ ****************
+ */  
+ body {
+  font-family: "Ariel", sans-serif;
+}
 
-header > h2 
-	{
-  	float: left;
-  }
+p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #353535;
+}
 
-.navlinks 
-	{
-  	float: right;
-  	padding: 10px 0px;
-  }
+.footer, .title, nav>ul>li>a {
+  text-transform: lowercase;
+}
 
-nav li 
-	{
-  	display: inline;
-  	margin-left: 30;
-  	margin-right: 0px;
-  }
+nav>ul>li>a, .footer>a {
+  color: #7e7e7e;
+}
 
-header 
-	{
-  }
+a {
+  text-decoration: none;
+}
 
-.logo 
-	{
-  	-moz-box-sizing: border-box;
-  	-webkit-box-sizing: border-box;
-  	box-sizing: border-box;
-  	background: url(../img/marvelous_tree.jpg) no-repeat;
-  	color: #f1f1f1;
-  	height: 131px;
-  }
+a:active {
+  color: #333333;
+}
 
-.spacer 
-	{
-  	background-color: #333333;
-  	height: 131px;
-  }
+.light_logo {
+  font-weight: lighter;
+}
 
-
-
-/*
- ***********************
-   =main
- ***********************
-*/
-
-.primary 
-	{
-   	background: #e3e3e3;
-  }
-
-
-section 
-	{
-   	-moz-box-sizing: border-box;
-   	-webkit-box-sizing: border-box;
-   	box-sizing: border-box;
-   	padding: 10px 10px 10px 0px;
-  }
-
-.readmore 
-  {
-   	background-color: #333333;
-   	text-transform: uppercase;
-   	color: #f1f1f1;
-   	padding: 5px 10px;
-  }
-
-blockquote 
-  {
-   	font-style: italic;
-   	color: #a1a1a1;
-   	margin: 0 0;
-  }
-
-
-/******************
-  =aside
-  ****************/
-
-aside a 
-	{
-   	color: #f1f1f1;
-   	text-decoration: none;
-  }
-
-
-aside ul 
-	{
-   	list-style: none outside none;
-   	margin-left: 0px;
-  }
+h2.title {
+  font-size: 20px;
+  letter-spacing: -1px;
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 1em;
+}
 
 
 /*
  ****************
-   =footer
+ * =header
  ****************
-*/
+ */  
 
-.footer 
-	{
-	}
+ .topnav {
+  padding-top: 10px;
+}
+
+header > h2 {
+ float: left;
+}
+
+.navlinks {
+ float: right;
+ padding: 5px 0px;
+}
+
+nav li {
+ display: inline;
+ margin-left: 30;
+ margin-right: 0px;
+}
+
+.logo {
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+ background: url(../img/school_sched.png) no-repeat center;
+ color: #f1f1f1;
+ height: 375px;
+}
+
+.spacer {
+ background-color: #333333;
+ height: 375px;
+}
+
+
+
+/*
+ ****************
+ * =main
+ ****************
+ */  
+
+.main {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 15px;
+  line-height: 20px;
+  color: #0e0e0e;
+  margin: 0 0;
+  position: relative;
+  padding-left: 30px;
+  float: right;
+}
+
+.main blockquote p:first-child:before {
+  content: '“';
+  font-size: 40px;
+  color: #bfbfbf;
+  position: absolute;
+  top: 7px;
+  left: 0px;
+}
+
+.main blockquote p:last-child:after {
+  content: "”";
+  font-size: 40px;
+  color: #bfbfbf;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.primary {
+  background: #e3e3e3;
+}
+
+
+section {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 10px 10px 0px;
+}
+
+.readmore {
+  background-color: #333333;
+  text-transform: uppercase;
+  color: #f1f1f1;
+  padding: 6px 10px;
+}
+
+
+/*
+ ****************
+ * =aside
+ ****************
+ */  
+
+aside a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+
+aside ul {
+  list-style: none outside none;
+  margin-left: 0px;
+}
+
+
+/*
+ ****************
+ * =footer
+ ****************
+ */  
+
+.footer {
+  border-top: 1px solid #cccccc;
+  margin-top: 20px;
+  padding: 10px 0px;
+}
 
