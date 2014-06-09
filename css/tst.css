@@ -2,27 +2,344 @@
  *************************
   Notes on colors & sizes.
 
-  #f2f5fa - bckground for pts possible
+	#b4b4af - table border
 
-  #dddddd - gray background for scoring boxes
+  #f2f5fa - bckground for pts possible x
 
-  #1c9200 - green points possible
+  #dddddd - gray background for scoring boxes x
 
-  #aaaaaa - text (black)
+  #1c9200 - green points possible x
 
-  #aac1e8 - TST hyperlink (blue)
+  #666666 - params text (black) x
+
+  #0066cc - TST hyperlink (blue) x
 
   #8fb6cd - Beacon nav hyperlink (blue) 
 
   #badce8 - Beacon nav active hyperlink (black)
 
-  #000000 - mClass bar (black)
+  #000000 - mClass bar (black) x
 
-  #99ccff - mClass logo (blue)
+  #99ccff - mClass logo (blue) x
+
+  beacon nav bar: #e9e9e9;  x
 
   #ff9900 - Admin page (orange)
 
   #cacaca - vertical divider (gray)
 
+  30px w (38 W BORDER)
+  22 h (36 or 38 w border)
+
  *************************
-*/  
+ */  
+
+/*
+ ****************
+ * =global styles
+ ****************
+ */  
+ body {
+ 	font-size: 13px;
+ }
+
+ a {
+ 	text-decoration: none;
+ 	color: #0066cc;
+ }
+
+ p {
+ 	display: inline;
+ }
+
+/*
+ ****************
+ * =navigation
+ ****************
+ */  
+
+ .mclasshead {
+ 	background-color: black;
+ 	color: #ffffff;
+ 	zpadding: 5px;
+ 	height: 28px;
+ 	font-weight: bolder;
+ }
+
+.mclasshead p {
+	display: inline;
+}
+
+.beaconlogo {
+	font-family: "Courier", serif;
+	font-size: 18px;
+	font-weight: lighter;
+	padding: 1px 10px 2px 10px;
+}
+
+.username {
+	margin-left: 15px;
+	padding: 1px 10px 2px 10px;
+}
+
+.globalnav_item {
+	display: inline;
+	color: #99ccff;
+}
+
+.globalnav {
+	text-decoration: none;
+	float: right;
+	margin-right: 10px;
+	padding-top: 4px;
+}
+
+ .beaconnav {
+ 	background-color: #e9e9e9;
+ 	border-bottom: 1px solid #b4b4af;
+ 	margin-bottom: 10px;
+ 	padding: 5px 5px 5px 0px;
+ 	margin: 0px;
+ 	height: 18px;
+ }
+
+ .beaconnav>li {
+ 	display: inline;
+ 	margin: 10px;
+ }
+
+/*
+ ****************
+ * =params
+ ****************
+ */  
+ .params {
+ 	line-height: 30px;
+ 	margin-bottom: 5px;
+ }
+
+.pagetitle {
+	font-size: 18px;
+}
+
+ .param_label, .print {
+ 	color: #666666;
+ }
+
+ .print:before {
+ 	content: url("../pfriend.png");
+ 	position: relative;
+ 	left: -2px;
+ 	top: 6px;
+ }
+
+ .params>td{
+ 	margin: 0px 30px;
+ }
+
+ .param_label {
+ 	text-align: right;
+ 	width: 100px;
+ }
+
+ .sections {
+ 	margin-left: 15px;
+ }
+
+ option.sections
+ {
+ 	zpadding-top: 5px;
+ 	zheight: 24px;
+ }
+
+ select.sections {
+ 	zbackground-color:#f1f1f1;
+ 	z-moz-border-radius:2px;
+ 	z-webkit-border-radius:2px;
+ 	zborder-radius:2px;
+ 	zborder:1px solid #e3e3e3;
+ 	zheight: 24px;
+ 	width: 190px;
+ 	zfont-size: 13px;
+ 	font-family: sans-serif;
+ }
+
+table.params>tr>td {
+	height: 30px;
+}
+
+ .print, .assmtname, .pagetitle {
+ 	margin-left: 20px;
+ }
+
+/*
+ ****************
+ * =names
+ ****************
+ */  
+
+ .stu_list>ul>li{
+ 	transform: rotate(-45deg);
+ 	display: inline;
+ 	float: left;
+ 	min-width: 40px;
+ }
+
+ .stu_table, .stu_list {
+ 	margin: 0px 5px;
+ }
+
+ .stu_table>table>tbody>tr>td{
+ 	transform: rotate(-45deg);
+ 	min-width: 40px;
+ 	width:40px;
+ 	letter-spacing: 0em;
+ 	overflow: hidden;
+ }
+
+/*
+ ****************
+ * =scores
+ ****************
+ */  
+ td.score {
+ 	-moz-box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	border-top: 8px solid #dddddd;
+ 	border-bottom: 8px solid #dddddd;
+ 	border-left: 4px solid #dddddd;
+ 	border-right: 4px solid #dddddd;
+ 	width: 38px;
+ 	text-align: center;
+ 	vertical-align: middle;
+ 	height: 38px;
+ }
+
+ tr.score {
+ 	border: 1px solid #ffffff;
+ }
+
+ input {
+ 	width: 28px;
+ 	height: 22px;
+ 	text-align: center;
+ 	font-size: 14px;
+ 	font-weight: bolder;
+ }
+
+/*
+ ****************
+ * =items
+ ****************
+ */  
+
+ .item_prompt {
+ 	padding: 0px 5px;
+ 	width: 318px;
+ }
+
+ .pts_possible {
+ 	background-color: #f2f5fa;
+ 	color: #1C9200;
+ 	font-weight: bold;
+ 	width: 54px;
+ }
+
+ .items>table>tbody>tr>td {
+ 	height: 40px;
+ 	text-align: center;
+ 	vertical-align: middle;
+ 	-moz-box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	border: 1px solid #b4b4af;
+ 	overflow: hidden;
+ }
+
+/*
+ ****************
+ * =footer
+ ****************
+ */  
+
+ .footer {
+ 	clear: both;
+ }
+
+ .footer>ul>li {
+ 	display: inline;
+ }
+
+ .save {
+ 	background-color:#dddddd;
+ 	-moz-border-radius:2px;
+ 	-webkit-border-radius:2px;
+ 	border-radius:2px;
+ 	border:1px solid #aaaaaa;
+ 	display:inline-block;
+ 	cursor:pointer;
+ 	color:#333333;
+ 	font-family:arial;
+ 	font-size:15px;
+ 	padding:6px 18px;
+ 	text-decoration:none;
+ 	text-shadow:0px 1px 0px #e3e3e3;
+ }
+ .save:hover {
+ 	background-color:#aaaaaa;
+ }
+ .save:active {
+ 	position:relative;
+ 	top:1px;
+ }
+
+ /*
+  ****************
+  * =positioning
+  ****************
+  */  
+
+  .usercontrols {
+  	position: absolute;
+  	top: 70px;
+  }
+
+  .items {
+  	position: absolute;
+  	top: 275px;
+  	left: 10px;
+  }
+
+  .scores {
+  	position: absolute;
+  	top: 275px;
+  	left: 395px;
+  }
+
+  .stu_table, .stu_list {
+  	position: absolute;
+  	top: 225px;
+  	left: 395px;
+  }
+
+  .footer {
+  	position: absolute;
+  	right: 0px;
+  	bottom: 0px;
+  	margin: 50px;
+  }
+
+  /*
+   ****************
+   * =ideas
+   ****************
+  */  
+
+  .idea {
+  	zdisplay: none;
+  }
+
+  .old {
+  	zdisplay: none;
+  }
