@@ -73,10 +73,24 @@
 		</table>
 	</div>
 
+	<div class="hiderows idea">
+		<label class="hiderows">
+			<input type="checkbox" id="row_toggle" autocomplete="off" onclick="toggleAutoScored(this)">&nbsp;&nbsp;Hide auto-scored items</input>
+		</label>
+	<div>
+
 <!--Item prompts-->
 	<div class="items">
 		<table>
-			<tr>
+			<tr class="item_row_scored">
+				<td class="item_prompt">
+					<p class="item_type old">CR&nbsp;&nbsp;&nbsp;</p>
+					<a class="view_work idea old" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
+					<strong>1.&nbsp;</strong>
+					<a href="#">Which of the following was included...</td>
+				<td class="pts_possible">1</td>
+			</tr>
+			<tr class="item_row">
 				<td class="item_prompt">
 					<p class="item_type old">CR&nbsp;&nbsp;&nbsp;</p>
 					<a class="view_work idea" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
@@ -84,7 +98,7 @@
 					<a href="#">How can scientists determine the curren...</td>
 				<td class="pts_possible">4</td>
 			</tr>
-			<tr>
+			<tr class="item_row">
 				<td class="item_prompt">
 					<p class="item_type old">CR&nbsp;&nbsp;&nbsp;</p>
 					<a class="view_work idea" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
@@ -92,7 +106,7 @@
 					<a href="#">How can scientists determine the curren...</td>
 					<td class="pts_possible">4</td>
 			</tr>
-			<tr>
+			<tr class="item_row">
 				<td class="item_prompt">
 					<p class="item_type old">CR&nbsp;&nbsp;&nbsp;</p>
 					<a class="view_work idea" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
@@ -100,7 +114,7 @@
 					<a href="#">How can scientists determine the curren...</td>
 					<td class="pts_possible">4</td>
 			</tr>
-			<tr>
+			<tr class="item_row">
 				<td class="item_prompt">
 					<p class="item_type old">CR&nbsp;&nbsp;&nbsp;</p>
 					<a class="view_work idea" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
@@ -115,6 +129,23 @@
 <!--Score table-->
 	<div class="scores">
 		<table>
+			<tr class="item_row_scored">
+				<td class="score"><input value="A"></input></td>
+				<td class="score"><input value="B"></input></td>
+				<td class="score"><input value="A"></input></td>
+				<td class="score"><input value="C"></input></td>
+				<td class="score"><input value="B"></input></td>
+				<td class="score"><input value="A"></input></td>
+				<td class="score"><input value="C"></input></td>
+				<td class="score"><input value="C"></input></td>
+				<td class="score"><input value="B"></input></td>
+				<td class="score"><input value="A"></input></td>
+				<td class="score"><input value="B"></input></td>
+				<td class="score"><input value="B"></input></td>
+				<td class="score"><input value="C"></input></td>
+				<td class="score"><input value="B"></input></td>
+				<td class="score"><input value="C"></input></td>
+			</tr>
 			<tr>
 				<td class="score"><input value="3"></input></td>
 				<td class="score"><input value="4"></input></td>
@@ -197,35 +228,28 @@
 
 	<!-- end container-->
 </div>
+
+
+<script>
+
+function toggleAutoScored()
+{
+  var chToggle = document.getElementById("row_toggle");
+
+  if (chToggle.checked) {
+      cName = "hide_element";
+  } 
+  else {
+      cName = "show_element";
+  }
+
+  document.getElementsByClassName("item_row_scored").className = "item_row_scored " + cName;
+
+}
+</script>
+
 </body>
 </html>
 
 
-<!--
 
-
-
-
-
-
-
-<div class="stu_list">
-	<ul>
-		<li><a href="#">Phil A</a></li>
-		<li><a href="#">Jan B</a></li>
-		<li><a href="#">Bob C</a></li>
-		<li><a href="#">Jos C</a></li>
-		<li><a href="#">Yan F</a></li>
-		<li><a href="#">Tom G</a></li>
-		<li><a href="#">Mel G</a></li>
-		<li><a href="#">Gina H</a></li>
-		<li><a href="#">Stef I</a></li>
-		<li><a href="#">Joe M</a></li>
-		<li><a href="#">Tom O</a></li>
-		<li><a href="#">Mike P</a></li>
-		<li><a href="#">Gina R</a></li>
-		<li><a href="#">Stef T</a></li>
-		<li><a href="#">Fran Y</a></li>
-	</ul>
-</div>
--->
