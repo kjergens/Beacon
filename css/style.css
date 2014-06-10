@@ -1,49 +1,200 @@
-body {
-	font-family: sans-serif;
-	color: #333333;
+/*
+ ****************
+ * =global
+ ****************
+ */
+ @viewport
+ {
+  zoom: 1.0;
+  width: extend-to-zoom;
 }
 
-aside a {
-	color: #f1f1f1;
-	text-decoration: none;
+@-ms-viewport
+{
+  width: extend-to-zoom;
+  zoom: 1.0;
 }
 
-.container_12 {
-	background-color: #345473;
+:target 
+{
+  background-color: gray;
+  color: white;
+  padding: 10px;
+}
+
+/*
+ ****************
+ * =typography
+ ****************
+ */  
+ body {
+  font-family: "Arial", sans-serif;
+}
+
+p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #353535;
+}
+
+.footer, .title, nav>ul>li>a {
+  text-transform: lowercase;
+}
+
+nav>ul>li>a, .footer>a {
+  color: #7e7e7e;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active {
+  color: #333333;
+}
+
+.light_logo {
+  font-weight: lighter;
+}
+
+h2.title {
+  font-size: 20px;
+  letter-spacing: -1px;
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 1em;
+}
+
+
+/*
+ ****************
+ * =header
+ ****************
+ */  
+
+ .topnav {
+  padding-top: 10px;
+}
+
+header > h2 {
+ float: left;
+}
+
+.navlinks {
+ float: right;
+ padding: 5px 0px;
 }
 
 nav li {
-	display: inline;
-	margin-left: 0;
-	margin-right: 30px;
+ display: inline;
+ margin-left: 30;
+ margin-right: 0px;
 }
 
-aside ul {
-	 list-style: none outside none;
-	 margin-left: 0px;
+.logo {
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+ background: url(../img/school_sched.png) no-repeat center;
+ color: #f1f1f1;
+ height: 375px;
+}
+
+.spacer {
+ background-color: #333333;
+ height: 375px;
 }
 
 
-.primary {
-	background: #e3e3e3;
-}
 
-header{
-	background: #e3e3e3;
-	padding: 10px 0px;
-}
+/*
+ ****************
+ * =main
+ ****************
+ */  
 
 .main {
-	margin: 30px 0;
+  margin-top: 10px;
+  padding-top: 10px;
 }
+
+blockquote {
+  font-style: italic;
+  font-size: 15px;
+  line-height: 20px;
+  color: #0e0e0e;
+  margin: 0 0;
+  position: relative;
+  padding-left: 30px;
+  float: right;
+}
+
+.main blockquote p:first-child:before {
+  content: '“';
+  font-size: 40px;
+  color: #bfbfbf;
+  position: absolute;
+  top: 7px;
+  left: 0px;
+}
+
+.main blockquote p:last-child:after {
+  content: "”";
+  font-size: 40px;
+  color: #bfbfbf;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.primary {
+  background: #e3e3e3;
+}
+
 
 section {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 10px 10px 0px;
 }
 
-.wrap {
-	margin: 10px auto;
+.readmore {
+  background-color: #333333;
+  text-transform: uppercase;
+  color: #f1f1f1;
+  padding: 6px 10px;
 }
+
+
+/*
+ ****************
+ * =aside
+ ****************
+ */  
+
+aside a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+
+aside ul {
+  list-style: none outside none;
+  margin-left: 0px;
+}
+
+
+/*
+ ****************
+ * =footer
+ ****************
+ */  
+
+.footer {
+  border-top: 1px solid #cccccc;
+  margin-top: 20px;
+  padding: 10px 0px;
+}
+
