@@ -310,6 +310,10 @@ table.params>tr>td {
  	font-weight: bolder;
  }
 
+.tst_cr {
+	margin: 100px 0px 0px 30px;
+}
+
 /*
  ****************
  * =items
