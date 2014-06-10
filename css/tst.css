@@ -36,6 +36,72 @@
 
 /*
  ****************
+ * =fonts
+ ****************
+*/  
+
+@font-face{
+font-family:"amplify";
+src:url('../fonts/amplify/amplify.eot');
+src:url('../fonts/amplify/amplify.eot?#iefix') format('embedded-opentype'),url('../fonts/amplify/amplify.woff') format('woff'), url('../fonts/amplify/amplify.ttf') format('truetype'), url('../fonts/amplify/amplify.svg') format('svg');
+font-weight:"normal";
+font-style:"normal"
+}
+
+@font-face{
+font-family:"amplify-light";
+src:url('../fonts/amplify-light/amplify-light.eot');
+src:url('../fonts/amplify-light/amplify-light.eot?#iefix') format('embedded-opentype'),url('../fonts/amplify-light/amplify-light.woff') format('woff'), url('../fonts/amplify-light/amplify-light.ttf') format('truetype'), url('../fonts/amplify-light/amplify-light.svg') format('svg');
+font-weight:"normal";
+font-style:"normal"
+}
+
+@font-face{
+font-family:"amplify-icon";
+src:url('../fonts/amplify-icon/amplify-icon.eot');
+src:url('../fonts/amplify-icon/amplify-icon.eot?#iefix') format('embedded-opentype'),url('../fonts/amplify-icon/amplify-icon.woff') format('woff'), url('../fonts/amplify-icon/amplify-icon.ttf') format('truetype'), url('../fonts/amplify-icon/amplify-icon.svg') format('svg');
+font-weight:"normal";
+font-style:"normal"
+}
+
+@font-face{
+font-family:"benton-sans-medium";
+src:url('../fonts/benton-sans-medium/benton-sans-medium.eot');
+src:url('../fonts/benton-sans-medium/benton-sans-medium.eot?#iefix') format('embedded-opentype'),url('../fonts/benton-sans-medium/benton-sans-medium.woff') format('woff'), url('../fonts/benton-sans-medium/benton-sans-medium.ttf') format('truetype'), url('../fonts/benton-sans-medium/benton-sans-medium.svg') format('svg');
+font-weight:"normal";
+font-style:"normal"}
+
+@font-face{
+font-family:"benton-sans-bold";
+src:url('../fonts/benton-sans-bold/benton-sans-bold.eot');
+src:url('../fonts/benton-sans-bold/benton-sans-bold.eot?#iefix') format('embedded-opentype'),url('../fonts/benton-sans-bold/benton-sans-bold.woff') format('woff'), url('../fonts/benton-sans-bold/benton-sans-bold.ttf') format('truetype'), url('../fonts/benton-sans-bold/benton-sans-bold.svg') format('svg');
+font-weight:"normal";
+font-style:"normal"}
+
+@font-face{
+font-family:"benton-sans-book";
+src:url('../fonts/benton-sans-book/benton-sans-book.eot');
+src:url('../fonts/benton-sans-book/benton-sans-book.eot?#iefix') format('embedded-opentype'),url('../fonts/benton-sans-book/benton-sans-book.woff') format('woff'), url('../fonts/benton-sans-book/benton-sans-book.ttf') format('truetype'), url('../fonts/benton-sans-book/benton-sans-book.svg') format('svg');
+font-weight:"normal";
+font-style:"normal"
+}
+
+@font-face{
+font-family:"benton-sans-light";
+src:url('../fonts/benton-sans-light/benton-sans-light.eot');
+src:url('../fonts/benton-sans-light/benton-sans-light.eot?#iefix') format('embedded-opentype'),url('../fonts/benton-sans-light/benton-sans-light.woff') format('woff'), url('../fonts/benton-sans-light/benton-sans-light.ttf') format('truetype'), url('../fonts/benton-sans-light/benton-sans-light.svg') format('svg');
+font-weight:"normal";
+font-style:"normal"}
+
+@font-face{
+font-family:"glyphicons-halflings-regular";
+src:url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.eot');
+src:url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.svg') format('svg');
+font-weight:"normal";
+font-style:"normal"}
+
+/*
+ ****************
  * =global styles
  ****************
  */  
@@ -61,7 +127,6 @@
  .mclasshead {
  	background-color: black;
  	color: #ffffff;
- 	zpadding: 5px;
  	height: 28px;
  	font-weight: bolder;
  }
@@ -71,18 +136,20 @@
 }
 
 .beaconlogo {
-	font-family: "Courier", serif;
+	font-family: "amplify", "Courier", serif;
 	font-size: 18px;
 	font-weight: lighter;
 	padding: 1px 10px 2px 10px;
 }
 
 .username {
-	margin-left: 15px;
+	margin-left: 10px;
 	padding: 1px 10px 2px 10px;
+	font-family: "benton-sans-light";
 }
 
 .globalnav_item {
+	font-family: "benton-sans-light";
 	display: inline;
 	color: #99ccff;
 }
@@ -179,11 +246,20 @@ table.params>tr>td {
  */  
 
  .stu_list>ul>li{
- 	transform: rotate(-45deg);
- 	display: inline;
+  -webkit-transform: rotate(-45deg) scale(1);
+  -moz-transform: rotate(-45deg) scale(1);
+  -o-transform: rotate(-45deg) scale(1);
+  -ms-transform: rotate(-45deg) scale(1);
+ 	transform: rotate(-45deg) scale(1);
+ 	display: inline-block;
  	float: left;
  	min-width: 40px;
+ 	height: 40px;
  }
+
+.rotate {
+	display: inline-block;
+}
 
  .stu_table, .stu_list {
  	margin: 0px 5px;
@@ -256,6 +332,12 @@ table.params>tr>td {
  	border: 1px solid #b4b4af;
  	overflow: hidden;
  }
+
+.view_work {
+	margin-left: -10px;
+	margin-right: 10px;
+}
+
 
 /*
  ****************
@@ -332,14 +414,22 @@ table.params>tr>td {
 
   /*
    ****************
-   * =ideas
+   * =toggles
    ****************
   */  
 
   .idea {
-  	zdisplay: none;
+  	display: all;
   }
 
   .old {
-  	zdisplay: none;
+  	display: none;
+  }
+
+  .college_board {
+  	display: none;
+  }
+
+  .to_deprecate {
+  	display: all;
   }
