@@ -186,6 +186,12 @@ font-style:"normal"}
  * =params
  ****************
  */  
+
+ .usercontrols {
+  margin: 10px 30px;
+ }
+
+
  .params {
  	line-height: 30px;
  	margin-bottom: 5px;
@@ -212,7 +218,7 @@ font-style:"normal"}
 
  .param_label {
  	text-align: right;
- 	width: 100px;
+ 	width: 70px;
  }
 
  .sections {
@@ -241,7 +247,7 @@ table.params>tr>td {
 	height: 30px;
 }
 
- .print, .assmtname, .pagetitle {
+ .print, .assmtname{
  	margin-left: 20px;
  }
 
@@ -352,6 +358,37 @@ table.params>tr>td {
 	margin-right: 10px;
 }
 
+.item_wrapper {
+  width: 600px;
+  margin: 100px auto;
+}
+
+/*
+ ****************
+ * =student responses
+ ****************
+*/  
+
+ul.all_stu_resp {
+ list-style: none;
+ margin: 30px 0px;
+}
+
+li.stu_resp {
+  border-bottom: 2px solid #dddddd;
+  margin: 10px 0px;
+  padding: 0px 0px 20px 0px;
+}
+
+.back {
+  zmargin: 50px 20px;
+}
+
+
+.full_item_prompt {
+  border-bottom: 1px solid #b4b4af;
+  padding-bottom: 20px;
+}
 
 /*
  ****************
