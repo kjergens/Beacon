@@ -139,7 +139,13 @@ font-style:"normal"}
 	font-family: "amplify", "Courier", serif;
 	font-size: 18px;
 	font-weight: lighter;
-	padding: 1px 10px 2px 10px;
+	padding: 1px 0px 2px 10px;
+}
+
+.tm {
+	font-size: 9px;
+	padding: 5px 0px;
+	vertical-align: top;
 }
 
 .username {
