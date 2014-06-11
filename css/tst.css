@@ -567,3 +567,7 @@ input[type=checkbox]
    .show_element {
     display: all;
    }
+
+.item_row_scored {
+  display: none;
+}
