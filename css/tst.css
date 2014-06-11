@@ -69,36 +69,40 @@
   src:url('../fonts/benton-sans-medium/benton-sans-medium.eot');
   src:url('../fonts/benton-sans-medium/benton-sans-medium.eot?#iefix') format('embedded-opentype'),url('../fonts/benton-sans-medium/benton-sans-medium.woff') format('woff'), url('../fonts/benton-sans-medium/benton-sans-medium.ttf') format('truetype'), url('../fonts/benton-sans-medium/benton-sans-medium.svg') format('svg');
   font-weight:"normal";
-  font-style:"normal"}
+  font-style:"normal"
+}
 
-  @font-face{
-    font-family:"benton-sans-bold";
-    src:url('../fonts/benton-sans-bold/benton-sans-bold.eot');
-    src:url('../fonts/benton-sans-bold/benton-sans-bold.eot?#iefix') format('embedded-opentype'),url('../fonts/benton-sans-bold/benton-sans-bold.woff') format('woff'), url('../fonts/benton-sans-bold/benton-sans-bold.ttf') format('truetype'), url('../fonts/benton-sans-bold/benton-sans-bold.svg') format('svg');
-    font-weight:"normal";
-    font-style:"normal"}
+@font-face{
+  font-family:"benton-sans-bold";
+  src:url('../fonts/benton-sans-bold/benton-sans-bold.eot');
+  src:url('../fonts/benton-sans-bold/benton-sans-bold.eot?#iefix') format('embedded-opentype'),url('../fonts/benton-sans-bold/benton-sans-bold.woff') format('woff'), url('../fonts/benton-sans-bold/benton-sans-bold.ttf') format('truetype'), url('../fonts/benton-sans-bold/benton-sans-bold.svg') format('svg');
+  font-weight:"normal";
+  font-style:"normal"
+}
 
-    @font-face{
-      font-family:"benton-sans-book";
-      src:url('../fonts/benton-sans-book/benton-sans-book.eot');
-      src:url('../fonts/benton-sans-book/benton-sans-book.eot?#iefix') format('embedded-opentype'),url('../fonts/benton-sans-book/benton-sans-book.woff') format('woff'), url('../fonts/benton-sans-book/benton-sans-book.ttf') format('truetype'), url('../fonts/benton-sans-book/benton-sans-book.svg') format('svg');
-      font-weight:"normal";
-      font-style:"normal"
-    }
+@font-face{
+  font-family:"benton-sans-book";
+  src:url('../fonts/benton-sans-book/benton-sans-book.eot');
+  src:url('../fonts/benton-sans-book/benton-sans-book.eot?#iefix') format('embedded-opentype'),url('../fonts/benton-sans-book/benton-sans-book.woff') format('woff'), url('../fonts/benton-sans-book/benton-sans-book.ttf') format('truetype'), url('../fonts/benton-sans-book/benton-sans-book.svg') format('svg');
+  font-weight:"normal";
+  font-style:"normal"
+}
 
-    @font-face{
-      font-family:"benton-sans-light";
-      src:url('../fonts/benton-sans-light/benton-sans-light.eot');
-      src:url('../fonts/benton-sans-light/benton-sans-light.eot?#iefix') format('embedded-opentype'),url('../fonts/benton-sans-light/benton-sans-light.woff') format('woff'), url('../fonts/benton-sans-light/benton-sans-light.ttf') format('truetype'), url('../fonts/benton-sans-light/benton-sans-light.svg') format('svg');
-      font-weight:"normal";
-      font-style:"normal"}
+@font-face{
+  font-family:"benton-sans-light";
+  src:url('../fonts/benton-sans-light/benton-sans-light.eot');
+  src:url('../fonts/benton-sans-light/benton-sans-light.eot?#iefix') format('embedded-opentype'),url('../fonts/benton-sans-light/benton-sans-light.woff') format('woff'), url('../fonts/benton-sans-light/benton-sans-light.ttf') format('truetype'), url('../fonts/benton-sans-light/benton-sans-light.svg') format('svg');
+  font-weight:"normal";
+  font-style:"normal"
+}
 
-      @font-face{
-        font-family:"glyphicons-halflings-regular";
-        src:url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.eot');
-        src:url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.svg') format('svg');
-        font-weight:"normal";
-        font-style:"normal"}
+@font-face{
+  font-family:"glyphicons-halflings-regular";
+  src:url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.eot');
+  src:url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.svg') format('svg');
+  font-weight:"normal";
+  font-style:"normal"
+}
 
 /*
  ****************
@@ -107,6 +111,7 @@
  */  
  body {
  	font-size: 13px;
+  min-width: 990px;
  }
 
  a {
@@ -326,7 +331,7 @@ table.params>tr>td {
 
  .scores {
   display: inline-block;
- }
+}
 
 /*
  ****************
@@ -350,12 +355,12 @@ table.params>tr>td {
  	height: 40px;
  	text-align: center;
   zpadding-left: 20px;
- 	vertical-align: middle;
- 	-moz-box-sizing: border-box;
- 	-webkit-box-sizing: border-box;
- 	box-sizing: border-box;
- 	overflow: hidden;
- }
+  vertical-align: middle;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
 
 .item_prompt, .pts_possible {
   border: 1px solid #b4b4af;
@@ -366,12 +371,12 @@ and  left-align item prompt */
 .pts_possible>td {
   text-align: center;
 }
- .view_work {
-   margin-left: -10px;
-   margin-right: 10px;
- }
+.view_work {
+ margin-left: -10px;
+ margin-right: 10px;
+}
 
- .item_wrapper {
+.item_wrapper {
   width: 600px;
   margin: 100px auto;
 }
@@ -436,8 +441,8 @@ input[type=checkbox]
  ****************************
  * =embedded student responses
  ****************************
-*/  
-#response_detail {
+ */  
+ #response_detail {
   border: 1px solid #dddddd;
 }
 
@@ -456,37 +461,37 @@ input[type=checkbox]
  ****************
  */  
 
-.footer {
+ .footer {
   float: right;
   margin: 100px; 
 }
 
- .footer>ul>li {
- 	display: inline;
- }
+.footer>ul>li {
+  display: inline;
+}
 
- .save {
- 	background-color:#dddddd;
- 	-moz-border-radius:2px;
- 	-webkit-border-radius:2px;
- 	border-radius:2px;
- 	border:1px solid #aaaaaa;
- 	display:inline-block;
- 	cursor:pointer;
- 	color:#333333;
- 	font-family:arial;
- 	font-size:15px;
- 	padding:6px 18px;
- 	text-decoration:none;
- 	text-shadow:0px 1px 0px #e3e3e3;
- }
- .save:hover {
- 	background-color:#aaaaaa;
- }
- .save:active {
- 	position:relative;
- 	top:1px;
- }
+.save {
+  background-color:#dddddd;
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  border-radius:2px;
+  border:1px solid #aaaaaa;
+  display:inline-block;
+  cursor:pointer;
+  color:#333333;
+  font-family:arial;
+  font-size:15px;
+  padding:6px 18px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #e3e3e3;
+}
+.save:hover {
+  background-color:#aaaaaa;
+}
+.save:active {
+  position:relative;
+  top:1px;
+}
 
  /*
   ****************
@@ -531,11 +536,11 @@ input[type=checkbox]
   	left: 395px;
   }
 
-.response_wrapper {
+  .response_wrapper {
     position: relative;
     top: 50px;
     left: 65px;
-}
+  }
 
 
   /*
@@ -562,8 +567,8 @@ input[type=checkbox]
 
    .hide_element {
     display: none;
-   }
+  }
 
-   .show_element {
+  .show_element {
     display: all;
-   }
+  }
