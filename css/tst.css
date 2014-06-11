@@ -571,4 +571,12 @@ input[type=checkbox]
 
   .show_element {
     display: all;
+<<<<<<< HEAD
   }
+=======
+   }
+
+.item_row_scored {
+  display: none;
+}
+>>>>>>> FETCH_HEAD
