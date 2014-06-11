@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="css/960gs/code/css/text.css">
 <link rel="stylesheet" href="public/css/styles.css">
 <link rel="stylesheet" href="css/tst.css">
-<title>TST</title>
+<title>TST CR in table</title>
 </head>
 <body>
 
@@ -75,49 +75,53 @@
 
 	<div class="hiderows idea">
 		<label class="hiderows">
-			<input type="checkbox" id="row_toggle" autocomplete="off" onclick="toggleAutoScored(this)">&nbsp;&nbsp;Hide auto-scored items</input>
+			<input type="checkbox" id="row_toggle" checked onclick="toggleAutoScored(this)">&nbsp;&nbsp;Hide auto-scored items</input>
 		</label>
 	<div>
 
 <!--Item prompts-->
 	<div class="items">
 		<table>
-			<tr id="item_row_scored">
+			<tr id="item_row_scored" class="hide_element">
 				<td class="item_prompt">
-					<p class="item_type old">CR</p>
-					<a class="view_work idea old" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
+					<p class="item_type">MC</p>
+					<a class="view_work old" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
 					<strong>1.&nbsp;</strong>
-					<a href="#">Which of the following was included...</td>
+					<a href="#">Which of the following was included in lo...</td>
 				<td class="pts_possible">1</td>
 			</tr>
 			<tr class="item_row">
 				<td class="item_prompt">
-					<p class="item_type old">CR</p>
-					<a class="view_work idea" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
+					<p class="item_type">CR</p>
+					<a class="view_work old" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
 					<strong>3.&nbsp;</strong>
 					<a href="#">How can scientists determine the curren...</td>
 				<td class="pts_possible">4</td>
 			</tr>
+			<tr id="blank_row" class="hide_element">
+				<td colspan=2>
+			</td>
+			</tr>
 			<tr class="item_row">
 				<td class="item_prompt">
-					<p class="item_type old">CR</p>
-					<a class="view_work idea" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
+					<p class="item_type">CR</p>
+					<a class="view_work old" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
 					<strong>4.&nbsp;</strong>
 					<a href="#">How can scientists determine the curren...</td>
 					<td class="pts_possible">4</td>
 			</tr>
 			<tr class="item_row">
 				<td class="item_prompt">
-					<p class="item_type old">CR</p>
-					<a class="view_work idea" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
+					<p class="item_type">CR</p>
+					<a class="view_work old" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
 					<strong>5.&nbsp;</strong>
 					<a href="#">How can scientists determine the curren...</td>
 					<td class="pts_possible">4</td>
 			</tr>
 			<tr class="item_row">
 				<td class="item_prompt">
-					<p class="item_type old">CR</p>
-					<a class="view_work idea" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
+					<p class="item_type">CR</p>
+					<a class="view_work old" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
 					<strong>8.&nbsp;</strong>
 					<a href="#">How can scientists determine the curren...</td>
 					<td class="pts_possible">4</td>
@@ -129,7 +133,7 @@
 <!--Score table-->
 	<div class="scores">
 		<table>
-			<tr id="score_row_scored">
+			<tr id="score_row_scored" class="hide_element">
 				<td class="score"><input value="A"></input></td>
 				<td class="score"><input value="B"></input></td>
 				<td class="score"><input value="A"></input></td>
@@ -147,22 +151,25 @@
 				<td class="score"><input value="C"></input></td>
 			</tr>
 			<tr>
-				<td class="score"><input value="3"></input></td>
-				<td class="score"><input value="4"></input></td>
-				<td class="score"><input value="2"></input></td>
-				<td class="score"><input value="1"></input></td>
-				<td class="score"><input value="3"></input></td>
-				<td class="score"><input value="3"></input></td>
-				<td class="score"><input value="3"></input></td>
-				<td class="score"><input value="3"></input></td>
-				<td class="score"><input value="3"></input></td>
-				<td class="score"><input value="3"></input></td>
-				<td class="score"><input value="3"></input></td>
-				<td class="score"><input value="4"></input></td>
-				<td class="score"><input value="2"></input></td>
-				<td class="score"><input value="1"></input></td>
-				<td class="score"><input value="3"></input></td>
+				<td class="score" onclick="showResponse()"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
 			</tr>
+			<tr id="response_detail" class="hide_element">
+				<td colspan=15>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, perspiciatis, delectus, ut, impedit odio earum error commodi officiis laborum incidunt in praesentium ullam explicabo aut corporis iste iusto quod qui.
+			</td>
 			<tr>
 				<td class="score"><input value=""></input></td>
 				<td class="score"><input value=""></input></td>
@@ -217,11 +224,14 @@
 		</table>
 	</div>
 
+
+
+
 <!-- Save button and other footer content-->
 	<div class="footer">
 		<ul>
-			<li><a href="#" class="back to_deprecate">Back to Assignments</a></li>
-			<li><a href="#" class="save to_deprecate">Save</a></li>
+			<li><a href="#" class="back ">Back to Assignments</a></li>
+			<li><a href="#" class="save ">Save</a></li>
 		</ul>
 	</div>
 
@@ -243,8 +253,15 @@ function toggleAutoScored()
       cName = "show_element";
   }
 
-  document.getElementById("item_row_scored").className = "item_row_scored " + cName;
-  document.getElementById("score_row_scored").className = "item_row_scored " + cName;
+  document.getElementById("item_row_scored").className = cName;
+  document.getElementById("score_row_scored").className = cName;
+
+}
+
+function showResponse()
+{
+  document.getElementById("blank_row").className = "show_element";
+  document.getElementById("response_detail").className = "show_element";
 
 }
 </script>

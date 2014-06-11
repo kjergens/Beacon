@@ -324,6 +324,10 @@ table.params>tr>td {
    width: 0px auto;
  }
 
+ .scores {
+  display: inline-block;
+ }
+
 /*
  ****************
  * =items
@@ -345,14 +349,23 @@ table.params>tr>td {
  .items>table>tbody>tr>td {
  	height: 40px;
  	text-align: center;
+  zpadding-left: 20px;
  	vertical-align: middle;
  	-moz-box-sizing: border-box;
  	-webkit-box-sizing: border-box;
  	box-sizing: border-box;
- 	border: 1px solid #b4b4af;
  	overflow: hidden;
  }
 
+.item_prompt, .pts_possible {
+  border: 1px solid #b4b4af;
+}
+
+/*debug - need to be able to center pts possible a
+and  left-align item prompt */
+.pts_possible>td {
+  text-align: center;
+}
  .view_work {
    margin-left: -10px;
    margin-right: 10px;
@@ -361,6 +374,10 @@ table.params>tr>td {
  .item_wrapper {
   width: 600px;
   margin: 100px auto;
+}
+
+.item_type {
+  margin-right: 10px;
 }
 
 input[type=checkbox]
@@ -383,7 +400,7 @@ input[type=checkbox]
 
 /*
  ****************
- * =student responses
+ * =all student responses
  ****************
  */  
 
@@ -402,10 +419,35 @@ input[type=checkbox]
   zmargin: 50px 20px;
 }
 
-
 .full_item_prompt {
   border-bottom: 2px solid #b4b4af;
   padding-bottom: 20px;
+}
+
+.full_item_wrapper, .response_wrapper {
+  width: 600px;
+}
+
+.stu_resp:last-child {
+  border-bottom: 0px;
+}
+
+/*
+ ****************************
+ * =embedded student responses
+ ****************************
+*/  
+#response_detail {
+  border: 1px solid #dddddd;
+}
+
+#response_detail>td {
+  padding: 15px;
+}
+
+#blank_row {
+  border: 0px;
+  height: 90px;
 }
 
 /*
@@ -414,9 +456,10 @@ input[type=checkbox]
  ****************
  */  
 
- .footer {
- 	clear: both;
- }
+.footer {
+  float: right;
+  margin: 100px; 
+}
 
  .footer>ul>li {
  	display: inline;
@@ -448,12 +491,13 @@ input[type=checkbox]
  /*
   ****************
   * =positioning
+  many of this could be done with margins and padding
   ****************
   */  
 
   .usercontrols {
-  	position: absolute;
-  	top: 60px;
+  	position: relative;
+  	top: 10px;
   }
 
   .hiderows label {
@@ -469,29 +513,30 @@ input[type=checkbox]
   }
 
   .items {
-  	position: absolute;
-  	top: 245px;
+  	position: relative;
+  	top: 35px;
   	left: 10px;
+    display: inline-block;
   }
 
   .scores {
-  	position: absolute;
-  	top: 245px;
-  	left: 395px;
+  	position: relative;
+  	top: 35px;
+  	left: 15px;
   }
 
   .stu_table, .stu_list {
-  	position: absolute;
-  	top: 195px;
+  	position: relative;
+  	top: 15px;
   	left: 395px;
   }
 
-  .footer {
-  	position: absolute;
-  	right: 0px;
-  	bottom: 0px;
-  	margin: 50px;
-  }
+.response_wrapper {
+    position: relative;
+    top: 50px;
+    left: 65px;
+}
+
 
   /*
    ****************
