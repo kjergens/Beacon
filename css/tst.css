@@ -1,33 +1,31 @@
 /*
  *************************
-  Notes on colors & sizes.
+ =COLORS
+ 
+ ==lines and borders
+	table border - #b4b4af
+  vertical divider (gray) - #cacaca 
 
-	#b4b4af - table border
+==background colors
+  background for pts possible: #f2f5fa 
+  background for scoring boxes: #dddddd  
+  background for beacon nav bar: #e9e9e9;
+  background for mClass bar (black): #000000;
+  not mastered red #d61c2a
+  mastered green #60b033
 
-  #f2f5fa - bckground for pts possible x
+==text colors
+  Amplify orange: #F37321;
+  text for points possible: #1c9200 - green 
+  mClass logo (blue): #99ccff;
+  params text (black) - #666666 
+  hyperlink: #0066cc
+  Beacon nav hyperlink (blue) - #8fb6cd
+  Admin page (orange) -  #ff9900
+  Beacon nav active hyperlink (black) -  #badce8 
 
-  #dddddd - gray background for scoring boxes x
 
-  #1c9200 - green points possible x
-
-  #666666 - params text (black) x
-
-  #0066cc - TST hyperlink (blue) x
-
-  #8fb6cd - Beacon nav hyperlink (blue) 
-
-  #badce8 - Beacon nav active hyperlink (black)
-
-  #000000 - mClass bar (black) x
-
-  #99ccff - mClass logo (blue) x
-
-  beacon nav bar: #e9e9e9;  x
-
-  #ff9900 - Admin page (orange)
-
-  #cacaca - vertical divider (gray)
-
+=DIMENSIONS
   30px w (38 W BORDER)
   22 h (36 or 38 w border)
 
@@ -270,8 +268,9 @@ table.params>tr>td {
   transform: rotate(-45deg) scale(1);
   display: inline-block;
   float: left;
-  min-width: 40px;
-  height: 40px;
+  min-width: 80px;
+  margin: 0px -40px 0px 0px;
+  padding: 0px;
 }
 
 .rotate {
@@ -279,11 +278,15 @@ table.params>tr>td {
 }
 
 .stu_table, .stu_list {
-  margin: 0px 5px;
+  margin: 20px 2px;
 }
 
 .stu_table>table>tbody>tr>td{
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg) scale(1);
+  -moz-transform: rotate(-45deg) scale(1);
+  -o-transform: rotate(-45deg) scale(1);
+  -ms-transform: rotate(-45deg) scale(1);
+  transform: rotate(-45deg) scale(1);
   min-width: 40px;
   width:40px;
   letter-spacing: 0em;
@@ -331,6 +334,7 @@ table.params>tr>td {
 
  .scores {
   display: inline-block;
+  width: 500px;
 }
 
 /*
@@ -461,9 +465,10 @@ input[type=checkbox]
  ****************
  */  
 
- .footer {
-  float: right;
-  margin: 100px; 
+.footer {
+position: relative;
+left: 740px;
+top: 50px;
 }
 
 .footer>ul>li {
@@ -485,98 +490,149 @@ input[type=checkbox]
   text-decoration:none;
   text-shadow:0px 1px 0px #e3e3e3;
 }
+
 .save:hover {
   background-color:#aaaaaa;
 }
+
 .save:active {
   position:relative;
   top:1px;
 }
 
- /*
-  ****************
-  * =positioning
-  many of this could be done with margins and padding
-  ****************
-  */  
+/*
+****************
+* =positioning
+many of this could be done with margins and padding
+****************
+*/  
 
-  .usercontrols {
-  	position: relative;
-  	top: 10px;
-  }
+.usercontrols {
+	position: relative;
+	top: 10px;
+}
 
-  .hiderows label {
-    display: block;
-    padding-left: 15px;
-    text-indent: -15px;
-    display: block;
-    left: 10px;
-    padding-left: 15px;
-    position: absolute;
-    text-indent: -15px;
-    top: 212px;
-  }
+.hiderows label {
+  clear: both;
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+  display: block;
+  left: 10px;
+  padding-left: 15px;
+  position: absolute;
+  text-indent: -15px;
+  top: 212px;
+}
 
-  .items {
-  	position: relative;
-  	top: 35px;
-  	left: 10px;
-    display: inline-block;
-  }
+.items {
+  clear: both;
+	position: relative;
+	top: 35px;
+	left: 10px;
+  display: inline-block;
+}
 
-  .scores {
-  	position: relative;
-  	top: 35px;
-  	left: 15px;
-  }
+.scores {
+  clear: both;
+	position: relative;
+	top: 35px;
+	left: 15px;
+}
 
-  .stu_table, .stu_list {
-  	position: relative;
-  	top: 15px;
-  	left: 395px;
-  }
+.stu_table, .stu_list {
+	position: relative;
+	top: 15px;
+	left: 395px;
+}
 
-  .response_wrapper {
-    position: relative;
-    top: 50px;
-    left: 65px;
-  }
+.response_wrapper {
+  position: relative;
+  top: 50px;
+  left: 65px;
+}
 
+/*
+****************
+* =toggles
+****************
+*/  
 
-  /*
-   ****************
-   * =toggles
-   ****************
-   */  
+.idea {
+  display: all;
+}
 
-   .idea {
-     display: all;
-   }
-
-   .old {
-     display: none;
-   }
-
-   .college_board {
-     display: none;
-   }
-
-   .to_deprecate {
-     display: all;
-   }
-
-   .hide_element {
-    display: none;
-  }
-
-  .show_element {
-    display: all;
-<<<<<<< HEAD
-  }
-=======
-   }
-
-.item_row_scored {
+.old {
   display: none;
 }
->>>>>>> FETCH_HEAD
+
+.college_board {
+  display: none;
+}
+
+.to_deprecate {
+  display: all;
+}
+
+.hide_element {
+ display: none;
+}
+
+.show_element {
+ display: all;
+}
+
+
+.item_row_scored {
+display: none;
+}
+
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after,
+.container_12:before,
+.container_12:after,
+.container_16:before,
+.container_16:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after,
+.container_12:after,
+.container_16:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix,
+.container_12,
+.container_16 {
+  zoom: 1;
+}

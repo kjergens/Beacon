@@ -1,0 +1,214 @@
+
+.table_row li {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+ul {
+	list-style: none outside none;
+	margin: 0px;
+	padding: opx;
+}
+
+section {
+	margin: 0px 50px;
+	border-top: 1px solid #dddddd;
+}
+
+section:first-child {
+	border-top: 0px;
+}
+
+.stu_data, h5.col_head {
+	font-weight: bold;
+}
+
+h4.table_name {
+	color: #F37321;
+}
+
+/*
+ ****************
+ * =PDF settings
+ ****************
+*/  
+.ui-toolkit .container {
+	width: 835px; 
+	background-color: #ffffff;
+	margin: 3px auto;
+	position: relative;
+	height: 3305px;
+}
+
+.page_space {
+	height: 90px;
+} 
+
+.ui-toolkit #page_break1, .ui-toolkit #page_break2 {
+	background-color: #333333;
+	font-size: 6px;
+	z-index: 2;
+}
+
+.ui-toolkit #page_break1 {
+	position: relative;
+	top: 1110px;
+}
+
+.ui-toolkit #page_break2 {
+	position: relative;
+	top: 2195px;
+}
+
+/*
+ *************************
+ * =UI Toolkit overrides
+ *************************
+*/  
+
+
+.ui-toolkit body {
+	background-color: #333333;
+}
+
+.ui-toolkit p, .ui-toolkit body {
+	font-size: 13px;
+}
+
+.ui-toolkit p {
+	margin: 2px 0px;
+	padding: 0px;
+}
+
+
+/*
+ ****************
+ * =header
+ ****************
+*/  
+
+.ui-toolkit .beacon_logo{
+	font-family: "amplify";
+	color: #666666;
+}
+
+.report_title {
+	padding-top:15px;
+}
+
+/*
+ ****************
+ * =standards table
+ ****************
+*/  
+
+.standards_breakdown>.row>div {
+	height: 28px;
+	overflow: hidden;
+	vertical-align: text-top;
+	zborder-bottom: 1px solid #b4b4af;
+}
+
+.standards_breakdown>.row>.col_head {
+	height: 30px;
+}
+
+.standards_breakdown>.row>.secondary_col_head {
+	background-color: #dddddd;
+	border: 0px;
+	height: 20px;
+	margin-bottom: 5px;
+	vertical-align: text-bottom;
+}
+
+
+p.secondary_col_head {
+	color: #666666;
+	font-size: 11px;
+}
+
+.std_desc {
+	border-bottom: 1px solid #b4b4af;
+	letter-spacing: .05px;
+	line-height: 1.3em;
+	font-size: 10px;
+}
+
+p.mastery {
+	zdisplay: none;
+	
+}
+
+.ui-toolkit .col-md-1, .ui-toolkit .col-md-2 {
+	text-align: center;
+}
+
+
+.ui-toolkit .padding_hack  {
+	padding-left: 7px;
+}
+
+
+.std_id {
+	font-weight: bolder;
+	font-size: 11px;
+}
+
+.mastered {
+	color: #60b033;
+}
+
+.not_mastered {
+	color: #d61c2a;
+}
+
+.unclear {
+	color: #b4b4af;
+}
+
+.not_mastered_group {
+	border-top: 1px solid #666666;
+}
+
+.end_mastered_group {
+	border-bottom: 1px solid #666666;
+}
+
+/*
+ ****************
+ * =review materials
+ ****************
+*/  
+
+.ui-toolkit .stu_score {
+	border: 1px solid #F37321;
+}
+
+.pts_earned {
+	font-style: bold;
+	font-size: 14px;
+	color: #666666;
+}
+
+
+.item_row, .rubric {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.divider {
+	border-bottom: 1px solid #dddddd;
+	margin: 30px 0px;
+}
+
+
+.ui-toolkit .quote {
+	font-size: 12px;
+	padding: 10px;
+	margin: 10px 0px;
+	border: 1px solid #dddddd;
+}
+
+
