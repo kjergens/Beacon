@@ -195,3 +195,10 @@ td.toggle {
 .indent3 {
 	content: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 }
+
+.clicker {
+	position: relative;
+	top: 214px;
+	left: 178px;
+	font-size: 13px;
+}
