@@ -1,0 +1,38 @@
+body {
+	background-image: url(../img/AM_disabled.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-color: #333;
+}
+
+button {
+	background-color: #F37321;
+	font-family: "bentons sans book", arial, sans-serif;
+	border-radius: 4px;
+	border: 0px;
+	color: #f1f1f1;
+	font-size: 14px;
+	height: 32px;
+	width: 76px;
+}
+
+
+.edit_btn {
+	position: relative;
+	top: 35px;
+	left:1010px;
+	z-index: 3000;
+}
+
+.assign_btn {
+	position: relative;
+	top: 49px;
+	left:1040px;
+	z-index: 3000;
+}
+
+.overlay {
+	position: relative;
+	top: 100px;
+	left: 100px;
+}

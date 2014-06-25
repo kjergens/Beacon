@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>testing datetimepicker</title>
+	<link rel="stylesheet" href="css/jquery.css">
+	<link href="public/css/styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap-datetimepicker-0.0.11/css/bootstrap-datetimepicker.min.css">
+
+
+</head>
+<body>
+	
+		<!-- test window experiment-->
+  <div id="datetimepicker2" class="input-append">
+    <input data-format="MM/dd/yyyy HH:mm:ss PP" type="text"></input>
+    <span class="add-on">
+      <i data-time-icon="glyphicon glyphicon-time" data-date-icon="glyphicon glyphicon-calendar">
+      </i>
+    </span>
+  </div>
+
+
+<!-- Javascript -->
+<script src="public/js/vendor/jquery/jquery.js"></script>
+<script src="bootstrap-datetimepicker-0.0.11/js/bootstrap-datetimepicker.min.js"></script>
+
+<script type="text/javascript">
+  $(function() {
+    $('#datetimepicker2').datetimepicker({
+      language: 'en',
+      pick12HourFormat: true
+    });
+  });
+</script>
+
+</body>
+</html>

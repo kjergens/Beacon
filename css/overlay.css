@@ -1,0 +1,197 @@
+body {
+	background-image: url(../img/AM.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-color: #333;
+}
+/*
+ ****************
+ * =width of overlay
+ ****************
+*/  
+.ui-toolkit .modal-dialog {
+	width: 860px;
+}
+/*
+ *******************************
+ * =space out the elements of form
+ ******************************
+*/  
+.panel, form, .test_window {
+	zmargin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.ui-toolkit p {
+	margin-bottom: 20px;
+}
+
+.ui-toolkit section {
+	margin-bottom: 35px;
+}
+
+.ui-toolkit section:last-child {
+	margin-bottom: 0px;
+}
+
+
+p.expandable {
+	font-size: 18px;
+	display: inline;
+}
+
+/*
+ ****************
+ * =typography
+ ****************
+*/  
+
+h4.section_name, h5.section_name {
+	zcolor: #666666;
+}
+
+/*
+ ****************
+ * =Preview OA
+ ****************
+*/  
+#zpreview_oa {
+	position: relative;
+	left: -230px;
+	top: 300px;
+}
+
+/*
+ ****************
+ * =Student Population table
+ ****************
+*/  
+
+.ui-toolkit .panel  {
+	height: 250px;
+	overflow-y: scroll;
+}
+
+.glyphicon-file {
+	margin-left: 45px;
+}
+
+td.toggle {
+	margin-left: 80px;
+}
+
+
+.ui-toolkit label {
+	font-weight: normal;
+}
+
+
+/*
+ ****************
+ * =Testing Window
+ ****************
+*/  
+.window label {
+	margin-right: 10px;
+	text-align: center;
+}
+
+.ui-toolkit .btn-group {
+	zpadding-right: 20px;
+}
+
+.window input[type=text] {
+	border-radius: 3px 0px 0px 3px;
+	border: 1px solid #dddddd;
+	box-shadow: 0px;
+	-webkit-box-shadow: 0px;
+	-moz-box-shadow: 0px;
+	color: #333333;
+	height: 30px;
+	font-family: "benton-sans-book",Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.42857;
+	padding: 8px;
+	width: 220px;
+}
+
+.window .add-on {
+	padding: 5px 5px 5px 7px;
+	margin:-4px;
+	background: #f1f1f1;
+	border-radius: 0px 3px 3px 0px;
+	border: 1px solid #ddd; 
+}
+
+.window {
+	margin: 10px;
+}
+
+.bootstrap-datetimepicker-widget, .ui-toolkit .dropdown-menu {
+	z-index: 3000;
+}
+
+/* hack */
+.ui-toolkit .dropdown-menu li  {
+  margin-left: -30px;
+}
+
+/*
+ ****************
+ * =Online Access
+ ****************
+*/  
+
+#all_students {
+	margin-right: 10px;
+}
+
+.ui-toolkit .online_toggle .switch-label-sm:before, 
+.ui-toolkit .online_toggle .switch-label-sm:after {
+    top: 1px;
+}
+
+/*
+ ****************
+ * =expandadable
+ ****************
+*/  
+
+.ui-toolkit h4 .expandadable:before {
+	content: url('img/eye.svg');
+}
+
+/*
+ ****************
+ * =Hide controls
+ ****************
+*/  
+.ui-toolkit .show_mode {
+	display: all;
+}
+
+.ui-toolkit .hide_mode {
+	display: none;
+}
+
+.ui-toolkit .hide {
+	display: none;
+}
+
+/*
+ ****************
+ * =misc
+ ****************
+*/  
+
+.indent1 {
+	content: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+}
+
+.indent2 {
+	content: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+}
+
+.indent3 {
+	content: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+}

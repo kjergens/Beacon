@@ -1,0 +1,20 @@
+body {
+	background-image: url(../img/assign_overlay_IA_web.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-color: #333;
+}
+
+.hidden_btn {
+	background-color: #F37321;
+	font-family: "bentons sans book", arial, sans-serif;
+	border-radius: 4px;
+	border: 0px;
+	color: #f1f1f1;
+	font-size: 14px;
+	position: relative;
+	top: 548px;
+	left:1000px;
+	height: 30px;
+	width: 76px;
+}

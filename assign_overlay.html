@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en" class="ui-toolkit">
+<head>
+	<meta charset="UTF-8">
+	<title>Assign Overlay</title>
+		<link rel="stylesheet" href="css/jquery.css">
+		<link href="public/css/styles.css" rel="stylesheet">
+		<link href="css/overlay.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/zpesticide.css">
+		<link rel="stylesheet" href="bootstrap-datetimepicker-0.0.11/css/bootstrap-datetimepicker.min.css">
+
+
+		<style type="text/css">
+    .bs-example{
+    	margin: 20px;
+    }
+		</style>
+
+
+</head>
+<body>
+	<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+   <div class="modal-content">
+
+   	<!--Title-->
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Assignment for 3.ELA.2</h4><span class="label label-info">Available  both online and paper.</span>
+    </div>
+
+    <div class="modal-body">
+
+		<!--Student Population-->
+		<span id="edit_course_grade" class="show_mode">
+
+		<!--------------------------------------------
+		    Course or Grade
+		 -------------------------------------------->
+		<div class="btn-group">
+	    <button type="button" class="btn btn-dropdown-basic fixed-width dropdown-toggle" data-toggle="dropdown" data-value="Value 0">
+	        <span class="btn-dropdown-label">Course or Grade</span>
+	        <span class="icon icon-dropdown-arrow"></span>
+	    </button>
+	    <ul class="dropdown-menu menu-basic groups">
+	       <li class="category">
+	         <a href="#/" class="header">Course</a>
+	          <ul class="items">
+	             <li><a href="#/" data-value="Value 1.1">ELA</a></li>
+	             <li><a href="#/" data-value="Value 1.2">Other</a></li>
+	           </ul>
+	        </li>
+	        <li class="category">
+	           <a href="#/" class="header">Grade</a>
+	           <ul class="items">
+	             <li><a href="#/" data-value="Value 2.1">Grade 1</a></li>
+	             <li><a href="#/" data-value="Value 2.2">Grade 2</a></li>
+	             <li><a href="#/" data-value="Value 2.3">Grade 3</a></li>
+	           </ul>
+	        </li>
+	    </ul>
+		</div>
+	</span>
+
+			<!------------------------------------------------
+				Preview Online Assessment 
+		-------------------------------------------------->
+		<span id="preview_oa"><a href="https://mclasshome-futureqa.wgenhq.net/oa/assessment/preview#tag_0">Preview online</a></span>
+
+		<!--------------------------------------------
+		    Student Population (read)
+		 -------------------------------------------->
+		<section id="read_student_population" class="hide_mode">
+		<div class="panel panel-default">
+  		<table class="table population">
+  			<thead>
+  				<tr class="panel-title active">
+  						<td>Assigned To</td>
+  						<td>Online</td>
+  						<td>Login Credentials</td>
+  						<td>Answer Sheet</td>
+  				</tr>
+  				</thead>
+  				<tbody>
+  				 <tr>
+  						<td>Pave Academy Charter District</td>
+  						<td>
+							<label class="switch-sm">
+							    <input type="checkbox" class="switch-input-sm" checked="">
+							    <span class="switch-label-sm" data-on="ON" data-off="OFF"></span>
+							    <span class="switch-handle-sm"></span>
+							</label></td>
+  						<td><a href="#">view all</a></td>
+  						<td></td>
+  				</tr>
+ 				 <tr>
+  						<td>Pave Academy Charter School</td>
+  						<td class="toggle">
+							<label class="switch-sm">
+							    <input type="checkbox" class="switch-input-sm" checked="">
+							    <span class="switch-label-sm" data-on="ON" data-off="OFF"></span>
+							    <span class="switch-handle-sm"></span>
+							</label></td>
+  						<td><a href="#">view all</a></td>
+  						<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
+  			</tr>
+ 				 <tr>
+  						<td>Grade 6</td>
+  						<td>
+							<label class="switch-sm">
+							    <input type="checkbox" class="switch-input-sm" checked="">
+							    <span class="switch-label-sm" data-on="ON" data-off="OFF"></span>
+							    <span class="switch-handle-sm"></span>
+							</label></td>
+  						<td><a href="#">view all</a></td>
+  						<td><a href="#"><span class="glyphicon glyphicon-file"></span></a></td>
+  				</tr>
+  				<tr>
+  						<td>Javier Garcia</td>
+  						<td>
+							<label class="switch-sm">
+							    <input type="checkbox" class="switch-input-sm" checked="">
+							    <span class="switch-label-sm" data-on="ON" data-off="OFF"></span>
+							    <span class="switch-handle-sm"></span>
+							</label></td>
+  						<td>jgarcia / panda14red</td>
+  						<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
+  				</tr>
+  				<tr>
+  					<td>Alexandro Desanto</td>
+  					<td>
+						<label class="switch-sm">
+							    <input type="checkbox" class="switch-input-sm" checked="">
+							    <span class="switch-label-sm" data-on="ON" data-off="OFF"></span>
+							    <span class="switch-handle-sm"></span>
+						</label></td>
+  					<td>adesanto / car56stoic</td>
+  					<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
+  				</tr>
+  				<tr>
+  				<td>Pamela Donne</td>
+  					<td>
+						<label class="switch-sm">
+							    <input type="checkbox" class="switch-input-sm" checked="">
+							    <span class="switch-label-sm" data-on="ON" data-off="OFF"></span>
+							    <span class="switch-handle-sm"></span>
+						</label></td>
+  					<td>pdonne / rose68slow</td>
+  					<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
+  				</tr>
+ 				</tbody>
+ 			</table>
+		</div>
+		</section>
+          
+		<!--------------------------------------------
+		    Student Population (edit)
+		 -------------------------------------------->
+
+    <section id="edit_student_population" class="show_mode">
+		<div class="panel panel-default">
+  		<table class="table population">
+  			<thead>
+  				<tr class="panel-title active">
+  						<td>Assigned To</td>
+  				</tr>
+  				</thead>
+  				<tbody>
+  				 <tr>
+  						<td><input id="checkbox-1" class="regular-checkbox" type="checkbox" checked="">
+							<label for="checkbox-1">
+    					<span class="icon icon-checkbox"></span>Pave Academy Charter District</label></td>
+  				</tr>
+ 				 <tr>
+  						<td><input id="checkbox-2" class="regular-checkbox" type="checkbox" checked="">
+							<label for="checkbox-2">
+    					<span class="icon icon-checkbox"></span>Pave Academy Charter School</label></td>
+  			</tr>
+ 				 <tr>
+  						<td><input id="checkbox-3" class="regular-checkbox" type="checkbox" checked="">
+							<label for="checkbox-3">
+    					<span class="icon icon-checkbox"></span>Grade 6</label></td>
+  				</tr>
+  				<tr>
+  						<td><input id="checkbox-4" class="regular-checkbox" type="checkbox" checked="">
+							<label for="checkbox-4">
+    					<span class="icon icon-checkbox"></span>Javier Garcia</label></td>
+  				</tr>
+  				<tr>
+  					<td><input id="checkbox-5" class="regular-checkbox" type="checkbox" checked="">
+						<label for="checkbox-5">
+   					<span class="icon icon-checkbox"></span>Alexandro Desanto</label></td>
+  				</tr>
+  				<tr>
+  				<td><input id="checkbox-6" class="regular-checkbox" type="checkbox" checked="">
+						<label for="checkbox-6">
+   					<span class="icon icon-checkbox"></span>Pamela Donne</label></td>
+  				</tr>
+ 				</tbody>
+ 			</table>
+		</div>
+		</section>
+
+
+
+		<!--------------------------------------------
+		    Testing Window
+		 -------------------------------------------->
+		<section id="testing_window">
+    <h4 class="header">Testing Window</h4>
+
+		<!-- test window experiment-->
+	  <span id="datetimepicker2" class="input-append window">
+	  	<label>From</label>
+	    <input data-format="MM/dd/yyyy HH:mm:ss PP" type="text"></input>
+	    <span class="add-on">
+	      <i data-time-icon="glyphicon glyphicon-time" data-date-icon="glyphicon glyphicon-calendar">
+	      </i>
+	    </span>
+		</span>
+		<span id="datetimepicker3" class="input-append window">
+	    <label>To</label>
+	    <input data-format="MM/dd/yyyy HH:mm:ss PP" type="text"></input>
+	    <span class="add-on">
+	      <i data-time-icon="glyphicon glyphicon-time" data-date-icon="glyphicon glyphicon-calendar">
+	      </i>
+	    </span>
+	  	</span>
+		</section>
+
+		<section id="read_testing_window" class="hide_mode">
+			<p>Jun 16 - Jul 4, 2014</p>
+			<h4>Print options</h4>
+		</section>
+ 
+    <section id="edit_testing_window" class="hide_mode">
+    <!--Start Date-->
+    <div class="window">
+    <label>From</label>
+    <div class="btn-group">
+	    <button type="button" class="btn btn-dropdown-basic fixed-width dropdown-toggle" data-toggle="dropdown" data-value="Value 0">
+	        <span class="btn-dropdown-label">Start Date</span>
+	        <span class="icon icon-dropdown-arrow"></span>
+	    </button>
+	    <ul class="dropdown-menu menu-basic">
+	        <li><a href="#/" data-value="Value 1">Item 1</a></li>
+	        <li><a href="#/" data-value="Value 2">Item 2</a></li>
+	        <li><a href="#/" data-value="Value 3">Item 3</a></li>
+	        <li><a href="#/" class="ellipsis" data-value="Value 4">Item 4 - Long text with ellipsis</a></li>
+	        <li><a href="#/" data-value="Value 5">Item 5</a></li>
+	        <li><a href="#/" data-value="Value 6">Item 6</a></li>
+	        <li><a href="#/" data-value="Value 7">Item 7</a></li>
+	        <li><a href="#/" data-value="Value 8">Item 8</a></li>
+	        <li><a href="#/" data-value="Value 9">Item 9</a></li>
+	        <li><a href="#/" data-value="Value 10">Item 10</a></li>
+	    </ul>
+		</div>
+
+		<!--Start Time-->
+		<div class="btn-group">
+	    <button type="button" class="btn btn-dropdown-basic fixed-width dropdown-toggle" data-toggle="dropdown" data-value="Value 0">
+	        <span class="btn-dropdown-label">Start Time</span>
+	        <span class="icon icon-dropdown-arrow"></span>
+	    </button>
+	    <ul class="dropdown-menu menu-basic">
+	        <li><a href="#/" data-value="Value 1">Item 1</a></li>
+	        <li><a href="#/" data-value="Value 2">Item 2</a></li>
+	        <li><a href="#/" data-value="Value 3">Item 3</a></li>
+	        <li><a href="#/" class="ellipsis" data-value="Value 4">Item 4 - Long text with ellipsis</a></li>
+	        <li><a href="#/" data-value="Value 5">Item 5</a></li>
+	        <li><a href="#/" data-value="Value 6">Item 6</a></li>
+	        <li><a href="#/" data-value="Value 7">Item 7</a></li>
+	        <li><a href="#/" data-value="Value 8">Item 8</a></li>
+	        <li><a href="#/" data-value="Value 9">Item 9</a></li>
+	        <li><a href="#/" data-value="Value 10">Item 10</a></li>
+	    </ul>
+		</div>
+		<!--end of start of window-->
+		</div>
+
+
+    <!--End Date-->
+    <div class="window">
+     	<label>To</label>
+      <div class="btn-group">
+	    <button type="button" class="btn btn-dropdown-basic fixed-width dropdown-toggle" data-toggle="dropdown" data-value="Value 0">
+	        <span class="btn-dropdown-label">End Date</span>
+	        <span class="icon icon-dropdown-arrow"></span>
+	    </button>
+	    <ul class="dropdown-menu menu-basic">
+	        <li><a href="#/" data-value="Value 1">Item 1</a></li>
+	        <li><a href="#/" data-value="Value 2">Item 2</a></li>
+	        <li><a href="#/" data-value="Value 3">Item 3</a></li>
+	        <li><a href="#/" class="ellipsis" data-value="Value 4">Item 4 - Long text with ellipsis</a></li>
+	        <li><a href="#/" data-value="Value 5">Item 5</a></li>
+	        <li><a href="#/" data-value="Value 6">Item 6</a></li>
+	        <li><a href="#/" data-value="Value 7">Item 7</a></li>
+	        <li><a href="#/" data-value="Value 8">Item 8</a></li>
+	        <li><a href="#/" data-value="Value 9">Item 9</a></li>
+	        <li><a href="#/" data-value="Value 10">Item 10</a></li>
+	    </ul>
+		</div>
+
+		<!--End Time-->
+		<div class="btn-group">
+	    <button type="button" class="btn btn-dropdown-basic fixed-width dropdown-toggle" data-toggle="dropdown" data-value="Value 0">
+	        <span class="btn-dropdown-label">End Time</span>
+	        <span class="icon icon-dropdown-arrow"></span>
+	    </button>
+	    <ul class="dropdown-menu menu-basic">
+	        <li><a href="#/" data-value="Value 1">Item 1</a></li>
+	        <li><a href="#/" data-value="Value 2">Item 2</a></li>
+	        <li><a href="#/" data-value="Value 3">Item 3</a></li>
+	        <li><a href="#/" class="ellipsis" data-value="Value 4">Item 4 - Long text with ellipsis</a></li>
+	        <li><a href="#/" data-value="Value 5">Item 5</a></li>
+	        <li><a href="#/" data-value="Value 6">Item 6</a></li>
+	        <li><a href="#/" data-value="Value 7">Item 7</a></li>
+	        <li><a href="#/" data-value="Value 8">Item 8</a></li>
+	        <li><a href="#/" data-value="Value 9">Item 9</a></li>
+	        <li><a href="#/" data-value="Value 10">Item 10</a></li>
+	    </ul>
+		</div>
+
+		<!--end of end of testing window-->
+		</div>
+		</section>
+
+
+
+
+		<!--------------------------------------------
+		    Online Access
+		 -------------------------------------------->
+
+		<section id="edit_online_access" class="show_mode">
+		<h4 class="header">Online Access</h4>
+		<label id="all_students">All students</label>
+		<span class="online_toggle">
+		<label class="switch-sm">
+			<input type="checkbox" class="switch-input-sm" checked="">
+			<span class="switch-label-sm" data-on="ON" data-off="OFF"></span>
+			<span class="switch-handle-sm"></span>
+		</label>
+		</span>
+
+		<div id="online_alert" class="help_text alert alert-warning">Less secure. Students can access assessment without waiting for teacher to turn it on.</div>
+
+		<!--
+		<input id="open" name="access" class="regular-radio" type="radio">
+		<label for="open">
+		    <span class="icon icon-radio"></span>On by default
+		</label>
+		<input id="closed" name="access" class="regular-radio" type="radio">
+		<label for="closed">
+		    <span class="icon icon-radio"></span>Off by default
+		</label>
+		-->
+		</section>
+
+		<!--------------------------------------------
+		    Instant Feedback
+		 -------------------------------------------->
+
+		<section id="edit_instant_feedback" class="show_mode">
+		<h4 class="header">Instant Feedback</h4>
+		<input id="none" name="feedback" class="regular-radio" type="radio" checked="">
+		<label for="none">
+		    <span class="icon icon-radio"></span>None. Just exit the test.
+		</label>
+		<input id="low" name="feedback" class="regular-radio" type="radio">
+		<label for="low">
+		    <span class="icon icon-radio"></span>Low. Show score but no answers.
+		</label>
+		<input id="med" name="feedback" class="regular-radio" type="radio">
+		<label for="med">
+		    <span class="icon icon-radio"></span>Medium. Show score and correct answers.
+		</label>
+		<input id="high" name="feedback" class="regular-radio" type="radio">
+		<label for="high">
+		    <span class="icon icon-radio"></span>High. Show score, correct answers and rationale.
+		</label>
+		</section>
+
+
+
+  </div>
+
+
+     <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" id="btnSaveEdit" onclick="ToggleSaveEdit()" class="btn btn-primary">Save changes</button>
+     </div>
+
+
+    </div>
+
+</div>
+
+<!--
+		end modal body
+	-->
+</div>
+<div class="page_container">
+	<a href="#" class="btn btn-lg btn-success"
+   data-toggle="modal"
+   data-target="#basicModal">Click to open modal</a>
+</div>
+
+<!------------------------------------------------------>
+<!----------       Javascript               ------------>
+<!------------------------------------------------------>
+<script src="public/js/vendor/jquery/jquery.js"></script>
+<script src="public/js/vendor/bootstrap/affix.js"></script>
+<script src="public/js/vendor/bootstrap/alert.js"></script>
+<script src="public/js/vendor/bootstrap/button.js"></script>
+<script src="public/js/vendor/bootstrap/carousel.js"></script>
+<script src="public/js/vendor/bootstrap/dropdown.js"></script>
+<script src="public/js/vendor/bootstrap/modal.js"></script>
+<script src="public/js/vendor/bootstrap/scrollspy.js"></script>
+<script src="public/js/vendor/bootstrap/tab.js"></script>
+<script src="public/js/vendor/bootstrap/tooltip.js"></script>
+<script src="public/js/vendor/bootstrap/popover.js"></script>
+<script src="public/js/vendor/bootstrap/transition.js"></script>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+<script src="public/js/amplify/amplify-dropdown.js"></script>
+<script src="public/js/amplify/amplify-notes-widget.js"></script>
+<script src="public/js/amplify/amplify-utilities.js"></script>
+<script src="public/js/examples/notes-widget.js"></script>
+<script src="docs-assets/js/docs.js"></script>
+<script src="bootstrap-datetimepicker-0.0.11/js/bootstrap-datetimepicker.min.js"></script>
+
+
+  <script type="text/javascript">
+  $(function() {
+    $('#datetimepicker2').datetimepicker({
+      language: 'en',
+      pick12HourFormat: true
+    });
+  });
+
+  $(function() {
+    $('#datetimepicker3').datetimepicker({
+      language: 'en',
+      pick12HourFormat: true
+    });
+  });
+
+</script>
+
+<script>
+
+
+function ToggleSaveEdit () {
+
+	var btnLabel = document.getElementById("btnSaveEdit").innerHTML;
+
+	if (btnLabel == "Save changes") 
+	{
+			// Toggle button mode.
+			document.getElementById("btnSaveEdit").innerHTML = 'Edit';
+
+			// If switching from edit to read-only mode, hide the edit controls
+			document.getElementById('edit_course_grade').className = "hide_mode";
+			document.getElementById('edit_student_population').className = "hide_mode";
+			//document.getElementById('edit_testing_window').className = "hide_mode";
+			document.getElementById("edit_online_access").className = "hide_mode";
+			document.getElementById("edit_instant_feedback").className = "hide_mode";
+
+			// and display the read-only.
+			document.getElementById('read_student_population').className = "show_mode";
+			//document.getElementById('read_testing_window').className = "show_mode";
+			document.getElementById('read_online_access').className = "show_mode";
+	}
+	else
+	{		
+			// Toggle button mode.
+			document.getElementById("btnSaveEdit").innerHTML = 'Save changes';
+
+			// If switching from read-only to edit mode, display the edit controls
+			document.getElementById('edit_course_grade').className = "show_mode";
+			document.getElementById('edit_student_population').className = "show_mode";
+			//document.getElementById('edit_testing_window').className = "show_mode";
+			document.getElementById("edit_online_access").className = "show_mode";
+			document.getElementById("edit_instant_feedback").className = "show_mode";
+
+			// and hide the read-only controls
+			document.getElementById('read_student_population').className = "hide_mode";
+			//document.getElementById('read_testing_window').className = "hide_mode";
+			document.getElementById('read_online_access').className = "hide_mode";
+	}	
+}
+
+</script>
+
+</body>
+</html>
