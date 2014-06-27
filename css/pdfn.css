@@ -1,0 +1,240 @@
+/*
+ *****************************
+ * =basic pdf styling
+ *****************************
+*/  
+.pdf_container {
+	width: 835px; 
+	background-color: #ffffff;
+	margin: 3px auto;
+	position: relative;
+	height: 1110px;
+} 
+
+.ui-toolkit body {
+	background-color: #333333;
+}
+
+.ui-toolkit p {
+	margin: 2px 0px;
+	padding: 0px;
+}
+
+.ui-toolkit .row {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+/*
+ ****************************
+ * =typography
+ ****************************
+*/  
+
+.ui-toolkit p, .ui-toolkit body {
+	font-size: 13px;
+}
+
+.ui-toolkit .beacon_logo {
+	font-family: "amplify-light";
+	color: #9e9e9e;
+	font-size: 19px;
+}
+
+.ui-toolkit .subtitle {
+	font-size: 18px;
+}
+
+.ui-toolkit .trademark {
+	color: #9e9e9e;
+	font-size: 4;
+	position: relative;
+	left: -4px;
+	vertical-align:top;
+}
+
+h4.table_name {
+	color: #F37321;
+	position: relative;
+	left: -15px;
+}
+
+.ui-toolkit #summary .stu_data {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+h5.col_head {
+	font-weight: bold;
+}
+
+.secondary_col_head p {
+	font-size: 11px;
+}
+
+.secondary_col_head p.mastery {
+	font-weight: bolder;	
+}
+
+.mastered {
+	color: #60b033;
+}
+
+.not_mastered {
+	color: #d61c2a;
+}
+
+.unclear {
+	color: #b4b4af;
+}
+
+/*
+ ***************************
+ * =pdf header
+ ***************************
+*/  
+
+li {
+	display: inline-block;
+}
+
+.report_title {
+	float: left;
+	padding-left: 0px;
+}
+
+.stu_category {
+	float: right;
+}
+
+.report_title, .stu_category {
+	padding-top: 20px;
+}
+
+/*
+ ****************
+ * =summary table
+ ****************
+*/  
+
+#summary>div>.stu_data,
+#summary>div>.sum_data {
+	padding-left: 0px;
+}
+
+#summary>table {
+	margin: 0 auto;
+}
+
+#summary>table td {
+	padding: 2px 15px;
+}
+
+
+/*
+ ******************************
+ * =standards breakdown table
+ *****************************
+*/  
+
+
+h5.col_head {
+	margin: 15px 0px 5px;
+	padding: 0px;
+	text-align: center;
+	vertical-align: text-bottom;
+}
+
+#standards_breakdown>.row>.stu_pts,
+#standards_breakdown>.row>.secondary_col_head.stu_pts{
+	padding-left: 15px;
+	text-align: left;
+}
+
+#standards_breakdown>.row>.stu_pct{
+	padding-left: 0px;
+	text-align: left;
+}
+
+#standards_breakdown>.row>.secondary_col_head {
+	background-color: #e9e9e9; 
+	height: 20px;
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	padding-top: 0px;
+}
+
+#standards_breakdown>.row>div {
+	max-height: 68px;
+	overflow: hidden;
+	vertical-align: text-top;
+}
+
+#standards_breakdown>.data{
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: px;
+	padding-top: 1px;
+}
+
+#standards_breakdown>.row>.std_desc {
+	font-size: 10px;
+	line-height: 1.5em;
+	padding-left: 10px;
+	padding-right: 0px;
+}
+
+#standards_breakdown>.row>.std_id {
+	font-weight: bolder;
+	font-size: 9px;
+	padding-left: 5px;
+	text-align: left;
+	vertical-align: text-top;
+}
+
+#standards_breakdown>.row>.col_head {
+	font-weight: bolder;
+	margin: 15px 0px 0px 0px;
+	text-align: center;
+}
+
+#standards_breakdown>.row>.stu_head {
+	padding-right: 35px;
+	padding-left: 15px;
+} 
+
+#standards_breakdown>.row>.class_head {
+	padding-right: 25px;
+	padding-left: 5px;
+} 
+ 
+#standards_breakdown>.row>.secondary_col_head.stu_pts {
+	padding: 0px 10px 0px 0px;
+	text-align: center;
+} 
+
+#standards_breakdown>.row>.secondary_col_head.stu_pct {
+	margin: 0px;
+	padding: 0px 35px 0px 0px;
+	text-align: center;
+}
+
+#standards_breakdown>.row>.secondary_col_head.class_pct {
+	padding: 0px 10px 0px 0px;
+	text-align: center;
+}
+
+/*
+ **********************
+ * =footer
+ **********************
+*/  
+
+.footer {
+	color: #9e9e9e;
+	font-size: 11px;
+	position: relative;
+	bottom: -20px;
+	text-align: right;
+	padding: 25px;
+}

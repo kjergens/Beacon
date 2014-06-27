@@ -11,6 +11,9 @@ div .rep_section, .rep_section {
 
 h4.table_name {
 	color: #F37321;
+	padding: 0;
+	position: relative;
+	left: -15px;
 }
 
 /*
@@ -24,10 +27,6 @@ h4.table_name {
 	margin: 3px auto;
 	position: relative;
 	height: 1110px;
-}
-
-.pdf_container>div {
-	margin: 0px 50px;
 }
 
 .pdf_container>div>ul>li {
@@ -54,12 +53,15 @@ h4.table_name {
 	top: 2195px;
 }
 
+.ui-toolkit .row {
+	margin-left: 50px;
+	margin-right: 50px;
+}
 /*
  *************************
  * =UI Toolkit overrides
  *************************
 */  
-
 
 .ui-toolkit body {
 	background-color: #333333;
@@ -93,11 +95,13 @@ ul {
 	padding: opx;
 }
 
-.ui-toolkit .beacon_logo{
+.ui-toolkit .beacon_logo {
 	font-family: "amplify";
-	color: #666666;
+	color: #9e9e9e;
 }
-
+z.ui-toolkit .subtitle{
+	color: #b4b4b4;
+}
 
 .stu_title {
 	float: left;
@@ -263,4 +267,6 @@ h5.mastered {
  {
  	height: 25px;
  }
+
+
 

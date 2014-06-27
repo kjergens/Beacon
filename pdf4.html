@@ -4,198 +4,214 @@
 	<meta charset="UTF-8">
 	<title>Assessment Report (PDF)</title>
 	<link href="public/css/styles.css" rel="stylesheet">
-	<link href="css/pdf.css" rel="stylesheet">
+	<link href="css/pdfn.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/zpesticide.css">
 </head>
 <body>
 	<div class="pdf_container">
 
+
 <!------------------------------------------------------>
 <!----------       Report Header            ------------>
 <!------------------------------------------------------>
-<div>
-
-	<ul class="stu_title ">
-		<li><h4 class="report_title"><span class="beacon_logo">mCLASS Beacon&nbsp;</span><span class="subtitle">&nbsp; | &nbsp;Assessment Report</span></h4></li>
+<div class="row" id="report_header">
+	<ul class="report_title">
+		<li><span class="beacon_logo">mCLASS</span>
+			<span class="trademark">&reg;</span>
+			<span class="beacon_logo">Beacon</span>
+			<span class="trademark">&trade;</span>
+			<span class="subtitle">| &nbsp;6.MATH.IA2</span>
+		</li>
 	</ul>
 	<ul class="stu_category ">
-		<li><h5>Garcia, Javier | 6.MATH.IA2</h5></li>
+		<li><h5>Garcia, Javier</h5></li>
 	</ul>
-	
-</div>
+</div>	
+
 
 <!------------------------------------------------------>
 <!----------        Summary                 ------------>
 <!------------------------------------------------------>
-<div class="summary rep_section">
-	<div class="row">
-		<h4 class="table_name col-md-12">Summary</h4>
+<div>&nbsp;</div>
 
-		<div class="col-md-3"><p class="stu_data">Javier Garcia</p></div>
-		<div class="col-md-1"><p class="stu_data">60%</p></div>
-		<div class="col-md-8"><p class="stu_data">30 of 50 pts</p></div>
-
-		<div class="col-md-3"><p>Class Average</p></div>
-		<div class="col-md-1"><p>52%</p></div>
-		<div class="col-md-8"><p>26 of 50 pts</p></div>
-
-		<div class="col-md-3"><p>School Average*</p></div>
-		<div class="col-md-1"><p>57%</p></div>
-		<div class="col-md-8"><p>28.5 of 50 pts</p></div>
-
-		<div class="col-md-12">
-			<h6 class="footnote">*Based on number of students assessed</h6>
-		</div>
-
-	</div>
-
+<div id="summary">
+	  <table>
+	  	<tr>
+	  		<td class="stu_data">Javier Garcia</td>
+	  		<td class="stu_data">60%</td>
+	  		<td class="stu_data">30 of 50 pts</td>
+	  	</tr>
+	  	<tr>
+	  		<td>Class Average</td>
+	  		<td>52%</td>
+	  		<td>26 of 50 pts</td>
+	  	</tr>
+	  	<tr>
+	  		<td>School Average*</td>
+	  		<td>57%</td>
+	  		<td>28.5 of 50pts</td>
+	  	</tr>
+	  	<tr>
+	  		<td colspan=3>*Based on number of students assessed</td>
+	  	</tr>
+	  </table>
 </div>
 
-<div class="col-md-9">&nbsp;</div>
+<!-- hack to make space -->
+<div class="col-md-12">&nbsp;</div>
+
+<!-- hack to make space -->
+<div class="col-md-12">&nbsp;</div>
+
 <!------------------------------------------------------>
 <!----------       Standards Breakdown      ------------>
 <!------------------------------------------------------>
-<div class="standards_breakdown rep_section">
+<div id="standards_breakdown">
 
-	<div class="row">
-		<div class="col-md-9 col_head"><h4 class="table_name">Standards Breakdown</h4></div>
-		<div class="col-md-2 col_head"><h5 class="col_head">Student</h5></div>
-		<div class="col-md-1 col_head"><h5 class="col_head">Class</h5></div>
+		<div class="row">
+		<div class="col-md-9"><h4 class="table_name">Standards Breakdown</h4></div>
+		<div class="col-md-2 col_head stu_head">Student</h5></div>
+		<div class="col-md-1 col_head class_head">Class</div>
+		</div>
 
-		<div class="col-md-9 secondary_col_head mastery_col"><p class="secondary_col_head mastery">&nbsp;Mastered</p></div>
-		<div class="col-md-1 secondary_col_head"><p class="secondary_col_head">Pts</p></div>
-		<div class="col-md-1 secondary_col_head"><p class="secondary_col_head">%</p></div>
-		<div class="col-md-1 secondary_col_head"><p class="secondary_col_head">%</h5></div>
-	</div>
+		<div class="row mastery_class">
+		<div class="col-md-9 secondary_col_head"><p class="mastery">Mastered</p></div>
+		<div class="col-md-1 secondary_col_head stu_pts"><p>Pts</p></div>
+		<div class="col-md-1 secondary_col_head stu_pct"><p>%</p></div>
+		<div class="col-md-1 secondary_col_head class_pct"><p>%</p></div>
+		</div>
 
-		<div class="row data data">
+		<div class="row data">
 		<div class="col-md-1 std_id">6.RP.A.3.c</div>
 		<div class="col-md-8 std_desc"><p>Find a percent of a quantity as a rate per 100 (e.g., 30% of a quantity means 30/100 times the quantity); solve problems involving finding the whole, given a part and the percent. </p></div>
 		<div class="col-md-1 stu_pts">3/3</div>
-		<div class="col-md-1 class_pct"><span class="mastered">100%</span></div>
+		<div class="col-md-1 stu_pct mastered">100%</div>
 		<div class="col-md-1 class_pct">71%</div>
 		</div>
 
 		<div class="row data">
-		<div class="col-md-1 std_id"><p><span class="std_id">6.G.A.1</span></p></div>
+		<div class="col-md-1 std_id">6.G.A.1</div>
 		<div class="col-md-8 std_desc"><p>Find the area of right triangles, other triangles, special quadrilaterals, and polygons by composing into rectangles or decomposing into triangles and other shapes; apply these techniques in the context of solving real-world and mathematical problems. </p></div>
-		<div class="col-md-1 stu_pts"><p>2/2</p></div>
-		<div class="col-md-1"><p class="mastered">100%</p></div>
-		<div class="col-md-1 class_pct"><p>48%</p></div>
+		<div class="col-md-1 stu_pts">2/2</div>
+		<div class="col-md-1 stu_pct mastered">100%</div>
+		<div class="col-md-1 class_pct">48%</div>
 		</div>
 
 		<div class="row data">
-		<div class="col-md-1 std_id"><p><span class="std_id">6.RP.A.2</span></p></div>
+		<div class="col-md-1 std_id">6.RP.A.2</div>
 		<div class="col-md-8 std_desc"><p>Understand the concept of a unit rate a/b associated with a ratio a:b with b is not equal to 0, and use rate language in the context of a ratio relationship.</p></div>
-		<div class="col-md-1 stu_pts"><p>2/2</p></div>
-		<div class="col-md-1"><p class="mastered">100%</p></div>
-		<div class="col-md-1 class_pct"><p>48%</p></div>
+		<div class="col-md-1 stu_pts">2/2</div>
+		<div class="col-md-1 stu_pct mastered">100%</div>
+		<div class="col-md-1 class_pct">48%</div>
 		</div>
 
 		<div class="row data">
-		<div class="col-md-1 std_id"><p><span class="std_id">6.RP.A.3.d</span></p></div>
+		<div class="col-md-1 std_id">6.RP.A.3.d</div>
 		<div class="col-md-8 std_desc"><p>Use ratio reasoning to convert measurement units; manipulate and transform units appropriately when multiplying or dividing quantities.</p></div>
-		<div class="col-md-1 stu_pts"><p>2/2</p></div>
-		<div class="col-md-1"><p class="mastered">100%</p></div>
-		<div class="col-md-1 class_pct"><p>63%</p></div>
+		<div class="col-md-1 stu_pts">2/2</div>
+		<div class="col-md-1 stu_pct mastered">100%</div>
+		<div class="col-md-1 class_pct">63%</div>
 		</div>
 
 		<div class="row data">
-		<div class="col-md-1 std_id"><p><span class="std_id">6.SP.A.1</span></p></div>
+		<div class="col-md-1 std_id">6.SP.A.1</div>
 		<div class="col-md-8 std_desc"><p>Recognize a statistical question as one that anticipates variability in the data related to the question and accounts for it in the answers. </p></div>
-		<div class="col-md-1 stu_pts"><p>2/2</p></div>
-		<div class="col-md-1"><p class="mastered">100%</p></div>
-		<div class="col-md-1 class_pct"><p>54%</p></div>
+		<div class="col-md-1 stu_pts">2/2</div>
+		<div class="col-md-1 stu_pct mastered">100%</div>
+		<div class="col-md-1 class_pct">54%</div>
 		</div>
 
 		<div class="row data">
-		<div class="col-md-1 std_id"><p><span class="std_id">6.RP.A.3.b</span></p></div>
+		<div class="col-md-1 std_id">6.RP.A.3.b</div>
 		<div class="col-md-8 std_desc"><p>Solve unit rate problems including those involving unit pricing and constant speed. </p></div>
-		<div class="col-md-1 stu_pts"><p>2/2</p></div>
-		<div class="col-md-1"><p class="mastered">100%</p></div>
-		<div class="col-md-1 class_pct"><p>54%</p></div>
+		<div class="col-md-1 stu_pts">2/2</div>
+		<div class="col-md-1 stu_pct mastered">100%</div>
+		<div class="col-md-1 class_pct">54%</div>
 		</div>
 
 		<div class="row data">
-		<div class="col-md-1 std_id"><p><span class="std_id">6.NS.C.7.d</span></p></div>
+		<div class="col-md-1 std_id">6.NS.C.7.d</div>
 		<div class="col-md-8 std_desc"><p>Distinguish comparisons of absolute value from statements about order. For example, recognize that an account balance less than -30 dollars represents a debt greater than 30 dollars. </p></div>
-		<div class="col-md-1 stu_pts"><p>2/2</p></div>
-		<div class="col-md-1"><p class="mastered">100%</p></div>
-		<div class="col-md-1 class_pct"><p>71%</p></div>
+		<div class="col-md-1 stu_pts">2/2</div>
+		<div class="col-md-1 stu_pct mastered">100%</div>
+		<div class="col-md-1 class_pct">71%</div>
 		</div>
 
 		<div class="row data">
-		<div class="col-md-1 std_id"><p><span class="std_id">6.RP.A.3</span></p></div>
+		<div class="col-md-1 std_id">6.RP.A.3</div>
 		<div class="col-md-8 std_desc"><p>
 Use ratio and rate reasoning to solve real-world and mathematical problems, e.g., by reasoning about tables of equivalent ratios, tape diagrams, double number line diagrams, or equations.</p></div>
-		<div class="col-md-1 stu_pts"><p>3/4</p></div>
-		<div class="col-md-1"><p class="mastered">75%</p></div>
-		<div class="col-md-1 class_pct"><p>71%</p></div>
+		<div class="col-md-1 stu_pts">3/4</div>
+		<div class="col-md-1 stu_pct mastered">75%</div>
+		<div class="col-md-1 class_pct">71%</div>
 		</div>
 
 		<div class="row">
-		<div class="col-md-9 secondary_col_head mastery_col"><p class="secondary_col_head mastery">&nbsp;Not Mastered</p></div>
-		<div class="col-md-1 secondary_col_head"><p class="secondary_col_head">Pts</p></div>
-		<div class="col-md-1 secondary_col_head"><p class="secondary_col_head">%</p></div>
-		<div class="col-md-1 secondary_col_head"><p class="secondary_col_head">%</h5></div>
+		<div class="col-md-9 secondary_col_head mastery_col"><p class="secondary_col_head mastery">Not Mastered</p></div>
+		<div class="col-md-1 secondary_col_head stu_pts"><p class="secondary_col_head">Pts</p></div>
+		<div class="col-md-1 secondary_col_head stu_pct"><p class="secondary_col_head">%</p></div>
+		<div class="col-md-1 secondary_col_head class_pct"><p class="secondary_col_head">%</p></div>
 		</div>
 
 		<div class="row data">
-		<div class="col-md-1 std_id"><p><span class="std_id">6.RP.A.3.a</span></p></div>
+		<div class="col-md-1 std_id">6.RP.A.3.a</div>
 		<div class="col-md-8 std_desc"><p>Make tables of equivalent ratios relating quantities with whole-number measurements, find missing values in the tables, and plot the pairs of values on the coordinate plane. Use tables to compare ratios. </p></div>
-		<div class="col-md-1 stu_pts"><p>2/3</p></div>
-		<div class="col-md-1"><p class="not_mastered">67%</p></div>
-		<div class="col-md-1 class_pct"><p>44%</p></div>
+		<div class="col-md-1 stu_pts">2/3</div>
+		<div class="col-md-1 stu_pct not_mastered">67%</div>
+		<div class="col-md-1 class_pct">44%</div>
 		</div>
 
 		<div class="row data">
-		<div class="col-md-1 std_id"><p><span class="std_id">6.NS.C.6.b</span></p></div>
+		<div class="col-md-1 std_id">6.NS.C.6.b</div>
 		<div class="col-md-8 std_desc"><p>Understand signs of numbers in ordered pairs as indicating locations in quadrants of the coordinate plane; recognize that when two ordered pairs differ only by signs, the locations of the points are related by reflections across one or both axes.</p></div>
-		<div class="col-md-1 stu_pts"><p>2/3</p></div>
-		<div class="col-md-1"><p class="not_mastered">67%</p></div>
-		<div class="col-md-1 class_pct"><p>44%</p></div>
+		<div class="col-md-1 stu_pts">2/3</div>
+		<div class="col-md-1 stu_pct not_mastered">67%</div>
+		<div class="col-md-1 class_pct">44%</div>
 		</div>
 
 		<div class="row data">
-		<div class="col-md-1 std_id"><p><span class="std_id">6.RP.A.3.d</span></p></div>
+		<div class="col-md-1 std_id">6.RP.A.3.d</div>
 		<div class="col-md-8 std_desc"><p>Use ratio reasoning to convert measurement units; manipulate and transform units appropriately when multiplying or dividing quantities.</p></div>
-		<div class="col-md-1 stu_pts"><p>2/3</p></div>
-		<div class="col-md-1"><p class="not_mastered">67%</p></div>
-		<div class="col-md-1 class_pct"><p>44%</p></div>
+		<div class="col-md-1 stu_pts">2/3</div>
+		<div class="col-md-1 stu_pct not_mastered">67%</div>
+		<div class="col-md-1 class_pct">44%</div>
 		</div>
 
 		<div class="row data">
-		<div class="col-md-1 std_id"><p><span class="std_id">6.G.A.3</span></p></div>
+		<div class="col-md-1 std_id">6.G.A.3</div>
 		<div class="col-md-8 std_desc"><p>Draw polygons in the coordinate plane given coordinates for the vertices; use coordinates to find the length of a side joining points with the same first coordinate or the same second coordinate. Apply these techniques in the context of solving real-world and mathematical problems.</p></div>
-		<div class="col-md-1 stu_pts"><p>3/5</p></div>
-		<div class="col-md-1"><p class="not_mastered">60%</p></div>
-		<div class="col-md-1 class_pct"><p>66%</p></div>
+		<div class="col-md-1 stu_pts">3/5</div>
+		<div class="col-md-1 stu_pct not_mastered">60%</div>
+		<div class="col-md-1 class_pct">66%</div>
 		</div>
 
 		<div class="row data">
-		<div class="col-md-1 std_id"><p><span class="std_id">6.G.A.1</span></p></div>
+		<div class="col-md-1 std_id">6.G.A.1</div>
 		<div class="col-md-8 std_desc"><p>Find the area of right triangles, other triangles, special quadrilaterals, and polygons by composing into rectangles or decomposing into triangles and other shapes; apply these techniques in the context of solving real-world and mathematical problems.</p></div>
-		<div class="col-md-1 stu_pts"><p>4/9</p></div>
-		<div class="col-md-1"><p class="not_mastered">42%</p></div>
-		<div class="col-md-1 class_pct"><p>41%</p></div>
+		<div class="col-md-1 stu_pts">4/9</div>
+		<div class="col-md-1 stu_pct not_mastered">42%</div>
+		<div class="col-md-1 class_pct">41%</div>
+		</div>
+
+		<div class="row">
+		<div class="col-md-9 secondary_col_head mastery_col"><p class="secondary_col_head mastery">Undetermine mastery due to insufficient data</p></div>
+		<div class="col-md-1 secondary_col_head stu_pts"><p class="secondary_col_head">Pts</p></div>
+		<div class="col-md-1 secondary_col_head stu_pct"><p class="secondary_col_head">%</p></div>
+		<div class="col-md-1 secondary_col_head class_pct"><p class="secondary_col_head">%</p></div>
 		</div>
 
 		<div class="row data">
-		<div class="col-md-1 std_id"><p><span class="std_id">6.NS.C.8</span></p></div>
-		<div class="col-md-8 std_desc"><p>Solve real-world and mathematical problems by graphing points in all four quadrants of the coordinate plane. Include use of coordinates and absolute value to find distances between points with the same first coordinate or the same second coordinate.</p></div>
-		<div class="col-md-1 stu_pts"><p>2/8</p></div>
-		<div class="col-md-1"><p class="not_mastered">25%</p></div>
-		<div class="col-md-1 class_pct"><p>33%</p></div>
-		</div>
-<!--
-		<div class="row data">
-		<div class="col-md-1 std_id"><p><span class="std_id">6.RP.A.3.a</span></p></div>
+		<div class="col-md-1 std_id">6.RP.A.3.a</div>
 		<div class="col-md-8 std_desc"><p>Make tables of equivalent ratios relating quantities with whole-number measurements, find missing values in the tables, and plot the pairs of values on the coordinate plane. Use tables to compare ratios.</p></div>
-		<div class="col-md-1 stu_pts"><p>0/2</p></div>
-		<div class="col-md-1"><p class="not_mastered">0%</p></div>
-		<div class="col-md-1 class_pct"><p>50%</p></div>
+		<div class="col-md-1 stu_pts">0/1</div>
+		<div class="col-md-1 stu_pct unclear">0%</div>
+		<div class="col-md-1 class_pct">50%</div>
 		</div>
--->
+
+	</div>
+
+	<div class="footer">
+		&copy; 2013-2014 Amplify Education Inc. All rights reserved.
 	</div>
 </div>
 

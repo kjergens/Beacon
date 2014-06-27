@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Assign Overlay</title>
 		<link rel="stylesheet" href="css/jquery.css">
-		<link href="public/css/styles.css" rel="stylesheet">
+		<link href="uitoolkit/css/styles.css" rel="stylesheet">
 		<link href="css/overlay.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/zpesticide.css">
 		<link rel="stylesheet" href="bootstrap-datetimepicker-0.0.11/css/bootstrap-datetimepicker.min.css">
@@ -17,8 +17,7 @@
 
    	<!--Title-->
     <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Assignment for 3.ELA.2&nbsp;&nbsp;</h4>
+        <label class="modal-title" id="myModalLabel">Assignment for 3.ELA.2&nbsp;&nbsp;</label>
         <!--<span class="label label-default subtitle">Available  both online and paper.</span>-->
     </div>
 
@@ -62,11 +61,11 @@
 		<div class="panel panel-default">
   		<table class="table population">
   			<thead>
-  				<tr class="panel-title active">
-  						<td>Assigned To</td>
-  						<td>Enabled</td>
-  						<td>Login Credentials</td>
-  						<td>Answer Sheet</td>
+  				<tr class="active">
+  						<td><label>Assigned To</label></td>
+  						<td><label>Enabled</label></td>
+  						<td><label>Login Credentials</label></td>
+  						<td><label>Answer Sheet</label></td>
   				</tr>
   				</thead>
   				<tbody>
@@ -136,6 +135,50 @@
   					<td>pdonne / rose68slow</td>
   					<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
   				</tr>
+  				<tr>
+  				<td><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Thea Jackson</td>
+  					<td>
+						<label class="switch-sm">
+							    <input type="checkbox" class="switch-input-sm" checked="">
+							    <span class="switch-label-sm" data-on="YES" data-off="NO"></span>
+							    <span class="switch-handle-sm"></span>
+						</label></td>
+  					<td>tjackson / hip90out</td>
+  					<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
+  				</tr>
+  				<tr>
+  				<td><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Jose Vargas</td>
+  					<td>
+						<label class="switch-sm">
+							    <input type="checkbox" class="switch-input-sm" checked="">
+							    <span class="switch-label-sm" data-on="YES" data-off="NO"></span>
+							    <span class="switch-handle-sm"></span>
+						</label></td>
+  					<td>jvargas / tea45grand</td>
+  					<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
+  				</tr>
+  				<tr>
+  				<td><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Andrea Spano</td>
+  					<td>
+						<label class="switch-sm">
+							    <input type="checkbox" class="switch-input-sm" checked="">
+							    <span class="switch-label-sm" data-on="YES" data-off="NO"></span>
+							    <span class="switch-handle-sm"></span>
+						</label></td>
+  					<td>aspano / court67young</td>
+  					<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
+  				</tr>
+  				<tr>
+  				<td><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Carla Tripadero</td>
+  					<td>
+						<label class="switch-sm">
+							    <input type="checkbox" class="switch-input-sm" checked="">
+							    <span class="switch-label-sm" data-on="YES" data-off="NO"></span>
+							    <span class="switch-handle-sm"></span>
+						</label></td>
+  					<td>ctripadero / golf56brass</td>
+  					<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
+  				</tr>
  				</tbody>
  			</table>
 		</div>
@@ -149,40 +192,60 @@
 		<div class="panel panel-default">
   		<table class="table population">
   			<thead>
-  				<tr class="panel-title active">
-  						<td><p class="section_name expandable">Students</p></td>
+  				<tr class="active">
+  						<td><label class="expandable">Students</label></td>
   				</tr>
   				</thead>
   				<tbody>
   				 <tr>
   						<td><input id="checkbox-1" class="regular-checkbox" type="checkbox" checked="">
-							<label for="checkbox-1">
+							<label for="checkbox-1"  class="option">
     					<span class="icon icon-checkbox"></span>Pave Academy Charter District</label></td>
   				</tr>
  				 <tr>
   						<td><input id="checkbox-2" class="regular-checkbox" type="checkbox" checked="">
-							<label for="checkbox-2">
+							<label for="checkbox-2"  class="option">
     					<span class="icon icon-checkbox"></span><span class="indent1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Pave Academy Charter School</label></td>
   			</tr>
  				 <tr>
   						<td><input id="checkbox-3" class="regular-checkbox" type="checkbox" checked="">
-							<label for="checkbox-3">
+							<label for="checkbox-3"  class="option">
     					<span class="icon icon-checkbox"></span><span class="indent2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Grade 6</label></td>
   				</tr>
   				<tr>
   						<td><input id="checkbox-4" class="regular-checkbox" type="checkbox" checked="">
-							<label for="checkbox-4">
+							<label for="checkbox-4"  class="option">
     					<span class="icon icon-checkbox"></span><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Javier Garcia</label></td>
   				</tr>
   				<tr>
   					<td><input id="checkbox-5" class="regular-checkbox" type="checkbox" checked="">
-						<label for="checkbox-5">
+						<label for="checkbox-5"  class="option">
    					<span class="icon icon-checkbox"></span><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Alexandro Desanto</label></td>
   				</tr>
   				<tr>
   				<td><input id="checkbox-6" class="regular-checkbox" type="checkbox" checked="">
-						<label for="checkbox-6">
+						<label for="checkbox-6"  class="option">
    					<span class="icon icon-checkbox"></span><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Pamela Donne</label></td>
+  				</tr>
+  				<tr>
+  				<td><input id="checkbox-7" class="regular-checkbox" type="checkbox" checked="">
+						<label for="checkbox-7"  class="option">
+   					<span class="icon icon-checkbox"></span><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Thea Jackson</label></td>
+  				</tr>
+  				<tr>
+  				<td><input id="checkbox-8" class="regular-checkbox" type="checkbox" checked="">
+						<label for="checkbox-8"  class="option">
+   					<span class="icon icon-checkbox"></span><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Jose Vargas</label></td>
+  				</tr>
+  				<tr>
+  				<td><input id="checkbox-9" class="regular-checkbox" type="checkbox" checked="">
+						<label for="checkbox-9" class="option">
+   					<span class="icon icon-checkbox"></span><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Andrea Spano</label></td>
+  				</tr>
+  				<tr>
+  				<td><input id="checkbox-10" class="regular-checkbox" type="checkbox" checked="">
+						<label for="checkbox-10" class="option">
+   					<span class="icon icon-checkbox"></span><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Carla Tripadero</label></td>
   				</tr>
  				</tbody>
  			</table>
@@ -195,7 +258,7 @@
 		    Testing Window
 		 -------------------------------------------->
 		
-    <h4 class="header section_name">Testing Window</h4>
+    <p class="static">Testing Window</p>
 
 		<section id="edit_testing_window" class="hide_mode">
 		<div>
@@ -221,7 +284,7 @@
 		<section id="read_testing_window" class="show_mode">
 			<div><p>Jun 2 12:00 am - Jun 14 11:59 pm</p>
 				<section>
-				<h4 class="header section_name">Instant Feedback</h4>
+				<label>Instant Feedback</label>
 			<div><p>None. Just exit the test.</p></div>
 		</section>
 			</div>
@@ -234,18 +297,18 @@
 
 		<section id="edit_online_access" class="hide_mode">
 
-		<h4 class="header section_name">Enable online test | <a href="#">Preview</a></h4>
+		<label>Enable online test</label> | <a href="#">Preview</a>
 
 		<input id="open" name="access" class="regular-radio" type="radio">
-		<label for="open">
-		    <span class="icon icon-radio"></span>Automatic. Immediately online at start of assessment window.
+		<label for="open" class="option">
+		    <span class="icon icon-radio"></span>Automatic. Immediately appears online at start of assessment window.
 		</label>
 		<input id="closed" name="access" class="regular-radio" type="radio">
-		<label for="closed">
+		<label for="closed" class="option">
 		    <span class="icon icon-radio"></span>Manual. Teacher must activate before it's available online. (Recommended for large assessment windows.)
 		</label>
 		<input id="never" name="access" class="regular-radio" type="radio">
-		<label for="never">
+		<label for="never" class="option">
 		    <span class="icon icon-radio"></span>Never. This will only be taken on paper.
 		</label>
 
@@ -254,33 +317,30 @@
 		<!--------------------------------------------
 		    Instant Feedback
 		 -------------------------------------------->
-
-		
-
-<!--
+<!-- TODO debug
 		<section id="read_instant_feedback" class="show_mode">
-			<h4 class="header section_name">Instant Feedback</h4>
+			<label>Instant Feedback</label>
 			<div><p>None. Just exit the test.</p></div>
 		</section>
 
-	-->
+-->
 
 		<section id="edit_instant_feedback" class="hide_mode">
-			<h4 class="header section_name">Instant Feedback</h4>
+			<label>Instant Feedback</label>
 		<input id="none" name="feedback" class="regular-radio" type="radio" checked="">
-		<label for="none">
+		<label for="none" class="option">
 		    <span class="icon icon-radio"></span>None. Just exit the test.
 		</label>
 		<input id="low" name="feedback" class="regular-radio" type="radio">
-		<label for="low">
+		<label for="low" class="option">
 		    <span class="icon icon-radio"></span>Low. Show score but no answers.
 		</label>
 		<input id="med" name="feedback" class="regular-radio" type="radio">
-		<label for="med">
+		<label for="med" class="option">
 		    <span class="icon icon-radio"></span>Medium. Show score and correct answers.
 		</label>
 		<input id="high" name="feedback" class="regular-radio" type="radio">
-		<label for="high">
+		<label for="high" class="option">
 		    <span class="icon icon-radio"></span>High. Show score, correct answers and rationale.
 		</label>
 		</section>
@@ -289,14 +349,14 @@
 		    Print Options
 		 -------------------------------------------->
 		<section id="print_options" class="show_mode">
-			<span class="glyphicon glyphicon-play"></span><p class="expandable">&nbsp;Answer Sheet Options</p>
+			<span class="glyphicon glyphicon-play"></span><label class="expandable">&nbsp;Answer Sheet Settings</label>
 		</section>
 
 		<!-- -----------------------------
 			Reporting Performance Levels
 		--------------------------------- -->
 		<section id="reporting_performance_lvls">
-			<span class="glyphicon glyphicon-play"></span><p class="expandable">&nbsp;Reporting Performance Levels</p>
+			<span class="glyphicon glyphicon-play"></span><label class="expandable">&nbsp;Reporting Performance Levels</label>
 			</section>
 
 		<!-- end modal body-->
@@ -305,8 +365,10 @@
 
 		<!-- footer -->
      <div class="modal-footer">
+     	<span class="footer_btns">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="button" id="btnSaveEdit" onclick="ToggleSaveEdit()" class="btn btn-primary">Edit</button>
+       </span>
      </div>
 
 
@@ -388,7 +450,7 @@ function ToggleSaveEdit () {
 			document.getElementById('read_student_population').className = "show_mode";
 			document.getElementById('read_testing_window').className = "show_mode";
 			document.getElementById('print_options').className = "show_mode";
-			document.getElementById('read_online_access').className = "show_mode";
+			//document.getElementById('read_online_access').className = "show_mode";
 			//document.getElementById("read_instant_feedback").className = "show_mode";
 	}
 	else
@@ -408,7 +470,7 @@ function ToggleSaveEdit () {
 			document.getElementById('read_student_population').className = "hide_mode";
 			document.getElementById('read_testing_window').className = "hide_mode";
 			document.getElementById('print_options').className = "hide_mode";
-			document.getElementById('read_online_access').className = "hide_mode";
+			//document.getElementById('read_online_access').className = "hide_mode";
 
 	}	
 }
