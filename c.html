@@ -5,7 +5,7 @@
 	<title>Assign Overlay</title>
 		<link rel="stylesheet" href="css/jquery.css">
 		<link href="uitoolkit/css/styles.css" rel="stylesheet">
-		<link href="css/overlay.css" rel="stylesheet">
+		<link href="css/overlay2.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/zpesticide.css">
 		<link rel="stylesheet" href="bootstrap-datetimepicker-0.0.11/css/bootstrap-datetimepicker.min.css">
 
@@ -24,14 +24,15 @@
     <div class="modal-body">
 
 		<!--Student Population-->
-		<span id="edit_course_grade" class="hide_mode">
+		<span id="edit_course_grade" class="show_mode">
+		<label>Course or Grade:&nbsp;&nbsp;&nbsp;&nbsp;</label>
 
 		<!--------------------------------------------
 		    Course or Grade
 		 -------------------------------------------->
 		<div class="btn-group">
 	    <button type="button" class="btn btn-dropdown-basic fixed-width dropdown-toggle" data-toggle="dropdown" data-value="Value 0">
-	        <span class="btn-dropdown-label">Course or Grade</span>
+	        <span class="btn-dropdown-label">Grade 6</span>
 	        <span class="icon icon-dropdown-arrow"></span>
 	    </button>
 	    <ul class="dropdown-menu menu-basic groups">
@@ -57,7 +58,7 @@
 		<!--------------------------------------------
 		    Student Population (read)
 		 -------------------------------------------->
-		<section id="read_student_population" class="show_mode">
+		<section id="read_student_population" class="hide">
 		<div class="panel panel-default">
   		<table class="table population">
   			<thead>
@@ -70,7 +71,7 @@
   				</thead>
   				<tbody>
   				 <tr>
-  						<td>Pave Academy Charter District</td>
+  						<td><span class="expanded"></span>Pave Academy Charter District</td>
   						<td>
 							<label class="switch-sm">
 							    <input type="checkbox" class="switch-input-sm" checked="">
@@ -81,7 +82,7 @@
   						<td></td>
   				</tr>
  				 <tr>
-  						<td><span class="indent1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Pave Academy Charter School</td>
+  						<td><span class="indent1"></span><span class="expanded"></span>Pave Academy Charter School</td>
   						<td class="toggle">
 							<label class="switch-sm">
 							    <input type="checkbox" class="switch-input-sm" checked="">
@@ -92,7 +93,7 @@
   						<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
   			</tr>
  				 <tr>
-  						<td><span class="indent2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Grade 6</td>
+  						<td><span class="indent3"></span><button class="expand_btn" onclick="ToggleStudents()"><span id="grade_carot" class="glyphicon glyphicon-play"></span></button>Grade 6</td>
   						<td>
 							<label class="switch-sm">
 							    <input type="checkbox" class="switch-input-sm" checked="">
@@ -102,8 +103,8 @@
   						<td><a href="#">view all</a></td>
   						<td><a href="#"><span class="glyphicon glyphicon-file"></span></a></td>
   				</tr>
-  				<tr>
-  						<td><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Javier Garcia</td>
+  				<tr class="student hide">
+  						<td><span class="indent3"></span>Javier Garcia</td>
   						<td>
 							<label class="switch-sm">
 							    <input type="checkbox" class="switch-input-sm" checked="">
@@ -113,8 +114,8 @@
   						<td>jgarcia / panda14red</td>
   						<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
   				</tr>
-  				<tr>
-  					<td><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Alexandro Desanto</td>
+  				<tr class="student hide">
+  					<td><span class="indent3"></span>Alexandro Desanto</td>
   					<td>
 						<label class="switch-sm">
 							    <input type="checkbox" class="switch-input-sm" checked="">
@@ -124,8 +125,8 @@
   					<td>adesanto / car56stoic</td>
   					<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
   				</tr>
-  				<tr>
-  				<td><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Pamela Donne</td>
+  				<tr class="student hide">
+  				<td><span class="indent3"></span>Pamela Donne</td>
   					<td>
 						<label class="switch-sm">
 							    <input type="checkbox" class="switch-input-sm" checked="">
@@ -135,8 +136,8 @@
   					<td>pdonne / rose68slow</td>
   					<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
   				</tr>
-  				<tr>
-  				<td><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Thea Jackson</td>
+  				<tr class="student hide">
+  				<td><span class="indent3"></span>Thea Jackson</td>
   					<td>
 						<label class="switch-sm">
 							    <input type="checkbox" class="switch-input-sm" checked="">
@@ -146,8 +147,8 @@
   					<td>tjackson / hip90out</td>
   					<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
   				</tr>
-  				<tr>
-  				<td><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Jose Vargas</td>
+  				<tr class="student hide">
+  				<td><span class="indent3"></span>Jose Vargas</td>
   					<td>
 						<label class="switch-sm">
 							    <input type="checkbox" class="switch-input-sm" checked="">
@@ -157,8 +158,8 @@
   					<td>jvargas / tea45grand</td>
   					<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
   				</tr>
-  				<tr>
-  				<td><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Andrea Spano</td>
+  				<tr class="student hide">
+  				<td><span class="indent3"></span>Andrea Spano</td>
   					<td>
 						<label class="switch-sm">
 							    <input type="checkbox" class="switch-input-sm" checked="">
@@ -168,8 +169,8 @@
   					<td>aspano / court67young</td>
   					<td><a href="#"><span class="glyphicon glyphicon-file"></a></td>
   				</tr>
-  				<tr>
-  				<td><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Carla Tripadero</td>
+  				<tr class="student hide">
+  				<td><span class="indent3"></span>Carla Tripadero</td>
   					<td>
 						<label class="switch-sm">
 							    <input type="checkbox" class="switch-input-sm" checked="">
@@ -188,7 +189,7 @@
 		    Student Population (edit)
 		 -------------------------------------------->
 
-    <section id="edit_student_population" class="hide_mode">
+    <section id="edit_student_population" class="show_mode">
 		<div class="panel panel-default">
   		<table class="table population">
   			<thead>
@@ -200,49 +201,49 @@
   				 <tr>
   						<td><input id="checkbox-1" class="regular-checkbox" type="checkbox" checked="">
 							<label for="checkbox-1"  class="option">
-    					<span class="icon icon-checkbox"></span>Pave Academy Charter District</label></td>
+    					<span class="icon icon-checkbox"></span><span class="expanded"></span>Pave Academy Charter District</label></td>
   				</tr>
  				 <tr>
   						<td><input id="checkbox-2" class="regular-checkbox" type="checkbox" checked="">
 							<label for="checkbox-2"  class="option">
-    					<span class="icon icon-checkbox"></span><span class="indent1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Pave Academy Charter School</label></td>
+    					<span class="icon icon-checkbox"></span><span class="indent1"></span><span class="expanded"></span>Pave Academy Charter School</label></td>
   			</tr>
  				 <tr>
   						<td><input id="checkbox-3" class="regular-checkbox" type="checkbox" checked="">
 							<label for="checkbox-3"  class="option">
-    					<span class="icon icon-checkbox"></span><span class="indent2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Grade 6</label></td>
+    					<span class="icon icon-checkbox"></span><span class="indent3"></span><button class="expand_btn" onclick="ToggleEditStudents()"><span id="wgrade_carot" class="glyphicon glyphicon-play"></span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grade 6</label></td>
   				</tr>
-  				<tr>
+  				<tr class="wstudent hide">
   						<td><input id="checkbox-4" class="regular-checkbox" type="checkbox" checked="">
 							<label for="checkbox-4"  class="option">
     					<span class="icon icon-checkbox"></span><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Javier Garcia</label></td>
   				</tr>
-  				<tr>
+  				<tr class="wstudent hide">
   					<td><input id="checkbox-5" class="regular-checkbox" type="checkbox" checked="">
 						<label for="checkbox-5"  class="option">
    					<span class="icon icon-checkbox"></span><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Alexandro Desanto</label></td>
   				</tr>
-  				<tr>
+  				<tr class="wstudent hide">
   				<td><input id="checkbox-6" class="regular-checkbox" type="checkbox" checked="">
 						<label for="checkbox-6"  class="option">
    					<span class="icon icon-checkbox"></span><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Pamela Donne</label></td>
   				</tr>
-  				<tr>
+  				<tr class="wstudent hide">
   				<td><input id="checkbox-7" class="regular-checkbox" type="checkbox" checked="">
 						<label for="checkbox-7"  class="option">
    					<span class="icon icon-checkbox"></span><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Thea Jackson</label></td>
   				</tr>
-  				<tr>
+  				<tr class="wstudent hide">
   				<td><input id="checkbox-8" class="regular-checkbox" type="checkbox" checked="">
 						<label for="checkbox-8"  class="option">
    					<span class="icon icon-checkbox"></span><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Jose Vargas</label></td>
   				</tr>
-  				<tr>
+  				<tr class="wstudent hide">
   				<td><input id="checkbox-9" class="regular-checkbox" type="checkbox" checked="">
 						<label for="checkbox-9" class="option">
    					<span class="icon icon-checkbox"></span><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Andrea Spano</label></td>
   				</tr>
-  				<tr>
+  				<tr class="wstudent hide">
   				<td><input id="checkbox-10" class="regular-checkbox" type="checkbox" checked="">
 						<label for="checkbox-10" class="option">
    					<span class="icon icon-checkbox"></span><span class="indent3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Carla Tripadero</label></td>
@@ -260,7 +261,7 @@
 		
     <label>Testing Window</label>
 
-		<section id="edit_testing_window" class="hide_mode">
+		<section id="edit_testing_window" class="show_mode">
 		<div>
 			<p class="static">Start:</p>
 	  <span id="datetimepicker2" class="input-append window">
@@ -282,7 +283,7 @@
 	  </div>
 		</section>
 
-		<section id="read_testing_window" class="show_mode">
+		<section id="read_testing_window" class="hide">
 			<div><p>Jun 2 12:00 am - Jun 14 11:59 pm</p>
 				<section>
 				<label>Instant Feedback</label>
@@ -296,11 +297,11 @@
 		    Online Access
 		 -------------------------------------------->
 
-		<section id="edit_online_access" class="hide_mode">
+		<section id="edit_online_access" class="show_mode">
 
 		<label>Enable online test</label> | <a href="#">Preview</a>
 
-		<input id="open" name="access" class="regular-radio" type="radio">
+		<input id="open" name="access" class="regular-radio" type="radio" checked="">
 		<label for="open" class="option">
 		    <span class="icon icon-radio"></span>Automatic. Immediately appears online at start of assessment window.
 		</label>
@@ -326,7 +327,7 @@
 
 -->
 
-		<section id="edit_instant_feedback" class="hide_mode">
+		<section id="edit_instant_feedback" class="show_mode">
 			<label>Instant Feedback</label>
 		<input id="none" name="feedback" class="regular-radio" type="radio" checked="">
 		<label for="none" class="option">
@@ -350,7 +351,7 @@
 		    Print Options
 		 -------------------------------------------->
 		<section id="print_options" class="show_mode">
-			<span class="glyphicon glyphicon-play"></span><label class="expandable">&nbsp;Answer Sheet Settings</label>
+			<span class="glyphicon glyphicon-play"></span><label class="expandable">&nbsp;Paper Assessment</label>
 		</section>
 
 		<!-- -----------------------------
@@ -368,7 +369,7 @@
      <div class="modal-footer">
      	<span class="footer_btns">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" id="btnSaveEdit" onclick="ToggleSaveEdit()" class="btn btn-primary">Edit</button>
+        <button type="button" id="btnSaveEdit" onclick="ToggleSaveEdit()" class="btn btn-primary">Save Changes</button>
        </span>
      </div>
 
@@ -429,6 +430,69 @@
 </script>
 
 <script>
+
+
+/****************************************************
+
+	Expande/Collapse editable students
+
+*******************************************************/
+function ToggleEditStudents() {
+
+	// Collapse
+  if (document.getElementById("wgrade_carot").className == "expanded") 
+  {
+
+		while (document.getElementsByClassName("wstudent show_mode").length >0)
+		{
+			document.getElementsByClassName("wstudent show_mode")[0].className = "wstudent hide";
+		}
+
+		document.getElementById("wgrade_carot").className = "glyphicon glyphicon-play";	
+  }
+  // Expand
+	else if (document.getElementById("wgrade_carot").className == "glyphicon glyphicon-play")
+	{
+
+		while (document.getElementsByClassName("wstudent hide").length >0)
+		{
+			document.getElementsByClassName("wstudent hide")[0].className = "wstudent show_mode";
+		}
+
+		 document.getElementById("wgrade_carot").className = "expanded"	
+	}
+}
+
+/****************************************************
+
+	Expande/Collapse read-only students
+
+*******************************************************/
+function ToggleStudents() {
+
+
+  if (document.getElementById("grade_carot").className == "expanded") 
+  {
+
+		while (document.getElementsByClassName("student show_mode").length >0)
+		{
+			document.getElementsByClassName("student show_mode")[0].className = "student hide";
+		}
+
+		document.getElementById("grade_carot").className = "glyphicon glyphicon-play";	
+  }
+	else if (document.getElementById("grade_carot").className == "glyphicon glyphicon-play")
+	{
+
+		while (document.getElementsByClassName("student hide").length >0)
+		{
+			document.getElementsByClassName("student hide")[0].className = "student show_mode";
+		}
+
+		 document.getElementById("grade_carot").className = "expanded"	
+	}
+}
+
 
 
 function ToggleSaveEdit () {
