@@ -83,6 +83,11 @@ p.expandable {
 
 .static {
 	color: #666666;
+	display: inline;
+}
+
+.ui-toolkit label.modal-title {
+	font-size: 14px;
 }
 /*
  ****************
@@ -92,7 +97,7 @@ p.expandable {
 
 .ui-toolkit .panel  {
 	border: 1px solid #b4b4b4;
-	height: 350px;
+	max-height: 350px;
 	overflow-y: scroll;
 }
 
@@ -115,6 +120,29 @@ td.toggle {
 	vertical-align: middle;
 }
 
+.expanded {
+	position: relative;
+	top: 12px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #333;
+	margin-right: 20px;
+}
+
+.collapsed {
+	width: 0;
+	height: 0;
+	border-top: 3px solid transparent;
+	border-left: 6px solid #333;
+	border-bottom: 3px solid transparent;
+	margin: 10px;
+}
+
+.glyphicon-play {
+	margin-right: 10px;
+}
 /*
  ****************
  * =Testing Window
@@ -222,7 +250,7 @@ td.toggle {
 }
 
 .indent3 {
-	content: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+	margin-right: 50px;
 }
 
 .clicker {
