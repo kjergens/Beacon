@@ -17,8 +17,20 @@ body {
 		border-radius: 12px;
 }
 
+.ui-toolkit .modal-dialog,
+.ui-toolkit .modal-header,
+.ui-toolkit .modal-body,
+.ui-toolkit .modal-footer {
+	width: 952px;
+}
+
+.ui-toolkit .modal-body {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
 .ui-toolkit .modal-dialog {
-	width: 860px;
+	//width: 950px;
 	border-radius: 12px;
 }
 
@@ -44,7 +56,6 @@ body {
  ******************************
 */  
 .panel, form, .test_window {
-	zmargin-bottom: 10px;
 	margin-top: 10px;
 }
 
@@ -53,7 +64,7 @@ body {
 }
 
 .ui-toolkit section {
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 }
 
 .ui-toolkit section:last-child {
@@ -81,9 +92,10 @@ p.expandable {
 	font-weight: normal;
 }
 
-.static {
+p.static {
 	color: #666666;
 	display: inline;
+	margin-right: 20px;
 }
 
 .ui-toolkit label.modal-title {
@@ -97,7 +109,7 @@ p.expandable {
 
 .ui-toolkit .panel  {
 	border: 1px solid #b4b4b4;
-	max-height: 350px;
+	max-height: 450px;
 	overflow-y: scroll;
 }
 
@@ -149,12 +161,8 @@ td.toggle {
  ****************
 */  
 .window label {
-	margin-right: 10px;
-	text-align: center;
-}
-
-.ui-toolkit .btn-group {
-	zpadding-right: 20px;
+	margin: 0px 20px 0px 30px;
+	ztext-align: center;
 }
 
 .window input[type=text] {
@@ -173,15 +181,12 @@ td.toggle {
 }
 
 .window .add-on {
-	padding: 5px 5px 5px 7px;
-	margin:-4px;
-	background: #f1f1f1;
+	padding: 6px 5px 5px 7px;
+	margin-left:-4px;
+	margin-right:30px;
+	background: #FFF;
 	border-radius: 0px 3px 3px 0px;
 	border: 1px solid #ddd; 
-}
-
-.window {
-	margin: 10px;
 }
 
 .bootstrap-datetimepicker-widget, .ui-toolkit .dropdown-menu {
@@ -235,6 +240,12 @@ td.toggle {
 	display: none;
 }
 
+.expand_btn {
+	border: 0px;
+	background-color: #fff;
+	width: 15px;
+}
+
 /*
  ****************
  * =misc
@@ -242,11 +253,11 @@ td.toggle {
 */  
 
 .indent1 {
-	content: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+	margin-right: 15px;
 }
 
 .indent2 {
-	content: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+	margin-right: 30px;
 }
 
 .indent3 {
@@ -258,6 +269,10 @@ td.toggle {
 	top: 214px;
 	left: 178px;
 	font-size: 13px;
+}
+
+.info {
+	margin-left: 20px;
 }
 
 /*
