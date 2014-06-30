@@ -60,6 +60,7 @@
 		 -------------------------------------------->
 		<section id="read_student_population" class="show_mode">
 		<div class="panel panel-default">
+			<button onclick="ToggleStudents()"></button>
   		<table class="table population">
   			<thead>
   				<tr class="active">
@@ -71,7 +72,7 @@
   				</thead>
   				<tbody>
  				  <tr>
-  						<td><a href="b.html"><span class="glyphicon glyphicon-play" id="grade6_read"></a></span>Grade 6</td>
+  						<td><span class="glyphicon glyphicon-play" id="grade6_read"></span>Grade 6</td>
   						<td>
 							<label class="switch-sm">
 							    <input type="checkbox" class="switch-input-sm" checked="">
@@ -457,6 +458,14 @@ $(function() {
 	});
 });
 
+function ToggleStudents() {
+	var elems = document.getElementsByClassName("student hide"), i;
+
+	for (i=0; i<elems.length; i++) {
+			elems[0].className = "student show";
+	}
+
+}
 
 function ToggleSaveEdit () {
 
