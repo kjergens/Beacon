@@ -12,16 +12,17 @@ button {
 	border: 0px;
 	color: #f1f1f1;
 	font-size: 14px;
-	height: 32px;
-	width: 76px;
+
 }
 
 
 .edit_btn {
 	position: relative;
-	top: 35px;
-	left:1010px;
+	top: 36px;
+	left:1016px;
 	z-index: 3000;
+	height: 30px;
+	width: 70px;
 }
 
 .assign_btn {
@@ -29,6 +30,8 @@ button {
 	top: 49px;
 	left:1040px;
 	z-index: 3000;
+		height: 32px;
+	width: 76px;
 }
 
 .overlay {
