@@ -1,0 +1,419 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+li {
+	list-style: none outside none;
+	display: inline-block;
+	height: 11px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-family: helvetica;
+	font-weight: normal;
+	vertical-align: baseline;
+	line-height: 1;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	background-color: #636363;
+}
+
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.overlay {
+	width: 942px;
+	height: 782px;
+	background-color: #ffffff;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+.pdf {
+	width: 760px;
+	height: 1100px;
+	background-color: #ffffff;
+	margin: 10px auto;
+	padding: 50px 40px;
+}
+
+.titlebar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #e4e4e4;
+	width: 100%;
+	height: 35px;
+	border-bottom: 1px solid #999999;
+	text-align: left;
+}
+
+
+.sidebar {
+	position: absolute;
+	top:37px;
+	left:0px;
+	width: 233px;
+	height: 744px;
+	border-right: 1px solid #999999;
+}
+
+.hex {
+	width:233px;
+	height:282px;
+	border-bottom: 1px solid #cccccc;
+}
+
+.student_breakdown {
+	zpadding-left: 10px;
+}
+
+.not_mastered, .mastered {
+	border-bottom: 1px solid #cccccc;
+	height: 23px;
+	padding-left: 10px;
+}
+
+.mastered {
+	background-color: #EAF4E5;
+	color: #6AB046; 
+}
+
+.not_mastered {
+	background-color: #FDEDED;
+	color: #E33E39;
+}
+
+.mastered h6, .not_mastered h6 {
+	font-weight: bold;
+}
+
+.student_list h6 {
+	color: #0066CC;
+}
+
+.student_list td {
+	padding: 5px 30px;
+}
+
+.student_list tr {
+	border-bottom: 1px solid #cccccc;
+}
+
+.student_list {
+	width: 233px;
+}
+
+.student_list tr:hover {
+	background-color: #0066CC;
+}
+
+.student_list tr:hover h6 {
+	color: #ffffff;
+	font-weight: bold;
+} 
+
+.main_area {
+	position: absolute;
+	top: 0px;
+	left: 235px;
+	width: 704px;
+
+}
+
+.assessment_name h5 {
+	color: #636363;
+	font-weight: bold;
+	margin: 20px 0px 0px 10px;
+
+}
+
+.menu, .close_overlay {
+	display: inline-block;
+}
+
+.close_overlay {
+	position: absolute;
+	right: 7px;
+	top: 0px;
+	padding: 8px;
+}
+
+.standard_title {
+	font-weight: bold;
+	padding: 8px;
+	margin: 6px;
+	vertical-align: baseline;
+}
+
+.print_label {
+	vertical-align: baseline;
+	padding: 6px;
+	margin: 6px 0px;
+	font-weight: bold;
+}
+
+.menu {
+	position: absolute;
+	right: 40px;
+	top: 0px;
+	text-align: center;
+	vertical-align: baseline;
+	font-weight: bold;
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;
+	height: 35px;
+	padding: 0px 30px;
+}
+
+.item_table_container {
+	margin: 20px 0px 50px 0px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+.item_type_and_points, thead {
+	margin: 5px 10px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	color: #666666;
+}
+
+.item_table tr {
+	border-bottom: 1px solid #cccccc;
+	margin: 0px 10px;
+	text-align: right;
+	height: 19px;
+}
+
+.item_table td {
+	padding: 3px 10px;
+	text-align: right;
+	width: 75px;
+	height: 19px;
+}
+
+.item_table td:first-child {
+	width: 20px;
+}
+
+.filler_col_0 {
+	min-width:350px;
+}
+
+.filler_col_1pt {
+	min-width:230px;
+}
+
+.filler_col_3pts {
+	min-width:152px;
+}
+
+.filler_col_4pts {
+	min-width:65px;
+}
+
+.item_no {
+	color: #275F7A;
+}
+
+.item_no a:hover, .item_no a {
+	text-decoration: none;
+	color: #275F7A;
+}
+
+
+.red_bucket h5, .red_bucket h6, .red_bucket h4, .red_bucket h3 {
+	color: #E33E39;
+	font-weight: bold;
+}
+
+
+.yellow_bucket h6 {
+	color: #CDAD00;
+	font-weight: bold;
+}
+
+.green_bucket h6, .green_bucket h5, .green_bucket h4 {
+	color: #6AB046;
+	font-weight: bold;
+}
+
+.blue_bucket h6 {
+	color: #1D7CF2;
+	font-weight: bold;
+}
+
+.not_scored h6 {
+	color: #9c9c9c;
+	font-weight: bold;
+}
+
+.navigation_text {
+	color: #0066CC;
+	padding: 5px 25px;
+	border-bottom: 1px solid #cccccc;
+}
+
+.navigation_text a:visited {
+	text-decoration: none;
+	color: #0066CC;
+}
+
+.student_icon {
+	display: inline-block;
+	height: 11px;
+	margin: 15px 5px;
+	width: 7px;
+
+}
+
+.toggle p {
+	color:transparent;
+}
+
+.arrow
+{
+	border-left: 10px solid #777777;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	width:0px;
+	height:0px;
+	margin: 10px 5px 0;
+}
+
+.downarrow
+{
+	border-left: 5px solid transparent;
+	border-top: 10px solid #777777;
+	border-right: 5px solid transparent;
+	width:0px;
+	height:0px;
+	margin: 10px 3px 0;
+}
+
+.cir
+{
+	width:10px;
+	height:10px;
+	border-radius:5px;
+	background-color:#999999;
+	margin:5px 10px;
+	position: absolute;
+	top: 5px;
+}
+
+.hump
+{
+	width:12px;
+	height:12px;
+	border-radius:6px 6px 0px 0px;
+	background-color:#999999;
+	position: absolute;
+	bottom: 5px;
+}
+
+.stu_icon_gray {
+	width: 15px;
+	position: absolute;
+	left: 20px;
+}
+
+
+.selected_stu {
+	background-color: #0066CC;
+}
+
+.selected_stu h6 {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.footer {
+	float: clear both;
+	border-bottom: 1px solid #999999;
+}
+
+.item_type h6 {
+	color: #999999;
+	font-weight: bold;
+
+}
+
+#hexagon_top { 
+	border-bottom: 80px solid #E35152; 
+	border-left: 50px solid transparent; 
+	border-right: 50px solid transparent; 
+	height: 0; 
+	width: 80px;
+	display: block;
+}
+
+#hexagon_bottom { 
+	border-top: 80px solid #E35152; 
+	border-left: 50px solid transparent; 
+	border-right: 50px solid transparent; 
+	height: 0; 
+	width: 80px;
+	display: block;
+}
+
+
+.hex_header {
+	color: #363636;
+	padding: 10px;
+}
+
+.standard_summary {
+	margin: 30px 0px;
+	width: 700px;
+}
+
+.hex_description h4, .hex_description h5 {
+	margin: 10px 10px 0px 50px;
+}
