@@ -6,7 +6,7 @@
 	<meta name = "viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
 	<link rel="stylesheet" type="text/css" href="css/jQuery.css">
 	<link rel="stylesheet" type="text/css" href="uitoolkit/css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/OutcomesOverlay.css">
+	<link rel="stylesheet" type="text/css" href="css/OOverlay_iPad.css">
 	<link rel="stylesheet" type="text/css" href="css/zpesticide.css">
 	<title>Student Overlay</title>
 </head>
@@ -17,18 +17,20 @@
 	<div class="titlebar">
 		<div><label class="standard_title">Standard Performance: RL.2.1</label></div>
 		<div class="menu">
-			<div>Print</div>
+			<div><h5 class="print_label">Print</h5></div>
 		</div>
-		<div class="close_overlay">x</div>
+		<div class="close_overlay"><h5>x</h5></div>
 	</div>
 
 	<!--left column-->
 	<div class="sidebar">
-		<img src="img/standard.png" alt="RL.2.1">
+		<div class="hex">
+			<img src="img/standard.png" alt="RL.2.1" width="190px">
+		</div>
 		<div class="navigation_text"><a href="Standard_Overlay.html">Class View</a></div>
 		<div class="student_breakdown">
-			<div class="not_mastered"><span class="downarrow"></span>
-				 6 (66%) Not Mastered
+			<div class="not_mastered">
+				 (66%) Not Mastered
 				</div>
 			<table class="student_list">
 			<tr><td class="nstu selected_stu"><a href="Standard_Overlay.html">Margaret Rivera</a></td></tr>
@@ -38,7 +40,7 @@
 			<tr><td class="nstu"><a href="Standard_Overlay.html">Emma Schumacher</a></td></tr>
 			<tr><td class="nstu"><a href="Standard_Overlay.html">Anna Stone</a></td></tr>
 		</table>
-			<div class="mastered"><span class="downarrow"></span>
+			<div class="mastered">
 				3 (33%) Mastered
 			</div>
 		<table class="student_list">
@@ -47,7 +49,6 @@
 			<tr><td class="mstu"><a href="Standard_Overlay.html">Adam Pena</a></td></tr>
 		</table>
 		</div>
-	</div>
 	<!--right column-->
 	<div class="main_area">
 
@@ -64,7 +65,7 @@
 						<td>Item No</td>
 						<td>Item Type</td>
 						<td>Correct?</td>
-						<td class="empty_col"></td>
+						<td class="filler_col_0"></td>
 					</tr>
 				</thead>
 				<tbody>
@@ -72,19 +73,16 @@
 						<td><span class="glyphicon glyphicon-play"></span>5.</td>
 						<td class="item_type">MC</td>
 						<td class="red_points">&#10005;</td>
-						<td class="empty_col"></td>
 					</tr>
 					<tr>
 						<td><span class="glyphicon glyphicon-play"></span>6.</td>
 						<td class="item_type">MC</td>
 						<td class="green_points">&#10003;</td>
-						<td class="empty_col"></td>
 					</tr>
 					<tr>
 						<td><span class="glyphicon glyphicon-play"></span>7.</td>
 						<td class="item_type">MC</td>
 						<td class="green_points">&#10003;</td>
-						<td class="empty_col"></td>
 					</tr>
 				</tbody>
 			</table>
@@ -98,10 +96,10 @@
 			<table class="item_table">
 				<thead>
 					<tr>
-						<td>Item No</td>
-						<td>Item Type</td>
-						<td>Points Earned</td>
-						<td class="empty_col1"></td>
+						<td><h6>Item No</h6></td>
+						<td><h6>Item Type</h6></td>
+						<td><h6>Points Earned</h6></td>
+						<td class="filler_col_0"></td>
 					</tr>
 				</thead>
 				<tbody>
@@ -109,13 +107,11 @@
 						<td><span class="glyphicon glyphicon-play"></span>8.</td>
 						<td class="item_type">TEI</td>
 						<td class="yellow_points">1 of 2</td>
-						<td class="empty_col1"></td>
 					</tr>
 					<tr>
 						<td><span class="glyphicon glyphicon-play"></span>9.</td>
 						<td class="item_type">TEI</td>
 						<td class="green_points">2 of 2</td>
-						<td class="empty_col1"></td>
 					</tr>
 				</tbody>
 			</table>
@@ -132,7 +128,7 @@
 						<td>Item No</td>
 						<td>Item Type</td>
 						<td>Points Earned</td>
-						<td class="empty_col1"></td>
+						<td class="filler_col_0"></td>
 					</tr>
 				</thead>
 				<tbody>
@@ -140,7 +136,6 @@
 						<td><span class="glyphicon glyphicon-play"></span>10.</td>
 						<td class="item_type">TEI</td>
 						<td class="red_points">0 of 3</td>
-						<td class="empty_col1"></td>
 					</tr
 				</tbody>
 			</table>
@@ -157,7 +152,7 @@
 						<td>Item No</td>
 						<td>Item Type</td>
 						<td>Points Earned</td>
-						<td class="empty_col1"></td>
+						<td class="filler_col_0"></td>
 					</tr>
 				</thead>
 				<tbody>
@@ -165,19 +160,17 @@
 						<td><span class="glyphicon glyphicon-play"></span>11.</td>
 						<td class="item_type">TEI</td>
 						<td class="blue_points">4 of 4</td>
-						<td class="empty_col1"></td>
 					</tr>
 					<tr>
 						<td><span class="glyphicon glyphicon-play"></span>12.</td>
 						<td class="item_type">CR</td>
 						<td class="green_points">3 of 4</td>
-						<td class="empty_col1"></td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 	</div>
-
+</div>
 
 
 <!-- Include Footer and JS-->
