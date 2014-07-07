@@ -4,11 +4,11 @@
  *****************************
 */  
 .pdf_container {
-	width: 835px; 
 	background-color: #ffffff;
-	margin: 3px auto;
+	margin: 10px auto;
 	position: relative;
-	height: 1110px;
+	width: 595pt;
+	height: 842pt;
 } 
 
 .ui-toolkit body {
