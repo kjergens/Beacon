@@ -95,21 +95,36 @@
 	padding: 2px 30px;
 }
 
+.student_list .add {
+	padding: 2px 10px;
+}
+
 .student_list tr:last-child {
 	border-bottom: 1px solid #ccc;
 }
 
-.student_list tr:hover {
+.student_list tr:hover,
+.ui-toolkit .student_list tr .selected_stu {
 	background-color: #0066CC;
 }
 
 .ui-toolkit a:focus,
-.ui-toolkit a:hover {
-	background-color: #0066CC;
+.ui-toolkit a:hover,
+.ui-toolkit .student_list .selected_stu a {
 	color: #ffffff;
 	font-weight: bold;
 	text-decoration: none;
 }
+
+.student_list tr .add:hover,
+.ui-toolkit .student_list .add a:focus,
+.ui-toolkit .student_list .add a:hover  {
+	background-color: #fff;
+	color: #444;
+	font-weight: normal;
+	text-decoration: none;
+}
+
 
 .not_mastered, 
 .mastered {
@@ -190,15 +205,15 @@
     Standard overlay
  *--------------------*/
  .empty_col3 {
-	width: 230px;
+	width: 250px;
 }
 
 .empty_col4 {
-	width: 154px;
+	width: 178px;
 }
 
 .empty_col5 {
-	width: 78px;
+	width: 102px;
 }
 
 .red_bucket {
@@ -378,17 +393,25 @@
 }
 
 #tap_area {
-	width: 44px;
-	height: 44px;
+	width: 70px;
+	height: 70px;
 	background-color: red;
 	border: 2px dashed #f1f1f1;
 	position: fixed;
-	top: 380px;
-	left: 180px;
+	top: 610px;
+	left: 240px;
 	z-index: 200;
 	text-align: center;
 	color: #f1f1f1;
 	font-weight: bolder;
+	display: all;
+}
+
+#cm {
+	position: relative;
+	top: -430px;
+	left: 245px;
+	z-index: 200;
 }
 
 /*

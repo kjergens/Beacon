@@ -33,74 +33,7 @@
  */  
 
 /*
- ****************
- * =fonts
- ****************
- */  
 
- @font-face{
-  font-family:"amplify";
-  src:url('../fonts/amplify/amplify.eot');
-  src:url('../fonts/amplify/amplify.eot?#iefix') format('embedded-opentype'),url('../fonts/amplify/amplify.woff') format('woff'), url('../fonts/amplify/amplify.ttf') format('truetype'), url('../fonts/amplify/amplify.svg') format('svg');
-  font-weight:"normal";
-  font-style:"normal"
-}
-
-@font-face{
-  font-family:"amplify-light";
-  src:url('../fonts/amplify-light/amplify-light.eot');
-  src:url('../fonts/amplify-light/amplify-light.eot?#iefix') format('embedded-opentype'),url('../fonts/amplify-light/amplify-light.woff') format('woff'), url('../fonts/amplify-light/amplify-light.ttf') format('truetype'), url('../fonts/amplify-light/amplify-light.svg') format('svg');
-  font-weight:"normal";
-  font-style:"normal"
-}
-
-@font-face{
-  font-family:"amplify-icon";
-  src:url('../fonts/amplify-icon/amplify-icon.eot');
-  src:url('../fonts/amplify-icon/amplify-icon.eot?#iefix') format('embedded-opentype'),url('../fonts/amplify-icon/amplify-icon.woff') format('woff'), url('../fonts/amplify-icon/amplify-icon.ttf') format('truetype'), url('../fonts/amplify-icon/amplify-icon.svg') format('svg');
-  font-weight:"normal";
-  font-style:"normal"
-}
-
-@font-face{
-  font-family:"benton-sans-medium";
-  src:url('../fonts/benton-sans-medium/benton-sans-medium.eot');
-  src:url('../fonts/benton-sans-medium/benton-sans-medium.eot?#iefix') format('embedded-opentype'),url('../fonts/benton-sans-medium/benton-sans-medium.woff') format('woff'), url('../fonts/benton-sans-medium/benton-sans-medium.ttf') format('truetype'), url('../fonts/benton-sans-medium/benton-sans-medium.svg') format('svg');
-  font-weight:"normal";
-  font-style:"normal"
-}
-
-@font-face{
-  font-family:"benton-sans-bold";
-  src:url('../fonts/benton-sans-bold/benton-sans-bold.eot');
-  src:url('../fonts/benton-sans-bold/benton-sans-bold.eot?#iefix') format('embedded-opentype'),url('../fonts/benton-sans-bold/benton-sans-bold.woff') format('woff'), url('../fonts/benton-sans-bold/benton-sans-bold.ttf') format('truetype'), url('../fonts/benton-sans-bold/benton-sans-bold.svg') format('svg');
-  font-weight:"normal";
-  font-style:"normal"
-}
-
-@font-face{
-  font-family:"benton-sans-book";
-  src:url('../fonts/benton-sans-book/benton-sans-book.eot');
-  src:url('../fonts/benton-sans-book/benton-sans-book.eot?#iefix') format('embedded-opentype'),url('../fonts/benton-sans-book/benton-sans-book.woff') format('woff'), url('../fonts/benton-sans-book/benton-sans-book.ttf') format('truetype'), url('../fonts/benton-sans-book/benton-sans-book.svg') format('svg');
-  font-weight:"normal";
-  font-style:"normal"
-}
-
-@font-face{
-  font-family:"benton-sans-light";
-  src:url('../fonts/benton-sans-light/benton-sans-light.eot');
-  src:url('../fonts/benton-sans-light/benton-sans-light.eot?#iefix') format('embedded-opentype'),url('../fonts/benton-sans-light/benton-sans-light.woff') format('woff'), url('../fonts/benton-sans-light/benton-sans-light.ttf') format('truetype'), url('../fonts/benton-sans-light/benton-sans-light.svg') format('svg');
-  font-weight:"normal";
-  font-style:"normal"
-}
-
-@font-face{
-  font-family:"glyphicons-halflings-regular";
-  src:url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.eot');
-  src:url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.svg') format('svg');
-  font-weight:"normal";
-  font-style:"normal"
-}
 
 /*
  ****************
@@ -228,21 +161,9 @@
   margin-left: 15px;
 }
 
-option.sections
-{
-  zpadding-top: 5px;
-  zheight: 24px;
-}
 
 select.sections {
-  zbackground-color:#f1f1f1;
-  z-moz-border-radius:2px;
-  z-webkit-border-radius:2px;
-  zborder-radius:2px;
-  zborder:1px solid #e3e3e3;
-  zheight: 24px;
   width: 190px;
-  zfont-size: 13px;
   font-family: sans-serif;
 }
 
@@ -392,10 +313,6 @@ and  left-align item prompt */
 input[type=checkbox]
 {
   /* three-quarter-sized Checkboxes */
-  z -ms-transform: scale(.75); /* IE */
-  z-moz-transform: scale(.75); /* FF */
-  z -webkit-transform: scale(.75); /* Safari and Chrome */
-  z -o-transform: scale(.75); /* Opera */
   width: 16px;
   height: 13px;
   padding: 0;
@@ -588,51 +505,25 @@ display: none;
 }
 
 
-/* `Clear Floated Elements
-----------------------------------------------------------------------------------------------------*/
-
-/* http://sonspring.com/journal/clearing-floats */
-
-.clear {
-  clear: both;
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
-/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
-
-.clearfix:before,
-.clearfix:after,
-.container_12:before,
-.container_12:after,
-.container_16:before,
-.container_16:after {
-  content: '.';
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  font-size: 0;
-  line-height: 0;
-  width: 0;
-  height: 0;
-}
-
-.clearfix:after,
-.container_12:after,
-.container_16:after {
+.clearfix:after {
+  content: "";
+  display: table;
   clear: both;
 }
 
 /*
-  The following zoom:1 rule is specifically for IE6 + IE7.
-  Move to separate stylesheet if invalid CSS is a problem.
-*/
+ ****************
+ * =duplicates
+ ****************
+*/  
 
-.clearfix,
-.container_12,
-.container_16 {
-  zoom: 1;
+.duplicate {
+   pointer-events: none;
+   cursor: default;
 }
+
+input.duplicate {
+   color: #cacaca;
+   font-weight: lighter;
+}
+

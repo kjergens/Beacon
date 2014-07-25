@@ -1,9 +1,4 @@
-body {
-	background-image: url(../img/AM.png);
-	background-repeat: no-repeat;
-	background-position: top left;
-	background-color: #333;
-}
+
 
 
 
@@ -191,11 +186,6 @@ td.toggle {
 
 .bootstrap-datetimepicker-widget, .ui-toolkit .dropdown-menu {
 	z-index: 3000;
-}
-
-/* hack */
-.ui-toolkit .dropdown-menu li  {
-  margin-left: -30px;
 }
 
 /*

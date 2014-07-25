@@ -1,0 +1,27 @@
+body {
+	background-image: url(../img/iPad-Landscape.png);
+	background-repeat: no-repeat;
+	background-color: #f1f1f1;
+}
+
+#overlay {
+	position: relative;
+	top: 105px;
+	left: 147px;
+	width: 1024px;
+	overflow: scroll;
+}
+
+.nav {
+	position: fixed;
+	top: 950px;
+	right: 50px;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	color: #abcdef;
+}
+
+
+a {
+	margin: 0 5px;
+}

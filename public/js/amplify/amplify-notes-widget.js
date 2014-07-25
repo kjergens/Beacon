@@ -109,6 +109,7 @@
          */
         displayErrorMessage : function (errorText) {
             this.characterCountDisplay.text(errorText);
+            this._enableCharacterCountDisplay();
         },
 
         /*

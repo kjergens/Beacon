@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/960gs/code/css/reset.css">
+<link rel="stylesheet" href="../css/960gs/code/css/text.css">
+<link rel="stylesheet" href="../public/css/styles.css">
+<link rel="stylesheet" href="../css/tst.css">
+<link rel="stylesheet" href="../css/spesticide.css">
+<title>TST CR in table</title>
+</head>
+<body>
+
+<div class="container">
+
+<!--Navigation-->
+	<div class="mclasshead">
+		<p class="beaconlogo">mCLASS</p><p class="beaconlogo tm">&reg;</p><p class="beaconlogo">Beacon</p><p class="beaconlogo tm">&reg;</p>
+		<p class="username">Kathy Yonker, Fillmore</p>
+			<ul class="globalnav">
+				<li class="globalnav_item">Home</li>
+				<li class="globalnav_item">Support</li>
+				<li class="globalnav_item">Log Out</li>
+			</ul>
+	</div>
+	<ul class="beaconnav">
+		<li><a href="#">Overview</a></li>
+		<li><a href="#">Matrix</a></li>
+		<li><a href="#">Learning Map</a></li>
+		<li>Assignments</li>
+		<li><a href="#">Assessments</a></li>
+	</ul>
+
+<!--Parameters-->
+	<div class="usercontrols">
+		<table class="params">
+			<tr><td colspan=2><p class="pagetitle idea">Scoring Tool</p></td></tr>
+			<tr>
+				<td class="param_label">Assessment</td>
+				<td><p class="assmtname">Biology Grade 7 (Oct 2, 2013)</p></td></tr>
+			<tr>
+				<td class="param_label">Section/Class</td>
+				<td>
+					<select class="sections">
+						<option value="Grade 7 Biology">Grade 7 Biology</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+	<p class="print college_board">Print All Online Student Responses</p>
+	<!-- end params section-->
+	</div>
+
+<!--Student Names-->
+
+<div class="stu_list clearfix">
+	<ul>
+		<li><a href="#">Philip A</a></li>
+		<li><a href="#">Janet B</a></li>
+		<li><a href="#">Yan C</a></li>
+		<li><a href="#">Melody D</a></li>
+		<li><a href="#">Jose F</a></li>
+		<li><a href="#">Pamela G</a></li>
+		<li><a href="#">Valerie J</a></li>
+		<li><a href="#">Stuben K</a></li>
+		<li><a href="#">Ben L</a></li>
+		<li><a href="#">Jenifer M</a></li>
+		<li><a href="#">Tim N</a></li>
+		<li><a href="#">Mo O</a></li>
+		<li><a href="#">Thomas P</a></li>
+		<li><a href="#">Shelly R</a></li>
+		<li><a href="#">Fran Y</a></li>
+	</ul>
+</div>
+
+<!--
+	<div class="stu_table">
+		<table>
+			<tr>
+				<td><a href="#">Phil A</a></td>
+				<td><a href="#">Jan B</a></td>
+				<td><a href="#">Yan C</a></td>
+				<td><a href="#">Mel D</a></td>
+				<td><a href="#">Jo F</a></td>
+				<td><a href="#">Pam G</a></td>
+				<td><a href="#">Val J</a></td>
+				<td><a href="#">Stu K</a></td>
+				<td><a href="#">Ben L</a></td>
+				<td><a href="#">Jen M</a></td>
+				<td><a href="#">Tim N</a></td>
+				<td><a href="#">Mo O</a></td>
+				<td><a href="#">Tom P</a></td>
+				<td><a href="#">Shel R</a></td>
+				<td><a href="#">Fran Y</a></td>
+			</tr>
+		</table>
+	</div>
+
+-->
+
+	<div class="hiderows idea">
+		<label class="hiderows">
+			<input type="checkbox" id="row_toggle" checked onclick="toggleAutoScored(this)">&nbsp;&nbsp;Hide auto-scored items</input>
+		</label>
+	<div>
+
+<!--Item prompts-->
+	<div class="items">
+		<table>
+			<tr id="item_row_scored" class="hide_element">
+				<td class="item_prompt">
+					<p class="item_type">MC</p>
+					<a class="view_work old" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
+					<strong>1.&nbsp;</strong>
+					<a href="#">Which of the following was included in lo...</td>
+				<td class="pts_possible">1</td>
+			</tr>
+			<tr class="item_row">
+				<td class="item_prompt">
+					<p class="item_type">CR</p>
+					<a class="view_work old" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
+					<strong>3.&nbsp;</strong>
+					<a href="#">How can scientists determine the curren...</td>
+				<td class="pts_possible">4</td>
+			</tr>
+			<tr id="blank_row" class="hide_element">
+				<td colspan=2>
+			</td>
+			</tr>
+			<tr class="item_row">
+				<td class="item_prompt">
+					<p class="item_type">CR</p>
+					<a class="view_work old" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
+					<strong>4.&nbsp;</strong>
+					<a href="#">How can scientists determine the curren...</td>
+					<td class="pts_possible">4</td>
+			</tr>
+			<tr class="item_row">
+				<td class="item_prompt">
+					<p class="item_type">CR</p>
+					<a class="view_work old" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
+					<strong>5.&nbsp;</strong>
+					<a href="#">How can scientists determine the curren...</td>
+					<td class="pts_possible">4</td>
+			</tr>
+			<tr class="item_row">
+				<td class="item_prompt">
+					<p class="item_type">CR</p>
+					<a class="view_work old" href="all_crs.html"><img src="img/eye.svg" width="16px" height="16px"/></a>
+					<strong>8.&nbsp;</strong>
+					<a href="#">How can scientists determine the curren...</td>
+					<td class="pts_possible">4</td>
+			</tr>
+		</table>
+	</div>
+
+
+<!--Score table-->
+	<div class="scores">
+		<table>
+			<tr id="score_row_scored" class="hide_element">
+				<td class="score"><input value="A"></input></td>
+				<td class="score"><input value="B"></input></td>
+				<td class="score"><input value="A"></input></td>
+				<td class="score"><input value="C"></input></td>
+				<td class="score"><input value="B"></input></td>
+				<td class="score"><input value="A"></input></td>
+				<td class="score"><input value="C"></input></td>
+				<td class="score"><input value="C"></input></td>
+				<td class="score"><input value="B"></input></td>
+				<td class="score"><input value="A"></input></td>
+				<td class="score"><input value="B"></input></td>
+				<td class="score"><input value="B"></input></td>
+				<td class="score"><input value="C"></input></td>
+				<td class="score"><input value="B"></input></td>
+				<td class="score"><input value="C"></input></td>
+			</tr>
+			<tr>
+				<td class="score" onclick="showResponse()"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+			</tr>
+			<tr id="response_detail" class="hide_element">
+				<td colspan=15>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, perspiciatis, delectus, ut, impedit odio earum error commodi officiis laborum incidunt in praesentium ullam explicabo aut corporis iste iusto quod qui.
+			</td>
+			<tr>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+			</tr>
+			<tr>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+			</tr>
+			<tr>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input value=""></input></td>
+			</tr>
+		</table>
+	</div>
+
+
+
+
+<!-- Save button and other footer content-->
+	<div class="footer">
+		<ul>
+			<li><a href="#" class="back ">Back to Assignments</a></li>
+			<li><a href="#" class="save ">Save</a></li>
+		</ul>
+	</div>
+
+
+	<!-- end container-->
+</div>
+
+
+<script>
+
+function toggleAutoScored()
+{
+  var chToggle = document.getElementById("row_toggle");
+
+  if (chToggle.checked) {
+      cName = "hide_element";
+  } 
+  else {
+      cName = "show_element";
+  }
+
+  document.getElementById("item_row_scored").className = cName;
+  document.getElementById("score_row_scored").className = cName;
+
+}
+
+function showResponse()
+{
+  document.getElementById("blank_row").className = "show_element";
+  document.getElementById("response_detail").className = "show_element";
+
+}
+</script>
+
+</body>
+</html>
+
+
+

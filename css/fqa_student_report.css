@@ -1,0 +1,403 @@
+.pdf_container {
+    background-color: #FFFFFF;
+    height: 1110px;
+    margin: 3px 20px;
+    position: relative;
+    width: 934px;
+    font-size :13px;
+    top: -100px;
+    font-family: "benton-sans-book",Arial,sans-serif;
+}
+
+@font-face{
+    font-family:"benton-sans-book";
+    src:url('../fonts/benton-sans-book/benton-sans-book.eot?#iefix') format('embedded-opentype'),
+       :url('../fonts/benton-sans-book/benton-sans-book.woff') format('woff');
+    font-weight:"normal";
+    font-style:"normal";
+}
+    
+#summary .summary_data {
+    padding-left: 0;
+    padding-right: 31px;
+}
+
+.secondary_col_head p.mastery {
+    font-weight: bolder;
+}
+
+.secondary_col_head p {
+    font-size: 11px;
+}
+
+.student_name {
+    width: 100%;
+    height: 100%;
+    margin-top: 11px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+#standards_breakdown .row .student_pts,
+#standards_breakdown .row .secondary_col_head.student_pts {
+    padding-left: 0px;
+}
+
+#standards_breakdown .row .student_pct{
+    padding-left: 0px;
+    text-align: left;
+}
+
+#standards_breakdown .row .secondary_col_head {
+    background-color: #e9e9e9; 
+    height: 20px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+#standards_breakdown .data {
+    border-bottom: 1px solid #e9e9e9;
+    padding-bottom: px;
+    padding-top: 1px;
+}
+
+#standards_breakdown .row .standard_desc {
+    font-size: 13px;
+    line-height: 1.5em;
+    padding-left: 10px;
+}
+
+#standards_breakdown .row .standard_id {
+    font-weight: bolder;
+    font-size: 9px;
+    padding-left: 5px;
+    padding-top: 2px;
+    text-align: left;
+    vertical-align: text-top;
+}
+
+#standards_breakdown .row .class_head {
+    padding-right: 25px;
+    padding-left: 5px;
+} 
+ 
+#standards_breakdown .row .secondary_col_head.student_pts {
+    padding: 0px 10px 0px 0px;
+    text-align: center;
+} 
+
+#standards_breakdown .row .secondary_col_head.student_pct {
+    padding: 0px 35px 0px 0px;
+    text-align: center;
+}
+
+#standards_breakdown .row .secondary_col_head.class_pct {
+    padding: 0px 39px 0px 0px;
+    text-align: center;
+}
+
+.ui-toolkit .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.ui-toolkit .col-md-1 {
+    float: left;
+}
+
+.ui-toolkit .col-md-12,
+.ui-toolkit .col-md-9, 
+.ui-toolkit .col-md-8,
+.ui-toolkit .col-md-3 {
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    float: left;
+}
+
+.ui-toolkit h4,
+.ui-toolkit h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "benton-sans-book",Arial,sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.ui-toolkit h4 {
+    font-size: 18px;
+}
+
+.ui-toolkit p {
+    margin: 0 0 10px;
+    padding-top: 5px;
+}
+
+.ui-toolkit .row:after {
+    clear: both;
+}
+
+.ui-toolkit .row:before, .ui-toolkit .row:after {
+    content: " ";
+    display: table;
+}
+
+li {
+    display: inline-block;
+}
+
+.ui-toolkit .beacon_logo {
+    color: #9E9E9E;
+    font-family: "amplify-light";
+    font-size: 19px;
+}
+
+.trademark {
+    color: #9E9E9E;
+    left: -4px;
+    top:-1px;
+    position: relative;
+    vertical-align: top;
+    font-size :13px;
+}
+
+.ui-toolkit .subtitle {
+    font-size: 18px;
+}
+
+.report_title, .student_category {
+    padding-top: 20px;
+    padding-bottom : 20px;
+}
+
+.ui-toolkit .col-md-3 {
+    width: 25%;
+}
+
+.report_title {
+    float: left;
+    padding-left: 0px;
+}
+
+.ui-toolkit *, .ui-toolkit *:before, .ui-toolkit *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.student_category {
+    float: right;
+}
+
+h4.table_name {
+    color: #F37321;
+    position: relative;
+    left: -15px;
+}
+
+.col-md-1 {
+    padding-left: 2px;
+}
+
+.col-md-2.col_head.student_head {
+    position: relative;
+    left: 74px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 18px;
+    float:left;
+    font-size: 14px;
+}
+
+.secondary_col_head.student_pts {
+    left: -3px;
+}
+
+.student_category {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.col_head.class_head {
+    position: relative;
+    left: 129px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 18px
+}
+
+.col-md-8.standard_desc {
+    width: 677px;
+    float: left;
+    
+    
+}
+
+.col-md-8.standard_desc p {
+   margin-bottom: 3px;
+   padding-top: 0;
+}
+    
+.col-md-9.secondary_col_head {
+    width: 758px;
+}
+
+.standards_breakdown {
+    float: left;
+    position: relative;
+    left: 5px;
+    width: 689px;
+    margin-bottom: 4px;
+}
+
+.col-md-1.secondary_col_head.class_pct {
+    width: 63px;
+    position: relative;
+    left: 0px;
+}
+
+.page-breaker {
+    display: block;
+    clear: both;
+    page-break-after: always;
+}
+
+.page-breaker +.row {
+    margin-top: -86px;
+}
+
+.not_mastered {
+    color: #d61c2a;
+}
+
+.mastered {
+    color: #60b033;
+}
+
+.undetermined {
+    color: #b4b4af;
+}
+
+.col-md-1.secondary_col_head.student_pts {
+    width: 52px;
+    position: relative;
+    left: 0px;
+}
+
+.col-md-1.secondary_col_head.student_pct {
+    position: relative;
+    left: 0px;
+}
+
+.col-md-1.student_pct {
+    position: relative;
+    left: -5px;
+    width: 74px;
+}
+
+.col-md-1.student_pts {
+    position: relative;
+    left: 25px;
+    width : 84px;
+}
+
+.col-md-1.class_pct {
+    left: -16px;
+    position: relative;
+    text-align: center;
+}
+
+.col-md-1.class_pct.no_data {
+    left: -10px;
+}
+
+.col-md-1.student_pct.no_data.no_data_student_percent {
+    left: 1px;
+}
+
+.row.data {
+    page-break-inside: avoid;
+}
+
+.col-md-3.student_data,
+.col-md-3.summary_data {
+    padding-bottom: 5px;
+}
+
+.col-md-12.summary_data {
+    margin-top: 12px;
+}
+
+.stundet_title {
+    font-weight: bold;
+    font-size: 15px;
+}
+.standards_breakdown_header {
+    margin-top : 28px;
+}
+
+.col-md-12 .table_name {
+    padding-bottom: 7px;
+}
+
+.col-md-1.student_pct {
+    width: 84px;
+}
+
+.col-md-1.secondary_col_head.student_pct {
+    width: 91px;
+}
+
+.col-md-1.standard_id {
+    width: 68px;
+    overflow: hidden;
+}
+
+.no_data {
+    margin-top: -5px;
+}
+
+.no_data_student_percent {
+    margin-left: 4px;
+}
+.col-md-3.summary_data {
+    width: 184px;
+}
+
+#summary .col-md-8 .summary_data {
+    padding-right: 31px;
+    width: 64px;
+}
+
+.col-md-1.summary_data {
+    width: 61px;
+}
+
+.col-md-8.summary_data {
+    width: 143px;
+}
+
+.registered {
+    color: #9E9E9E;
+    left: -4px;
+    top: -2px;
+    position: relative;
+    vertical-align: top;
+    font-size: 13px;
+}
+
+.report_title,
+.student_category {
+    margin-top: 80px;
+}
+
+.student_assessed {
+    font-size:12px;
+}
+
+.col-md-1.col_head.class_head {
+    margin-left: -3px;
+}

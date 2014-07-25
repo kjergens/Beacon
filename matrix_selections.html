@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en" class="ui-toolkit">
+<head>
+	<meta charset="UTF-8">
+	<title>Matrix selections</title>
+		<link href="public/css/styles.css" rel="stylesheet">
+        <link href="css/beacon_modal.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/zpesticide.css">
+</head>
+<body>
+<!--------------------------------------------
+           A button to open modal
+---------------------------------------------->
+<div class="page_container">
+    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#matrix_selections">Launch Modal</button>
+</div> 
+
+
+<!--------------------------------------------
+           Grayed out background
+---------------------------------------------->
+<div class="modal amplify-modal modal-lg fade" id="matrix_selections" tabindex="-1" role="dialog" aria-hidden="true">
+
+<!--------------------------------------------
+           Modal dialog container
+---------------------------------------------->
+<div class="modal-dialog">
+
+
+    <!--------------------------------------------
+               Modal content container
+    ---------------------------------------------->
+    <div class="modal-content">
+
+    <!--------------------------------------------
+               Modal header
+    ---------------------------------------------->
+    <div class="modal-header">
+        <span class="icon icon-close" data-dismiss="modal" aria-hidden="true"></span>
+        <h4 class="modal-title">Matrix Selections</h4>
+    </div> <!-- end modal header -->
+
+    <!----------------------------------------------
+              Modal body
+    ---------------------------------------------->
+    <div class="modal-body">
+
+        <!--------------------------------------------
+                  Classes
+        ---------------------------------------------->
+        <div class="modal-section">
+        <div><p class="section_head">Classes</p></div>
+        <table>
+        <tr>
+        <td class="dd_label">Teacher:</td>
+
+        <td>
+        <div class="btn-group">
+            <button type="button" class="btn btn-dropdown-basic narrow dropdown-toggle" data-toggle="dropdown" data-value="1.0">
+                <span class="btn-dropdown-label ellipsis">Riddle, Claudia</span>
+                <span class="icon icon-dropdown-arrow"></span>
+            </button>
+            <ul class="dropdown-menu menu-basic">
+               <li><a data-value="1.1">Riddle, Claudia</a></li>
+            </ul>
+        </div>
+
+        <td class="dd_label">Class/Group:</td>
+
+        <td>
+        <div class="btn-group">
+            <button type="button" class="btn btn-dropdown-basic narrow dropdown-toggle" data-toggle="dropdown" data-value="1.1">
+                <span class="btn-dropdown-label ellipsis">Grade 7 ELA</span>
+                <span class="icon icon-dropdown-arrow"></span>
+            </button>
+            <ul class="dropdown-menu menu-basic" role="menu">
+                <li><a data-value="1.1">Grade 1 ELA</a></li>
+                <li><a data-value="1.1">Grade 2 ELA</a></li>
+                <li><a data-value="1.1">Grade 3 ELA</a></li>
+                <li><a data-value="1.1">Grade 4 ELA</a></li>
+                <li><a data-value="1.1">Grade 5 ELA</a></li>
+                <li><a data-value="1.1">Grade 6 ELA</a></li>
+                <li><a data-value="1.1">Grade 7 ELA</a></li>
+                <li><a data-value="1.1">Grade 8 ELA</a></li>
+                <li><a data-value="1.1">Grade 1 Math</a></li>
+                <li><a data-value="1.1">Grade 2 Math</a></li>
+                <li><a data-value="1.1">Grade 3 Math</a></li>
+                <li><a data-value="1.1">Grade 4 Math</a></li>
+                <li><a data-value="1.1">Grade 5 Math</a></li>
+                <li><a data-value="1.1">Grade 6 Math</a></li>
+                <li><a data-value="1.1">Grade 7 Math</a></li>
+                <li><a data-value="1.1">Grade 8 Math</a></li>
+            </ul>
+        </div>
+
+        </td>
+        </tr>
+
+        </table>
+        </div>
+
+        <div class="divider-partial"></div>
+        <!--------------------------------------------
+                  Assessments
+        ---------------------------------------------->
+        <div class="modal-section">
+        <div><p class="section_head">Assessments</p></div>
+
+        <table>
+        <tr>
+        <td class="dd_label">Subject:</td>
+
+        <td>
+        <div class="btn-group">
+            <button type="button" class="btn btn-dropdown-basic narrow dropdown-toggle" data-toggle="dropdown" data-value="1.0">
+                <span class="btn-dropdown-label">ELA</span>
+                <span class="icon icon-dropdown-arrow"></span>
+            </button>
+            <ul class="dropdown-menu menu-basic">
+               <li><a data-value="1.1">ELA</a></li>
+            </ul>
+        </div>
+        </td>
+        </tr>
+        <tr>
+        <td class="dd_label">Assessment:</td>
+
+        <td>
+        <div class="btn-group">
+            <button type="button" class="btn btn-dropdown-basic wide dropdown-toggle" data-toggle="dropdown" data-value="pia2">
+                <span class="btn-dropdown-label">PIA 2 ELA (Jan 12, 2014)</span>
+                <span class="icon icon-dropdown-arrow"></span>
+            </button>
+            <ul class="dropdown-menu menu-basic">
+                <li>
+                    <a href="#" class="selectable" data-state="selected" data-value="pia2"><span class="icon icon-checkbox" data-icon="&#xe602;"></span>PIA 2 ELA (Jan 12, 2014)
+                    </a></li>
+                <li>
+                    <a href="#" class="selectable" data-state="unselected" data-value="pia1"><span class="icon icon-checkbox" data-icon="&#xe602;"></span>PIA 1 ELA (Oct 12, 2013)
+                    </a></li>
+            </ul>
+        </div>
+
+        </td>
+        </tr>
+
+        </table>
+        </div>
+
+        <div class="divider-partial"></div>
+        <!--------------------------------------------
+                  Grouping & Sorting
+        ---------------------------------------------->
+        <div class="modal-section">
+        <div><p class="section_head">Grouping and sorting</p></div>
+
+        <table>
+        <tr>
+        <td class="dd_label">Group items by:</td>
+
+        <td>
+        <div class="btn-group dropup">
+            <button type="button" class="btn btn-dropdown-basic wide dropdown-toggle" data-toggle="dropdown" data-value="2.2">
+                <span class="btn-dropdown-label">Standard</span>
+                <span class="icon icon-dropdown-arrow"></span>
+            </button>
+            <ul class="dropdown-menu menu-basic wide">
+                <li><a data-value="1.0">No grouping</a></li>
+               <li><a data-value="1.1" checked="checked">Standard</a></li>
+               <li><a data-value="1.2">DOK level</a></li>
+               <li><a data-value="2.1">Text</a></li>
+               <li><a data-value="2.2">Target and standard</a></li>
+            </ul>
+        </div>
+
+        </td>
+        </tr>
+
+        <tr>
+        <td class="dd_label">Then sort:</td>
+
+        <td>
+        <div class="btn-group">
+            <button type="button" class="btn btn-dropdown-basic wide dropdown-toggle" data-toggle="dropdown" data-value="1.1">
+                <span class="btn-dropdown-label">Standard by performance, item by performance</span>
+                <span class="icon icon-dropdown-arrow"></span>
+            </button>
+            <ul class="dropdown-menu menu-basic">
+                <li><a data-value="1">Standard by performance, item by performance</a></li>
+                <li><a data-value="3">Standard by ID, item by performance</a></li>
+            </ul>
+        </div>
+
+        </td>
+        </tr>
+        <tr>
+        <td class="dd_label">Sort students by:</td>
+
+        <td>
+
+        <input id="score" name="sortstu" class="regular-radio" type="radio" checked="">
+        <label for="score">
+            <span class="icon icon-radio"></span>Percentage 
+        </label>
+        <input id="name" name="sortstu" class="regular-radio" type="radio">
+        <label for="name">
+            <span class="icon icon-radio"></span>Name
+        </label>
+        
+        </td>
+        </tr>
+    </table>
+    </div>
+
+    </div> <!-- end modal body -->
+    <div class="divider-partial"></div>
+
+    <!--------------------------------------------
+              Modal footer
+    ---------------------------------------------->
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">OK</button>
+    </div> <!-- end modal footer -->
+
+
+    </div> <!--end modal content -->
+
+</div> <!--end modal dialog -->
+
+
+<!------------------------------------------------------
+            Javascript              
+              uncomment as needed
+<!------------------------------------------------------>
+<script src="public/js/vendor/jquery/jquery.js"></script>
+<!--<script src="public/js/vendor/bootstrap/affix.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/alert.js"></script>-->
+<script src="public/js/vendor/bootstrap/button.js"></script>
+<!--<script src="public/js/vendor/bootstrap/carousel.js"></script>-->
+<script src="public/js/vendor/bootstrap/dropdown.js"></script>
+<script src="public/js/vendor/bootstrap/modal.js"></script>
+<!--<script src="public/js/vendor/bootstrap/scrollspy.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/tab.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/tooltip.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/popover.js"></script>-->
+<script src="public/js/vendor/bootstrap/transition.js"></script>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+<script src="public/js/amplify/amplify-dropdown.js"></script>
+<!--<script src="public/js/amplify/amplify-notes-widget.js"></script>-->
+<!--<script src="public/js/amplify/amplify-utilities.js"></script>-->
+<!--<script src="public/js/examples/notes-widget.js"></script>-->
+<!--<script src="docs-assets/js/docs.js"></script>-->
+</body>

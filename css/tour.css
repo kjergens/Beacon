@@ -1,0 +1,117 @@
+/*
+ ****************
+ * =header
+ ****************
+*/  
+
+.ui-toolkit h4,
+.ui-toolkit h3,
+.ui-toolkit h2,
+.ui-toolkit h1 {
+	font-family: "amplify";
+	color: #4d4d4f;
+}
+
+
+.ui-toolkit h1 {
+	color: #F37321;
+}
+
+.ui-toolkit .trademark {
+	position: relative;
+	bottom: 4px;
+	vertical-align:top;
+}
+
+.ui-toolkit h3 .trademark {
+	font-size: 12px;
+}
+
+header h2 {
+	text-align: center;
+}
+
+/*
+ ****************
+ * =body
+ ****************
+*/  
+
+.ui-toolkit .container {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.ui-toolkit .row {
+	margin-right: 0px;
+	margin-left: 0px;
+	position: relative;
+}
+
+.tourstop {
+	margin-bottom: 5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 1px solid #e9e9e9;
+}
+
+.video_len {
+	background-color: #e9e9e9;
+	padding: 3px;
+	color: #666;
+	font-size: 12px;
+}
+
+
+p .pdf,
+a {
+	color: rgb(18, 181, 234);
+}
+
+
+p .pdf:hover  {
+	color: #333;
+	text-decoration: none;
+}
+
+.play-btn:before {
+	content: url(../img/01a-playButton-default.png);
+	position: absolute;
+	left: 106px;
+	bottom: 35px;
+	z-index: 1000;
+}
+
+.play-btn:hover:before,
+.play-btn:active:before {
+	content: url(../img/01b-playButton-hover.png);
+}
+
+.glyphicon-play-circle {
+	padding: 10px;
+	position: absolute;
+	top: 50px;
+	left: 105px;
+	font-size: 2.8em;
+	color: #737373;
+	text-shadow: 2px 2px 2px rgba(62, 63, 64, 0.5);
+}
+
+.glyphicon-play-circle:hover {
+	color: #3e3f40;
+}
+
+
+/*
+ **********************
+ * =footer
+ **********************
+*/  
+
+.footer {
+	color: #9e9e9e;
+	font-size: 11px;
+	text-align: center;
+	padding: 25px;
+	border-top: 1px solid #e9e9e9;
+}

@@ -1,0 +1,49 @@
+/* table alignment */
+.section_head {
+	font-weight: 700;
+}
+
+.dd_label {
+	padding: 10px;
+	text-align: right;
+	min-width: 135px;
+}
+
+.ui-toolkit label.section_head {
+	margin-bottom: 15px;
+}
+
+.modal-section {
+	margin: 15px 0px;
+}
+
+.modal-section:first-child {
+	margin: 0px 0px 15px 0px;
+}
+
+
+.modal-section:last-child {
+	margin: 15px 0px 0px 0px;
+}
+
+
+.modal-section td {
+	height: 30px;
+}
+
+/*radio*/
+.ui-toolkit .regular-radio + label {
+	display: inline;
+}
+
+.ui-toolkit .menu-basic {
+	max-height: 340px;
+}
+
+z.icon-dropdown-arrow.rotate {
+	-webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}

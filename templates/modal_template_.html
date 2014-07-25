@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en" class="ui-toolkit">
+<head>
+	<meta charset="UTF-8">
+	<title>Modal template</title>
+
+    <!----------------------------------------------
+          Stylesheets
+          remember to change the path as needed
+    ------------------------------------------------>
+		<link rel="stylesheet" href="../css/jquery.css">
+		<link href="../public/css/styles.css" rel="stylesheet">
+		<link href="../css/beacon_modal.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/zpesticide.css">
+</head>
+<body>
+<!----------------------------------------------
+           A button to open modal
+---------------------------------------------->
+<div class="page_container">
+    <a href="#" class="btn btn-sm btn-default" data-toggle="modal" data-target="#basicModal">Click to open modal</a>
+</div> 
+<!----------------------------------------------
+           Grayed out background
+---------------------------------------------->
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+
+<!----------------------------------------------
+           Modal dialog container
+---------------------------------------------->
+<div class="modal-dialog">
+
+
+    <!----------------------------------------------
+               Modal content container
+    ---------------------------------------------->
+    <div class="modal-content">
+
+    <!----------------------------------------------
+               Modal header
+    ---------------------------------------------->
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+    </div>  <!-- end modal header -->
+
+    <!----------------------------------------------
+              Modal body
+    ---------------------------------------------->
+    <div class="modal-body">
+
+    <div class="modal-section">
+    <div><label>Section 1</label></div>
+    <table>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    </div>
+
+    <div class="modal-section">
+    <div><label>Section 2</label></div>
+    <table>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    </div>
+
+    </div> <!-- end modal body -->
+
+
+    <!----------------------------------------------
+              Modal footer
+    ---------------------------------------------->
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">OK</button>
+    </div> <!-- end modal footer -->
+
+
+    </div> <!--end modal content -->
+
+</div> <!--end modal dialog -->
+
+
+<!------------------------------------------------------
+            Javascript              
+              uncomment as needed
+              change path as needed
+<!------------------------------------------------------>
+<script src="../public/js/vendor/jquery/jquery.js"></script>
+<!--<script src="public/js/vendor/bootstrap/affix.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/alert.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/button.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/carousel.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/dropdown.js"></script>-->
+<script src="../public/js/vendor/bootstrap/modal.js"></script>
+<!--<script src="public/js/vendor/bootstrap/scrollspy.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/tab.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/tooltip.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/popover.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/transition.js"></script>-->
+<!--<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>-->
+<!--<script src="public/js/amplify/amplify-dropdown.js"></script>-->
+<!--<script src="public/js/amplify/amplify-notes-widget.js"></script>-->
+<!--<script src="public/js/amplify/amplify-utilities.js"></script>-->
+<!--<script src="public/js/examples/notes-widget.js"></script>-->
+<!--<script src="docs-assets/js/docs.js"></script>-->
+</body>
