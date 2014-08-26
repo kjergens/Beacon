@@ -1,0 +1,49 @@
+.ui-toolkit h1, 
+.ui-toolkit h2, 
+.ui-toolkit h3, 
+.ui-toolkit h4, 
+.ui-toolkit h5, 
+.ui-toolkit h6 {
+	margin: 5px 0px;
+}
+
+.pagetitle {
+	padding: 20px 0px 10px;
+}
+
+.regionNavHeader {
+	padding-left: 15px;
+}
+
+.ui-toolkit a:hover {
+	text-decoration: none;
+	color: #333;
+}
+
+.ui-toolkit li {
+	list-style: none;
+	-webkit-list-style: none;
+}
+
+.ui-toolkit body {
+	background-color: #333;
+}
+
+.ui-toolkit .container {
+	background-color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.ui-toolkit ul {
+	zmargin-left: -30px;
+}
+
+figcaption {
+	font-size: 9px;
+	text-align: right;
+}
+
+.ui-toolkit table {
+	background-color: #f1f1f1; 
+}

@@ -1,0 +1,68 @@
+.mapShadow {
+	background: transparent url('http://www.daredictionary.com/skin/20140805/svg/DAREmap_shadow_30.png') no-repeat -118px -73px;
+}
+
+
+.regionMap {
+position: relative;
+clear: both;
+}
+
+
+::selection {
+text-shadow: none;
+background-color: #add8e6;
+color: black;
+}
+
+.mapShadow:after {
+}
+
+
+figure {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 40px;
+-webkit-margin-end: 40px;
+}
+
+.regionMap .caption {
+display: block;
+font-size: .625em;
+font-family: arial, helvetica, sans-serif;
+color: #5c6769;
+text-align: right;
+margin-top: -4em;
+margin-bottom: 1em;
+}
+
+.maparea {
+	width: 800px;
+	border-right: 2px solid #444;
+	border-left: 2px solid #444;
+	padding: 0px 50px;
+	background-color: #fff;
+	margin: 0px auto;
+}
+
+.ui-toolkit body {
+	background-color: #444;
+}
+
+.regionExplore {
+border-top: 1px dotted #d1902c;
+padding-top: 1em;
+}
+
+.home #columnWrapper, .page-survey #columnWrapper {
+background: #fff url('http://www.daredictionary.com/skin/20140805/images/bkg_fauxcolumns_rt.jpg') repeat-y 0 0;
+}
+
+#columnWrapper {
+background-color: #fff;
+margin: 0 auto;
+width: 965px;
+width: 1004px;
+position: relative;
+}

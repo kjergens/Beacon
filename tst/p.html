@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="utf-8"> 
+<title>Twitter Bootstrap Popover Example</title> 
+<meta name="description" content="Creating Modal Window with Twitter Bootstrap">
+<link href="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet"> 
+</head>
+<body>
+<div class="container">
+<h2>Example of creating Modal with Twitter Bootstrap</h2>
+<div class="well">
+<a href="#" id="example" class="btn btn-danger" rel="popover" data-content="It's so simple to create a tooltop for my website!" data-original-title="Twitter Bootstrap Popover">hover for popover</a>
+</div>
+
+<!-- modal live example -->
+<button type="button" class="btn" data-toggle="modal" data-target="#mySmallModal">test</button>
+<!-- Modal -->
+<div class="modal fade amplify-modal modal-md notes-widget" id="mySmallModal" tabindex="-1" role="dialog" aria-labelledby="notesLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="icon icon-close" data-dismiss="modal" aria-hidden="true"></span>
+                <h4 class="modal-title">Notes</h4>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="divider-partial"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+</div> <!-- end container-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="/twitter-bootstrap/twitter-bootstrap-v2/js/bootstrap-tooltip.js"></script>
+<script src="/twitter-bootstrap/twitter-bootstrap-v2/js/bootstrap-popover.js"></script>
+<script>
+$(function ()
+{ $("#example").popover();
+});
+</script>
+</body>
+</html>

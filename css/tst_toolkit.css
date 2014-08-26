@@ -1,0 +1,550 @@
+/*
+ *************************
+ =COLORS
+ 
+ ==lines and borders
+	table border - #b4b4af
+  vertical divider (gray) - #cacaca 
+
+==background colors
+  background for pts possible: #f2f5fa 
+  background for scoring boxes: #dddddd  
+  background for beacon nav bar: #e9e9e9;
+  background for mClass bar (black): #000000;
+  not mastered red #d61c2a
+  mastered green #60b033
+
+==text colors
+  Amplify orange: #F37321;
+  text for points possible: #1c9200 - green 
+  mClass logo (blue): #99ccff;
+  params text (black) - #666666 
+  hyperlink: #0066cc
+  Beacon nav hyperlink (blue) - #8fb6cd
+  Admin page (orange) -  #ff9900
+  Beacon nav active hyperlink (black) -  #badce8 
+
+
+=DIMENSIONS
+  30px w (38 W BORDER)
+  22 h (36 or 38 w border)
+
+ *************************
+ */  
+
+/*
+
+
+/*
+ ****************
+ * =global styles
+ ****************
+ */  
+.page_container {
+  min-width: 1064px;
+  position: relative;
+}
+
+ p {
+ 	display: inline;
+ }
+
+/*
+ ****************
+ * =navigation
+ ****************
+ */  
+
+.mclasshead {
+ 	background-color: black;
+ 	color: #ffffff;
+ 	font-weight: bolder;
+  padding-top: 4px;
+  padding-bottom: 2px;
+ }
+
+.mclasshead p {
+   display: inline;
+   vertical-align: middle;
+ }
+
+.beaconlogo {
+   font-family: "amplify", "Courier", serif;
+   font-size: 18px;
+   font-weight: lighter;
+   padding-left: 10px;
+ }
+
+ .tm {
+   font-size: 9px;
+   padding: 5px 0px;
+   vertical-align: top;
+ }
+
+.username {
+   margin-left: 10px;
+   padding: 1px 10px 2px 10px;
+   font-family: "benton-sans-light";
+ }
+
+.globalnav_item {
+   font-family: "benton-sans-bold";
+   display: inline;
+   color: #99ccff;
+ }
+
+.globalnav_item::after {
+  zcolor: #cacaca;
+  content: "|";
+  padding-left: 15px;
+  padding-right: 15px;
+ }
+
+.globalnav_item:last-child::after {
+  content: "";
+  padding-right: 0px;
+ }
+
+.globalnav {
+   text-decoration: none;
+   float: right;
+   margin-right: 10px;
+   padding-top: 4px;
+ }
+
+.beaconnav {
+ 	background-color: #e9e9e9;
+ 	border-bottom: 1px solid #b4b4af;
+ 	margin-bottom: 10px;
+ 	padding: 10px 5px 6px 0px;
+ }
+
+.beaconnav>li {
+ 	display: inline;
+ 	margin: 10px;
+ }
+
+.beaconnav>li::after {
+  color: #cacaca;
+  content: "|";
+  padding-left: 15px;
+  padding-right: 0px;
+ }
+
+.beaconnav>li:last-child::after {
+  content: "";
+ }
+
+/*
+ ****************
+ * =params
+ ****************
+ */  
+
+.usercontrols .params {
+  margin-left: 20px;
+}
+
+.hiderows1 {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.hiderows label {
+  position: relative;
+  top: 55px;
+  left: 8px;
+}
+
+
+.params {
+  line-height: 30px;
+  margin-bottom: -15px;
+}
+
+z.ui-toolkit h3 {
+	font-size: 20px;
+}
+
+.param_label {
+  text-align: right;
+  width: 105px;
+  padding-right: 10px;
+  color: #999;
+}
+
+.assmt_name {
+  font-family: "benton-sans-bold";
+  font-weight: bold;
+}
+
+
+
+/*
+ ****************
+ * =Responses
+ ****************
+ */  
+
+
+.scores {
+  display: inline-block;
+  zmax-width: 660px;
+  zoverflow-x: scroll; 
+}
+
+.responses {
+    display: inline-block;
+    max-width: 640px;
+    zoverflow-x: scroll; 
+}
+
+.score_table {
+  display: inline-block;
+    max-width: 760px;
+  overflow-x: hidden; 
+}
+
+.scores.stupick {
+  overflow-x: hidden;
+}
+
+
+
+ /* --------------------
+  =names / times
+ ------------------ */ 
+.stu_list_row {
+  margin-bottom: 90px;
+  position: relative;
+  top: -50px;
+  left: -70px;
+}
+
+.stu_list_row>ul>li{
+  -webkit-transform: rotate(-45deg) scale(1);
+  -moz-transform: rotate(-45deg) scale(1);
+  -o-transform: rotate(-45deg) scale(1);
+  -ms-transform: rotate(-45deg) scale(1);
+  transform: rotate(-45deg) scale(1);
+  display: inline-block;
+  min-width: 395px;
+  margin-right:-345px;
+  float: left;
+}
+
+.stu_names{
+  margin-bottom: 20px;
+  position: relative;
+  top: 10px;
+  left: -24px;
+}
+
+.stu_times {
+  margin-bottom: 0px;
+  position: relative;
+  bottom: 15px;
+  left: -28px;
+}
+
+.stu_names>ul,
+.stu_times>ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.stu_names>ul>li {
+  -webkit-transform: rotate(-45deg) scale(1);
+  -moz-transform: rotate(-45deg) scale(1);
+  -o-transform: rotate(-45deg) scale(1);
+  -ms-transform: rotate(-45deg) scale(1);
+  transform: rotate(-45deg) scale(1);
+  display: inline;
+  margin-right:-12px;
+  float: left;
+}
+
+.stu_times>ul>li {
+  -webkit-transform: rotate(-45deg) scale(1);
+  -moz-transform: rotate(-45deg) scale(1);
+  -o-transform: rotate(-45deg) scale(1);
+  -ms-transform: rotate(-45deg) scale(1);
+  transform: rotate(-45deg) scale(1);
+  display: inline;
+  margin-right:-38px;
+  float: left;
+}
+
+ input {
+ 	width: 38px;
+ 	height: 32px;
+ 	text-align: center;
+ }
+
+/*radio*/
+.ui-toolkit .score_picker .regular-radio + label {
+  display: inline;
+  padding-right: 30px;
+}
+
+.score_picker ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.score_picker li {
+  display: inline-block;
+}
+
+.score_picker {
+  position: absolute;
+  top: 278px;
+  left: 360px;
+  z-index: 200;
+}
+
+.assessment_selection td {
+  padding-left: 6px;
+}
+
+.assessment_selection {
+  position: relative;
+  top: -3px; 
+}
+
+/*hack to fix that the table it wider than the columns */
+table.table.table-bordered.score_table.review_table {
+  border: 0px;
+}
+
+/*
+ ****************
+ * =items
+ ****************
+ */  
+
+.items {
+  margin: 0px 15px;
+  display: inline-block;
+}
+
+ .item_prompt {
+ 	padding: 0px 5px;
+ 	width: 318px;
+ }
+
+ .pts_possible {
+ 	color: #1C9200;
+ 	font-weight: bold;
+ 	width: 54px;
+ }
+
+.ui-toolkit .table>tbody>tr+.item_row>td,
+.ui-toolkit .table>tbody>tr>td+.pts_possible,
+.ui-toolkit .table.score_table>tbody>tr>td {
+  vertical-align: middle;
+  text-align: center;
+  height: 43px;
+}
+
+ .items>table>tbody>tr>td {
+  overflow: hidden;
+}
+
+
+
+/*
+ ****************
+ * =footer
+ ****************
+ */  
+
+.footer {
+position: relative;
+left: 950px;
+top: 70px;
+}
+
+.footer>ul>li {
+  display: inline;
+}
+
+.minifooter {
+position: relative;
+left: 900px;
+}
+
+
+
+/*
+****************
+* =toggles
+****************
+*/  
+
+
+.hide_element {
+ display: none;
+}
+
+.show_element {
+ display: all;
+}
+
+
+/*
+ ****************
+ * =duplicates
+ ****************
+*/  
+
+.duplicate,
+.unselectedcol {
+   pointer-events: none;
+   cursor: default;
+}
+
+input.duplicate {
+   color: #b4b4b4;
+   font-weight: lighter;
+   border: 1px solid #ddd;
+}
+
+
+.alert {
+  position: absolute;
+  left: 385px;
+  top: 80px;
+  width: 660px;
+}
+
+.isofficial {
+  position: relative;
+  top: 70px;
+  left: 10px;
+}
+
+.subheader {
+  margin: 20px;
+}
+
+.subheader:first-child {
+  margin-top: 35px;
+}
+
+.checking_message {
+  position: absolute;
+  top: 73px;
+  left: 495px;
+  text-align: center;
+  padding: 10px;
+  background-color: #ddd;
+}
+
+.loading_message {
+  margin: 30px;
+  text-align: center;
+}
+
+.selectedcol1,
+.selectedcol2  {
+  background-color: #DBEBF4;
+}
+
+.selectedtext1,
+.selectedtext2 {
+  font-family: "benton-sans-bold";
+  color:  #F37321;
+}
+
+.orange {
+  color:   #F37321;
+}
+
+.glyphicon-list-alt {
+  color: #ccc;
+}
+
+.triangle-bottomright {
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #b4b4b4;
+  border-left: 10px solid transparent;
+}
+
+#first {
+  position: absolute;
+  top: 713px;
+  left: 440px;
+}
+
+#second {
+  position: absolute;
+  top: 756px;
+  left: 440px;
+}
+
+#third {
+  position: absolute;
+  top: 799px;
+  left: 440px;
+}
+
+#fourth {
+  position: absolute;
+  top: 842px;
+  left: 440px;
+}
+
+#firstnote {
+  position: absolute;
+  top: 840px;
+  left: 423px;
+}
+
+#secondnote {
+  position: absolute;
+  top: 885px;
+  left: 423px;
+}
+
+#thirdnote {
+  position: absolute;
+  top: 925px;
+  left: 423px;
+}
+
+
+#fourthnote {
+  position: absolute;
+  top: 968px;
+  left: 423px;
+}
+
+.ui-toolkit .table.score_table>tbody>tr>td + .dupinactive {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/*
+ ****************
+ * =AM
+ ****************
+*/  
+
+.ui-toolkit .table > tbody > tr > td {
+  vertical-align: middle;
+}
+
+.ui-toolkit .table > tbody > tr > td + .score_col {
+  text-align: center;
+}
+
+.page_head {
+  margin: 30px 20px;
+}
+
+.am_body {
+  margin: 0px 20px;
+}
+

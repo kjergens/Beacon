@@ -47,3 +47,11 @@ z.icon-dropdown-arrow.rotate {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+
+.ui-toolkit .modal-footer {
+	z-index: -1;
+}
+
+.ui-toolkit .dropdown-menu {
+	z-index: 2000;
+}

@@ -55,8 +55,8 @@
 				</td>
 			</tr>
 		</table>
-	<!-- end params section-->
-	</div>
+	
+	</div><!-- end params section-->
 
 	<div class="hiderows">
 		<input id="row_toggle" class="regular-checkbox" type="checkbox" onclick="toggleAutoScored(this)" autocomplete="off">	
@@ -186,6 +186,7 @@
 		<li class="duplicated"><a href="#">Fran Y*</a></li>-->
 	</ul>
 	</div>
+
 
 		<table class="table table-condensed table-bordered table-striped  score_table">
 			<tr class="item_row_scored">
@@ -543,19 +544,86 @@
 		</table>
 	</div>
 
+
+
 <!-- Save button and other footer content-->
 	<div class="footer">
 		<button type="button" class="btn btn-lg btn-secondary">Save</button>
 	</div>
 
 
-<!--Alerts-->
-		<div class="alert alert-warning alert-dismissable" role="alert">
+<!--Alerts--> 
+		<div class="alert alert-info alert-dismissable" role="alert">
 			<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-			The first column for each student will appear in reports. Make corrections as needed.</div>
-	<!-- end container-->
-</div>
+			For each student select the set of responses to keep. Add or change responses as needed.</div>
 
+</div>	<!-- end container-->
+
+	<!--Score picker-->
+	<div class="score_picker">
+	<ul>
+		<li>
+			<input id="phil-1" name="phil" class="regular-radio" checked="" type="radio">
+			<label for="phil-1">
+    		<span class="icon icon-radio"></span>
+			</label>
+			<input id="phil-2" name="phil" class="regular-radio" type="radio">
+			<label for="phil-2">
+    			<span class="icon icon-radio"></span>
+			</label>
+    </li>
+		<li>
+			<input id="jan-1" name="jan" class="regular-radio" checked="" type="radio">
+			<label for="jan-1">
+    		<span class="icon icon-radio"></span>
+			</label>
+			<input id="jan-2" name="jan" class="regular-radio" type="radio">
+			<label for="jan-2">
+    			<span class="icon icon-radio"></span>
+			</label>
+    </li>
+    <li>
+			<input id="yan-1" name="yan" class="regular-radio" checked="" type="radio">
+			<label for="yan-1">
+    		<span class="icon icon-radio"></span>
+			</label>
+			<input id="yan-2" name="yan" class="regular-radio" type="radio">
+			<label for="yan-2">
+    			<span class="icon icon-radio"></span>
+			</label>
+    </li>
+    <li>
+			<input id="mel-1" name="mel" class="regular-radio" checked="" type="radio">
+			<label for="mel-1">
+    		<span class="icon icon-radio"></span>
+			</label>
+			<input id="mel-2" name="mel" class="regular-radio" type="radio">
+			<label for="mel-2">
+    			<span class="icon icon-radio"></span>
+			</label>
+    </li>
+    <li>
+			<input id="jose-1" name="jose" class="regular-radio" checked="" type="radio">
+			<label for="jose-1">
+    		<span class="icon icon-radio"></span>
+			</label>
+			<input id="jose-2" name="jose" class="regular-radio" type="radio">
+			<label for="jose-2">
+    			<span class="icon icon-radio"></span>
+			</label>
+    </li>
+    <li>
+			<input id="pam-1" name="pam" class="regular-radio" checked="" type="radio">
+			<label for="pam-1">
+    		<span class="icon icon-radio"></span>
+			</label>
+			<input id="pam-2" name="pam" class="regular-radio" type="radio">
+			<label for="pam-2">
+    			<span class="icon icon-radio"></span>
+			</label>
+    </li>
+	</ul>
+	</div>
 
 <script>
 
@@ -598,7 +666,7 @@ function toggleAutoScored()
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 <script src="public/js/amplify/amplify-dropdown.js"></script>
 <!--<script src="public/js/amplify/amplify-notes-widget.js"></script>-->
-<!--<script src="public/js/amplify/amplify-utilities.js"></script>-->
+<script src="public/js/amplify/amplify-utilities.js"></script>
 <!--<script src="public/js/examples/notes-widget.js"></script>-->
 <!--<script src="docs-assets/js/docs.js"></script>-->
 </body>

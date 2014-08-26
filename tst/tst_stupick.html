@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en" class="ui-toolkit">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../public/css/styles.css">
+<link rel="stylesheet" href="../css/tst_toolkit.css">
+<link rel="stylesheet" href="../css/zpesticide.css">
+<title>TST</title>
+</head>
+<body>
+
+<div class="page_container">
+
+
+
+<!--Navigation-->
+	<div class="mclasshead">
+		<p class="beaconlogo">mCLASS</p><p class="beaconlogo tm">&reg;</p><p class="beaconlogo">Beacon</p><p class="beaconlogo tm">&reg;</p>
+		<p class="username">Kathy Yonker, Fillmore</p>
+			<ul class="globalnav">
+				<li class="globalnav_item">Home</li>
+				<li class="globalnav_item">Support</li>
+				<li class="globalnav_item">Log Out</li>
+			</ul>
+	</div>
+	<ul class="beaconnav">
+		<li><a href="#">Overview</a></li>
+		<li><a href="#">Matrix</a></li>
+		<li><a href="#">Learning Map</a></li>
+		<li>Assignments</li>
+		<li><a href="#">Assessments</a></li>
+	</ul>
+
+
+<!--Parameters-->
+	<div class="usercontrols">
+		<table class="params">
+			<tr><td colspan=2><h3>Scoring Tool | Resolve Duplicates</h3></td></tr>
+			<tr>
+				<td class="param_label">Assessment:</td>
+				<td class="assmtname">Biology Grade 7 (Oct 2, 2013)</td></tr>
+			<tr>
+				<td class="param_label">Class/Group:</td>
+				<td>
+					  <div class="btn-group">
+            <button type="button" class="btn btn-dropdown-basic narrow dropdown-toggle" data-toggle="dropdown" data-value="7ela">
+                <span class="btn-dropdown-label ellipsis">Grade 7 ELA</span>
+                <span class="icon icon-dropdown-arrow"></span>
+            </button>
+            <ul class="dropdown-menu menu-basic" role="menu">
+                <li><a data-value="7ela">Grade 7 ELA</a></li>
+                <li><a data-value="8ela">Grade 8 ELA</a></li>
+            </ul>
+        </div>
+				</td>
+			</tr>
+		</table>
+	<!-- end params section-->
+	</div>
+
+	<div class="hiderows">
+		<input id="row_toggle" class="regular-checkbox" type="checkbox" onclick="toggleAutoScored(this)" autocomplete="off">	
+		<label for="row_toggle">
+    <span class="icon icon-checkbox"></span>Hide auto-scored items
+		</label>
+	</div>
+
+<!--Item prompts-->
+	<div class="items">
+		<table class="table table-bordered table-striped" >
+			<tr class="item_row item_row_scored">
+				<td class="item_prompt">MC&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="view_work" href="all_crs.html"></a>
+					<strong>1.&nbsp;</strong>
+					<a href="#">How can scientists determine the ra...</td>
+				<td class="pts_possible">4</td>
+			</tr>
+			<tr class="item_row item_row_scored">
+				<td class="item_prompt">MC&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="view_work" href="all_crs.html"></a>
+					<strong>2.&nbsp;</strong>
+					<a href="#">How can scientists determine the ra...</td>
+				<td class="pts_possible">4</td>
+			</tr>
+			<tr class="item_row item_row_scored">
+				<td class="item_prompt">MC&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="view_work" href="all_crs.html"></a>
+					<strong>3.&nbsp;</strong>
+					<a href="#">How can scientists determine the ra...</td>
+				<td class="pts_possible">4</td>
+			</tr>
+			<tr class="item_row item_row_scored">
+				<td class="item_prompt">MC&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="view_work" href="all_crs.html"></a>
+					<strong>4.&nbsp;</strong>
+					<a href="#">How can scientists determine the ra...</td>
+				<td class="pts_possible">4</td>
+			</tr>
+			<tr class="item_row item_row_scored">
+				<td class="item_prompt">MC&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="view_work" href="all_crs.html"></a>
+					<strong>5.&nbsp;</strong>
+					<a href="#">How can scientists determine the ra...</td>
+				<td class="pts_possible">4</td>
+			</tr>
+			<tr class="item_row item_row_scored">
+				<td class="item_prompt">MC&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="view_work" href="all_crs.html"></a>
+					<strong>6.&nbsp;</strong>
+					<a href="#">How can scientists determine the ra...</td>
+				<td class="pts_possible">4</td>
+			</tr>
+			<tr class="item_row item_row_scored">
+				<td class="item_prompt">MC&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="view_work" href="all_crs.html"></a>
+					<strong>7.&nbsp;</strong>
+					<a href="#">How can scientists determine the ra...</td>
+				<td class="pts_possible">4</td>
+			</tr>
+			<tr class="item_row">
+				<td class="item_prompt">CR&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="view_work" href="all_crs.html"></a>
+					<strong>8.&nbsp;</strong>
+					<a href="#">How can scientists determine the ra...</td>
+				<td class="pts_possible">4</td>
+			</tr>
+			<tr class="item_row">
+				<td class="item_prompt">CR&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="view_work" href="all_crs.html"></a>
+					<strong>9.&nbsp;</strong>
+					<a href="#">How can scientists determine the ra...</td>
+					<td class="pts_possible">4</td>
+			</tr>
+			<tr class="item_row">
+				<td class="item_prompt">CR&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="view_work" href="all_crs.html"></a>
+					<strong>10.&nbsp;</strong>
+					<a href="#">How can scientists determine the ra...</td>
+					<td class="pts_possible">4</td>
+			</tr>
+			<tr class="item_row">
+				<td class="item_prompt">CR&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="view_work" href="all_crs.html"></a>
+					<strong>11.&nbsp;</strong>
+					<a href="#">How can scientists determine the ra...</td>
+					<td class="pts_possible">4</td>
+			</tr>
+		</table>
+	</div>
+
+
+<!--Score table-->
+	<div class="scores">
+		<!--Student Names-->
+	<div class="stu_list_row clearfix">
+	<ul>
+		<li><a href="#">Phil Ano 1</a></li>
+		<li>Phil Ano 2</li>
+		<li>Phil Ano 3</li>
+		<li>Phil Ano 4</li>
+		<li>Phil Ano 5</li>
+	</ul>
+	</div>
+
+		<table class="table table-condensed table-bordered table-striped  score_table">
+			<tr class="item_row_scored">
+				<td class="score"><input value="A"></input></td>
+				<td class="score"><input value="B" class="duplicate"></input></td>
+				<td class="score"><input value="C" class="duplicate" ></input></td>
+				<td class="score"><input value="B" class="duplicate"></input></td>
+				<td class="score"><input value="A" class="duplicate" ></input></td>
+			</tr>
+			<tr class="item_row_scored">
+				<td class="score"><input value="C"></input></td>
+				<td class="score"><input value="A" class="duplicate"></input></td>
+				<td class="score"><input value="B" class="duplicate" ></input></td>
+				<td class="score"><input value="B" class="duplicate"></input></td>
+				<td class="score"><input value="A" class="duplicate" ></input></td>
+			</tr>
+			<tr class="item_row_scored">
+				<td class="score"><input value="C"></input></td>
+				<td class="score"><input value="" class="duplicate"></input></td>
+				<td class="score"><input value="B" class="duplicate" ></input></td>
+				<td class="score"><input value="" class="duplicate"></input></td>
+				<td class="score"><input value="A" class="duplicate" ></input></td>
+			</tr>
+			<tr class="item_row_scored">
+				<td class="score"><input value="C"></input></td>
+				<td class="score"><input value="" class="duplicate"></input></td>
+				<td class="score"><input value="B" class="duplicate" ></input></td>
+				<td class="score"><input value="" class="duplicate"></input></td>
+				<td class="score"><input value="A" class="duplicate" ></input></td>
+			</tr>
+			<tr class="item_row_scored">
+				<td class="score"><input value="C"></input></td>
+				<td class="score"><input value="" class="duplicate"></input></td>
+				<td class="score"><input value="B" class="duplicate" ></input></td>
+				<td class="score"><input value="" class="duplicate"></input></td>
+				<td class="score"><input value="A" class="duplicate" ></input></td>
+			</tr>
+			<tr class="item_row_scored">
+				<td class="score"><input value="C"></input></td>
+				<td class="score"><input value="" class="duplicate"></input></td>
+				<td class="score"><input value="B" class="duplicate" ></input></td>
+				<td class="score"><input value="" class="duplicate"></input></td>
+				<td class="score"><input value="A" class="duplicate" ></input></td>
+			</tr>
+			<tr class="item_row_scored">
+				<td class="score"><input value="C"></input></td>
+				<td class="score"><input value="" class="duplicate"></input></td>
+				<td class="score"><input value="B" class="duplicate" ></input></td>
+				<td class="score"><input value="" class="duplicate"></input></td>
+				<td class="score"><input value="A" class="duplicate" ></input></td>
+			</tr>
+			<tr>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input class="duplicate" value=""></input></td>
+				<td class="score"><input class="duplicate"value=""></input></td>
+				<td class="score"><input class="duplicate" value=""></input></td>
+				<td class="score"><input class="duplicate" value=""></input></td>
+			</tr>
+			<tr>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input class="duplicate" value=""></input></td>
+				<td class="score"><input class="duplicate"value=""></input></td>
+				<td class="score"><input class="duplicate" value=""></input></td>
+				<td class="score"><input class="duplicate" value=""></input></td>
+			</tr>
+			<tr>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input class="duplicate" value=""></input></td>
+				<td class="score"><input class="duplicate"value=""></input></td>
+				<td class="score"><input class="duplicate" value=""></input></td>
+				<td class="score"><input class="duplicate" value=""></input></td>
+			</tr>
+			<tr>
+				<td class="score"><input value=""></input></td>
+				<td class="score"><input class="duplicate" value=""></input></td>
+				<td class="score"><input class="duplicate"value=""></input></td>
+				<td class="score"><input class="duplicate" value=""></input></td>
+				<td class="score"><input class="duplicate" value=""></input></td>
+			</tr>
+		</table>
+	</div>
+
+
+<div class="score_picker">
+	<ul><li>
+
+			<input id="phil-1" name="phil" class="regular-radio" checked="" type="radio">
+			<label for="phil-1">
+    		<span class="icon icon-radio"></span>
+			</label>
+			<input id="phil-2" name="phil" class="regular-radio" type="radio">
+			<label for="phil-2">
+    			<span class="icon icon-radio"></span>
+			</label>
+			<input id="phil-3" name="phil" class="regular-radio" checked="" type="radio">
+			<label for="phil-3">
+    		<span class="icon icon-radio"></span>
+			</label>
+			<input id="phil-4" name="phil" class="regular-radio" type="radio">
+			<label for="phil-4">
+    			<span class="icon icon-radio"></span>
+			</label>
+
+			<input id="phil-5" name="phil" class="regular-radio" checked="" type="radio">
+			<label for="phil5">
+    		<span class="icon icon-radio"></span>
+			</label>
+	</li></ul>
+	</div>
+
+<!-- Save button and other footer content-->
+	<div class="footer">
+<!-- Primary arrow buttons -->
+<button class="btn btn-backward-primary" data-title="Prev"></button>
+<button class="btn btn-forward-primary" data-title="Next"></button>
+	</div>
+
+
+<!--Alerts-->
+		<!--<div class="alert alert-warning alert-dismissable" role="alert">
+			<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			The first column for each student will appear in reports. Make corrections as needed.</div>-->
+	<!-- end container-->
+</div>
+
+
+<script>
+
+function toggleAutoScored()
+{
+  var chToggle = document.getElementById("row_toggle");
+
+  if (chToggle.checked) {
+      cName = "hide_element";
+  } 
+  else {
+      cName = "show_element";
+  }
+
+  var elements = document.getElementsByClassName("item_row_scored");
+  for (e in elements)
+  {
+  	elements[e].className = "item_row_scored " + cName;
+  }
+
+}
+</script>
+
+<!------------------------------------------------------
+            Javascript              
+              uncomment as needed
+<!------------------------------------------------------>
+<script src="public/js/vendor/jquery/jquery.js"></script>
+<!--<script src="public/js/vendor/bootstrap/affix.js"></script>-->
+<script src="public/js/vendor/bootstrap/alert.js"></script>
+<script src="public/js/vendor/bootstrap/button.js"></script>
+<!--<script src="public/js/vendor/bootstrap/carousel.js"></script>-->
+<script src="public/js/vendor/bootstrap/dropdown.js"></script>
+<!--<script src="public/js/vendor/bootstrap/modal.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/scrollspy.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/tab.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/tooltip.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/popover.js"></script>-->
+<!--<script src="public/js/vendor/bootstrap/transition.js"></script>-->
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+<script src="public/js/amplify/amplify-dropdown.js"></script>
+<!--<script src="public/js/amplify/amplify-notes-widget.js"></script>-->
+<!--<script src="public/js/amplify/amplify-utilities.js"></script>-->
+<!--<script src="public/js/examples/notes-widget.js"></script>-->
+<!--<script src="docs-assets/js/docs.js"></script>-->
+</body>
+</html>
+
+
+

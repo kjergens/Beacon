@@ -63,7 +63,7 @@
 		<label for="row_toggle">
     <span class="icon icon-checkbox"></span>Hide auto-scored items
 		</label>
-	</div>
+	<div>
 
 <!--Item prompts-->
 	<div class="items">
@@ -186,6 +186,24 @@
 		<li class="duplicated"><a href="#">Fran Y*</a></li>-->
 	</ul>
 	</div>
+
+
+	<!--Score picker-->
+		<div class="score_picker">
+	<ul>
+		<li>
+			<label for="score">
+      	<span class="icon icon-radio"></span> 
+    	</label>
+     	<input id="name" name="sortstu" class="regular-radio" type="radio">
+     	<label for="name">
+            <span class="icon icon-radio"></span>
+      </label>
+    </li>
+	</ul>
+	</div>
+	 <input id="score" name="sortstu" class="regular-radio" type="radio" checked="">
+
 
 		<table class="table table-condensed table-bordered table-striped  score_table">
 			<tr class="item_row_scored">
@@ -550,9 +568,7 @@
 
 
 <!--Alerts-->
-		<div class="alert alert-warning alert-dismissable" role="alert">
-			<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-			The first column for each student will appear in reports. Make corrections as needed.</div>
+		<span class="alert alert-info" role="alert">Only the first column for each student will appear in reports. Make corrections as needed.</span>
 	<!-- end container-->
 </div>
 
