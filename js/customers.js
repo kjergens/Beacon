@@ -11,7 +11,13 @@ var CUSTOMERS = {
 			paper: "",
 			online: "",
 			num_summative: 0,
-			grades: "6-8"
+			grades: "6-8",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
 		} 
 	} ,
 	CA : {
@@ -27,6 +33,12 @@ var CUSTOMERS = {
 			paper: "Yes",
 			online: "Pending",
 			num_summative: 0,
+			testing_win1: "Sep 29 - Nov 14",
+			testing_win2: "Dec 15 - Jan 23",
+			testing_win3: "Mar 2 - Mar 27",
+			testing_win0: "",
+			testing_win4: "",
+			testing_win5: ""
 		},
 		LAUSD : {
 			name: "Los Angeles Unified School District",
@@ -39,20 +51,32 @@ var CUSTOMERS = {
 			paper: "No",
 			online: "Yes",
 			num_summative: 1,
-			grades: ""
+			grades: "",
+			testing_win0: "",
+			testing_win1: "May 25 - May 29",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
 		},
 		MUSD : {
 			name: "Mendota Unified School District",
 			num_schools: 7,
 			num_stu: 2600,
-			num_interims: -1,
+			num_interims: "not available",
 			url: "http://www.musdaztecs.com/",
 			consortia: "Smarter Balanced",
 			full_beacon: false,
 			paper: "",
 			online: "",
-			num_summative: -1,
-			grades: "2-12"
+			num_summative: "not available",
+			grades: "2-12",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
 		},
 		PUC : {
 			name: "PUC Schools",
@@ -60,14 +84,20 @@ var CUSTOMERS = {
 			state: "California",
 			num_schools: 16,
 			num_stu: 4500,
-			num_interims: -1,
+			num_interims: "not available",
 			url: "http://www.pucschools.org/",
 			consortia: "Smarter Balanced",
 			full_beacon: false,
 			paper: "",
 			online: "",
-			num_summative: -1,
-			grades: "2-12"
+			num_summative: "not available",
+			grades: "2-12",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
 		},
 		GPUSD : {
 			name: "Golden Plains Unified School District",
@@ -75,14 +105,20 @@ var CUSTOMERS = {
 			state: "California",
 			num_schools: 6,
 			num_stu: 1600,
-			num_interims: -1,
+			num_interims: "not available",
 			url: "http://www.gpusd.org/",
 			consortia: "Smarter Balanced",
 			full_beacon: true,
 			paper: "",
 			online: "Yes",
-			num_summative: -1,
-			grades: "K-12"
+			num_summative: "not available",
+			grades: "K-12",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
 		}  
 	},
 	DC : {
@@ -90,29 +126,60 @@ var CUSTOMERS = {
 			name: "District of Columbia Public Schools",
 			num_schools: 93,
 			num_stu: 33000,
-			num_interims: 0,
+			num_interims: 4,
 			url: "http://dcps.dc.gov/portal/site/DCPS/",
 			consortia: "PARCC",
 			full_beacon: true,
 			paper: "Yes",
 			online: "Yes",
+			num_summative: "not available",
+			grades: "2-10",
+			testing_win0: "Sep 2 - Sep 19 (pre-test)",
+			testing_win1: "Sep 29 - Oct 7",
+			testing_win2: "Nov 19 - Dec 2",
+			testing_win3: "Feb 2 - Feb 10",
+			testing_win4: "Mar 30 - Apr 28",
+			testing_win5: "May 5 - Jun 12"
+		},
+		EAPCS: {
+			name: "Eagle Academy Public Charter School District",
+			num_schools: "2",
+			num_stu: "900",
+			num_interims: "not available",
+			url: "http://www.eagleacademypcs.org/",
+			consortia: "PARCC",
+			full_beacon: false,
+			paper: "",
+			online: "",
 			num_summative: -1,
-			grades: "2-10"
-		} 
+			grades: "K-3",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
+		}  
 	},
 	DE : {
 		NCCS : {
 			name: "New Castle Charter Schools",
 			num_schools: 4,
 			num_stu: 1400,
-			num_interims: 0,
+			num_interims: "not available",
 			url: "http://nec.newcastledistrict.org/",
 			consortia: "PARCC",
 			full_beacon: false,
 			paper: "",
 			online: "",
-			num_summative: -1,
-			grades: "3-8"
+			num_summative: "not available",
+			grades: "3-8",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
 		} 
 	},
 	IL : {
@@ -120,14 +187,20 @@ var CUSTOMERS = {
 			name: "Victory Education Partners",
 			num_schools: "not available",
 			num_stu: "not available",
-			num_interims: 0,
+			num_interims: "not available",
 			url: "http://victoryep.com/",
 			consortia: "",
 			full_beacon: false,
 			paper: "",
 			online: "",
-			num_summative: -1,
-			grades: ""
+			num_summative: "not available",
+			grades: "",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
 		}
 	},
 	IN : {
@@ -137,14 +210,20 @@ var CUSTOMERS = {
 			state: "Indiana",
 			num_schools: 14,
 			num_stu: 8600,
-			num_interims: 0,
+			num_interims: "not available",
 			url: "http://www.eacs.k12.in.us/",
 			consortia: "none",
 			full_beacon: false,
 			paper: "",
 			online: "Yes",
-			num_summative: 0,
-			grades: "2-12"
+			num_summative: "not available",
+			grades: "2-12",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
 		} 
 	},
 	NC : {
@@ -161,7 +240,13 @@ var CUSTOMERS = {
 			paper: "",
 			online: "",
 			num_summative: 0,
-			grades: "6-8"
+			grades: "6-8",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
 		},
 		NHC : {
 			name: "New Hanover County Schools",
@@ -169,14 +254,20 @@ var CUSTOMERS = {
 			state: "North Carolina",
 			num_schools: 3,
 			num_stu: 800,
-			num_interims: -1,
+			num_interims: "not available",
 			url: "http://www.gcsnc.com/pages/gcsnc",
 			consortia: "",
 			full_beacon: false,
 			paper: "",
 			online: "Yes",
-			num_summative: -1,
-			grades: "3-8"
+			num_summative: "not available",
+			grades: "3-8",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
 		} 
 	}, 
 	NY : {
@@ -184,40 +275,58 @@ var CUSTOMERS = {
 			name: "Achievement First Public Charter Schools",
 			num_schools: 11,
 			num_stu: 5000,
-			num_interims: -1,
+			num_interims: "not available",
 			url: "http://www.achievementfirst.org/",
 			consortia: "PARCC",
 			full_beacon: false,
 			paper: "",
 			online: "",
-			num_summative: -1,
-			grades: ""
+			num_summative: "not available",
+			grades: "",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
 		},
 		PAVE : {
 			name: "PAVE Academy Charter School",
 			num_schools: 1,
 			num_stu: 225,
-			num_interims: 0,
+			num_interims: "not available",
 			url: "http://www.paveacademy.org/",
 			consortia: "PARCC",
 			full_beacon: true,
 			paper: "Yes",
 			online: "Yes",
-			num_summative: -1,
-			grades: "K-4"
+			num_summative: "not available",
+			grades: "K-4",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
 		},
 		UCS : {
 			name: "Uncommon Schools",
 			num_schools: 15,
 			num_stu: 857,
-			num_interims: 0,
+			num_interims: "not available",
 			url: "http://www.uncommonschools.org/",
 			consortia: "PARCC",
 			full_beacon: true,
 			paper: "Yes",
 			online: "No",
-			num_summative: -1,
-			grades: "2-8"
+			num_summative: "not available",
+			grades: "2-8",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
 		}  
 	},
 	VA : {
@@ -227,14 +336,20 @@ var CUSTOMERS = {
 			state: "FL,TX, MD, IL, DC, SC,  DE, WA, OH, CA, VA, TN",
 			num_schools: 115,
 			num_stu: 10000,
-			num_interims: 0,
+			num_interims: "not available",
 			url: "http://www.collegeboard.org",
 			consortia: "n/a",
 			full_beacon: true,
 			paper: "Yes",
 			online: "Yes",
-			num_summative: 0,
-			grades: "6-8"
+			num_summative: "not available",
+			grades: "6-8",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
 		} 
 	},
 	WA : {
@@ -251,21 +366,32 @@ var CUSTOMERS = {
 			paper: "",
 			online: "",
 			num_summative: 2,
-			grades: "2-12"
-
+			grades: "2-12",
+			testing_win0: "",
+			testing_win1: "Sep 8 - Sep 19",
+			testing_win2: "Nov 10 - Nov 21",
+			testing_win3: "Feb 2 - Feb 13",
+			testing_win4: "",
+			testing_win5: ""
 		} ,
 		SPO : {
 			name: "Spokane Public schools",
 			num_schools: 23,
 			num_stu: 11000,
-			num_interims: 0,
+			num_interims: "not available",
 			url: "http://www.spokaneschools.org",
 			consortia: "Smarter Balanced",
 			full_beacon: true,
 			paper: "",
 			online: "",
-			num_summative: 0,
-			grades: ""
+			num_summative: "not available",
+			grades: "",
+			testing_win0: "",
+			testing_win1: "Sep 15 - Oct 3",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
 		}
 	}
 };

@@ -1,0 +1,189 @@
+
+@font-face {
+	font-family:"amplify-light";
+	src:url('../fonts/amplify-light/amplify-light.eot');
+	src:url('../fonts/amplify-light/amplify-light.eot?#iefix') format('embedded-opentype'),url('../fonts/amplify-light/amplify-light.woff') format('woff'), url('../fonts/amplify-light/amplify-light.ttf') format('truetype'), url('../fonts/amplify-light/amplify-light.svg') format('svg');
+	font-weight:"normal";
+	font-style:"normal"
+}
+
+
+.ui-toolkit body {
+	background-color: #f38547;
+}
+
+.ui-toolkit .container {
+	position: relative;
+	background-color: #fff;
+	height: 893px;
+	width: 1192px;
+	margin-top: 10px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+}
+
+#navigation {
+	position: absolute;
+	top: 30px;
+	right: 10px;
+	zdisplay: none;
+}
+
+.glyphicon-circle-arrow-right:hover {
+	color: #f1f1f1;
+}
+
+.glyphicon-circle-arrow-right {
+	font-size: 72px;
+	color: #bcbec0;
+	zcolor: #fff;
+}
+
+#receiver {
+	font-size: 80pt;
+	margin: 70px 100px 60px;
+	font-family: "amplify-light";
+	color: #737373;
+}
+
+#receiver1 {
+	font-size: 56pt;
+	margin: 50px 100px 60px;
+	font-family: "amplify-light";
+	color: #737373;
+}
+
+#receiver2 {
+	font-size:58pt;
+	margin: 70px 100px 60px;
+	font-family: "amplify-light";
+	color: #737373;
+}
+
+#message {
+	font-size: 22pt;
+	padding: 30px 100px 30px;
+	color: #737373;
+	position: absolute;
+	top: 290px;
+	background-color: #f1f1f1;
+	width: 100%;
+	min-height: 270px;
+}
+
+#message2 {
+	font-size: 18pt;
+	padding: 20px 100px;
+	color: #737373;
+	position: absolute;
+	top: 300px;
+	background-color: #f1f1f1;
+	width: 100%;
+	min-height: 270px;
+}
+
+#sender {
+	font-size: 16pt;
+	padding-top: 25px;
+	text-transform: uppercase;
+	zposition: absolute;
+	zbottom: 30px;
+}
+
+
+#footerlogo {
+	position: absolute;
+	bottom: 170px;
+	right: 100px;
+	font-size: 46pt;
+	color: #F38547;
+	font-family: "amplify";
+}
+
+
+#a_footerlogo {
+	position: absolute;
+	bottom: 170px;
+	right: 100px;
+	font-size: 46pt;
+	color: #bcbec0;
+	font-family: "amplify";
+}
+
+#sublogo {
+	color: #bcbec0;
+}
+
+#footericon {
+	position: absolute;
+	bottom: 45px;
+	right: 85px;
+}
+
+#date {
+	position: absolute;
+	bottom: 115px;
+	right: 320px;
+	text-transform: uppercase;
+	font-size: 25px;
+	color: #737373;
+}
+
+#a_date {
+	position: absolute;
+	bottom: 115px;
+	right: 320px;
+	text-transform: uppercase;
+	font-size: 25px;
+	color: #bcbec0;
+}
+
+#badge-ribbon {
+ position: relative;
+ background: #f38547;
+ height: 100px;
+ width: 100px;
+ -moz-border-radius:    50px;
+ -webkit-border-radius: 50px;
+ border-radius:         50px;
+ z-index: 100;
+}
+
+#anniversary_msg {
+	margin-left: 150px;
+	z-index: 1;
+	position: relative;
+	top: -100px;
+}
+
+#anniversary_sender {
+	font-size: 16pt;
+	text-transform: uppercase;
+	position: relative;
+	top: 60px;
+}
+
+#badge-ribbon:before,
+#badge-ribbon:after {
+  content: '';
+  position: absolute;
+  border-bottom: 70px solid #f38547;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  top: 70px;
+  left: -10px;
+  -webkit-transform: rotate(-140deg);
+  -moz-transform:    rotate(-140deg);
+  -ms-transform:     rotate(-140deg);
+  -o-transform:      rotate(-140deg);
+}
+
+#badge-ribbon:after {
+  left: auto;
+  right: -10px;
+  -webkit-transform: rotate(140deg);
+  -moz-transform:    rotate(140deg);
+  -ms-transform:     rotate(140deg);
+  -o-transform:      rotate(140deg);
+}

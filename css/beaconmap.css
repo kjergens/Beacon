@@ -4,46 +4,95 @@
 .ui-toolkit h4, 
 .ui-toolkit h5, 
 .ui-toolkit h6 {
-	margin: 5px 0px;
-}
-
-.pagetitle {
-	padding: 20px 0px 10px;
-}
-
-.regionNavHeader {
-	padding-left: 15px;
-}
-
-.ui-toolkit a:hover {
-	text-decoration: none;
-	color: #333;
-}
-
-.ui-toolkit li {
-	list-style: none;
-	-webkit-list-style: none;
+	margin: 8px 0px;
 }
 
 .ui-toolkit body {
-	background-color: #333;
+	background-color: #fff;
 }
 
 .ui-toolkit .container {
 	background-color: #fff;
-	padding-left: 10px;
-	padding-right: 10px;
+	position: relative;
 }
 
-.ui-toolkit ul {
-	zmargin-left: -30px;
+#pagetitle {
+	font-family: "amplify";
+	font-size: 36px;
 }
+/*
+ ****************
+ * =Directory
+ ****************
+*/  
+
+#directory {
+	zdisplay: none;
+	background-color: #fff;
+}
+
+.ui-toolkit #directory li {
+	list-style: none;
+	-webkit-list-style: none;
+}
+
+.ui-toolkit #directory ul {
+	margin-left: -40px;
+}
+
+.ui-toolkit #directory a:hover {
+	text-decoration: none;
+	color: #333;
+}
+
+.ui-toolkit #directory a {
+	text-decoration: none;
+	color: #737374;
+}
+
+/*
+ ****************
+ * =map
+ ****************
+*/  
+
+#beaconmap {
+	margin-top: 50px;
+}
+
 
 figcaption {
 	font-size: 9px;
 	text-align: right;
 }
 
+/*
+ ****************
+ * =Details section
+ ****************
+*/  
+
+#districtInfo {
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	width: 600px;
+	height: 400px;
+	padding: 50px;
+	background-color: #f1f1f1;
+	border: 1px solid #333;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: all;
+}
+
 .ui-toolkit table {
 	background-color: #f1f1f1; 
 }
+
+
